@@ -55,11 +55,54 @@
                     </div>
                     <hr>
                     <div class="container mt-2" style="background-color: #e3e3e3">
+                        <h4> Seminar Content </h4>
                         <p>The advent of large-scale pretrained language models as "Swiss Army Knives" for various applications and problems in natural language understanding and computational semantics has drastically changed the natural language processing landscape.</p>
                         <p>The <a href="https://aclanthology.org/N19-1423/">BERT</a> model is only the most prominent example. The publication of BERT caused a huge impact in the NLP research community and basically lead to a paradigm change: Pretraining language models based on large text collections and then adapting them to a task at hand has become the most prominent procedure for cutting edge and state of the art systems both in research and for industry applications.</p>
                         <p>Since the birth of BERT, research has been flourishing that is targeted at finding smaller, faster and more accurate variants and that investigates the adaptation of BERT-like transformer models to new tasks. In this seminar, we will look at such variants and adaptations of pretrained language models. We will cover papers on diverse new and effective pretraining methods for such language models, as well as papers that investigate how to use and adapt pretrained models for selected tasks in natural language understanding and computational semantics. We will look into prominent use cases such as machine reading comprehension and open question answering, but also read papers on multilinguality, natural language inference or text classification (based on the interest of participants).</p>
+                        <hr>
+                        <h4> Selection of Relevant Papers </h4>
+                        <h5>Pretraining</h5>
+                        <ul>
+                            <li> <strong>XLNet</strong>: Generalized Autoregressive Pretraining for Language Understanding | <a href='https://proceedings.neurips.cc/paper/2019/file/dc6a7e655d7e5840e66733e9ee67cc69-Paper.pdf'> paper </a> </li>
+                            <li> <strong>ALBERT</strong>: A Lite BERT for Self-Supervised Learning of Language Representations | <a href='https://arxiv.org/pdf/1909.11942.pdf'> paper </a> </li>
+                            <li> <strong>RoBERTa</strong>: A Robustly Optimized BERT Pretraining Approach | <a href='https://arxiv.org/pdf/1907.11692.pdf'> paper </a> </li>
+                            <li> <strong>GPT-2</strong>: Language Models are Unsupervised Multitask Learners | <a href='http://www.persagen.com/files/misc/radford2019language.pdf'> paper </a> </li>
+                            <li> <strong>GPT-3</strong>: Language Models are Few-Shot Learners | <a href='https://proceedings.neurips.cc/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf'> paper </a> </li>
+                            <li> <strong>T5</strong>: Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer | <a href='https://www.jmlr.org/papers/volume21/20-074/20-074.pdf'> paper </a> </li>
+                            <li> <strong>ELECTRA</strong>: Pre-training Text Encoders as Discriminators Rather Than Generators | <a href='https://arxiv.org/abs/2003.10555'> paper </a> </li>
+                            <li> <strong>BART</strong>: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension | <a href='https://arxiv.org/abs/1910.13461'> paper </a> </li>
+                            <li> <strong>SpanBERT</strong>: Improving Pre-training by Representing and Predicting Spans | <a href='https://aclanthology.org/2020.tacl-1.5.pdf'> paper </a> </li>
+                        </ul>
+                        <h5>Tasks</h5>
+                        <h6>Open Question Answering/Neural Retrieval</h6>
+                        <ul>
+                            <li> Dense Passage Retrieval for Open-Domain Question Answering | <a href='https://aclanthology.org/2020.emnlp-main.550.pdf'> paper </a> </li>
+                            <li> How Much Knowledge Can You Pack Into the Parameters of a Language Model? | <a href='http://aclanthology.lst.uni-saarland.de/2020.emnlp-main.437.pdf'> paper </a> </li>
+                            <li> RocketQA: An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering | <a href='https://aclanthology.org/2021.naacl-main.466.pdf'> paper </a> </li>
+                            <li> Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks | <a href='https://proceedings.neurips.cc/paper/2020/file/6b493230205f780e1bc26945df7481e5-Paper.pdf?ref=https://githubhelp.com'> paper </a> </li>
+                            <li> REALM: Retrieval-Augmented Language Model Pre-Training | <a href='https://arxiv.org/pdf/2002.08909.pdf'> paper </a> </li>
+                        </ul>
+                        <h6>Machine Comprehension</h6>
+                        <ul>
+                            <li> TANDA: Transfer and Adapt Pre-Trained Transformer Models for Answer Sentence Selection | <a href='https://ojs.aaai.org/index.php/AAAI/article/view/6282'> paper </a> </li>
+                            <li> The Cascade Transformer: an Application for Efficient Answer Sentence Selection | <a href='https://aclanthology.org/2020.acl-main.504.pdf'> paper </a> </li>
+                            <li> Retrospective Reader for Machine Reading Comprehension | <a href='https://www.aaai.org/AAAI21Papers/AAAI-1640.ZhangZ.pdf'> paper </a> </li>
+                        </ul>
+                        <h6>Natural Language Inference, Entailment and Similarity</h6>
+                        <ul>
+                            <li> Semantics-aware BERT for Language Understanding | <a href='https://ojs.aaai.org/index.php/AAAI/article/view/6510'> paper </a> </li>
+                            <li> Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks | <a href='https://aclanthology.org/D19-1410.pdf'> paper </a> </li>
+                            <li> Making Monolingual Sentence Embeddings Multilingual using Knowledge Distillation | <a href='https://aclanthology.org/2020.emnlp-main.365.pdf'> paper </a> </li>
+                            <li> Multi-Task Deep Neural Networks for Natural Language Understanding | <a href='https://aclanthology.org/P19-1441.pdf'> paper </a> </li>
+                            <li> SimCSE: Simple Contrastive Learning of Sentence Embeddings | <a href='https://aclanthology.org/2021.emnlp-main.552.pdf'> paper </a> </li>
+                        </ul>
+                        <h6>Multilingual Models</h6>
+                        <ul>
+                            <li> mT5: A Massively Multilingual Pre-trained Text-to-Text Transformer <a href='https://arxiv.org/pdf/2010.11934.pdf'> paper </a> </li>
+                            <li> Unsupervised Cross-lingual Representation Learning at Scale <a href='https://arxiv.org/pdf/1911.02116.pdf'> paper </a> </li>
+                            <li> Multilingual Denoising Pre-training for Neural Machine Translation <a href='https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00343/96484/Multilingual-Denoising-Pre-training-for-Neural'> paper </a> </li>
+                        </ul>
                     </div>
-                    <hr>
                     <div class="container mt-2" style="background-color: #9AD5A3">
                         <font size="-1"><p>Some words on grading: This seminar is meant to be as interactive as possible. Final grades will be based on students' presentations, term papers (optional), but also on participation and discussion in class.</p>
                         <p>The participants are expected to prepare for classes accordingly, by reading the relevant papers and also doing background reading, if necessary. Based on this preparation, the participants should be able to discuss the presented papers in depth and to understand relevant context during the discussion.</p></font>
