@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -26,91 +25,174 @@
         <!-- Page content-->
         <div class="container">
             <div class="text-center mt-5">
-                <h3>Seminar: XPLN: Exploring Explainability in NLP</h3>
-                <h4>Wed 14:15–15:45, Seminarraum -1.05</h4>
-                <h6>Dr. Simon Ostermann, Tanja Bäumel, Soniya Vijayakumar</h6>
+                <h3>Seminar XPLN: Exploring Explainability in NLP</h3>
+                <h4>Wed 14:15–15:45, Room -1.05</h4>
+                <h6>Dr. Simon Ostermann, Tanja Bäumel</h6>
                 <h6>Deutsches Forschungszentrum für Künstliche Intelligenz (DFKI)</h6>
-                <h5></h5>
             </div>
             <div class="row align-items-start">
                 <div class="col">
+
                 </div>
                 <div class="col-8">
                     <div class="container mt-2" style="background-color: #D19589">
-                    	<h5>Coming Soon.</h5>
-                    	<!--
-                        <h5>If you would like to participate, please drop an email to <i>simon.ostermann (at) dfki.de</i><strong> until April 12 (23:59)</strong>.</h5>
+                        <!--<h6>The registration to the seminar is now closed. I've dropped an email to everybody that asked to join. Many thanks for your interest! :-) </h6>-->
+                        <h5>If you would like to participate, please drop an email to <i>xpln-seminar@dfki.de</i><br><strong> until April 17 (23:59)</strong>.</h5>
                         In your email, please:
                         <ul>
-                            <li>Give your name, semester, area of study</li>
+                            <li>Give your name, semester, study program</li>
                             <li>Write some words on why you want to take part in this course</li>
                             <li>List some of your previous experience:
                                 <ul>
-                                    <li>your background in <strong>deep learning</strong></li>
-                                    <li>your background in <strong>natural language understanding</strong></li>
-                                    <li>your previous hands-on experience in <strong>programming/implementing NLP models</strong></li>
+                                    <li>your background in <strong>deep learning or machine learning</strong></li>
+                                    <li>your background in <strong>natural language processing in general</strong></li>
+                                    <!--<li>your previous hands-on experience in <strong>programming/implementing NLP models</strong></li>-->
                                 </ul>
                             </li>
-                        </ul>-->
+                        </ul>
+
+                    </div>
+                    <div class="container mt-2" style="background-color: #D19589">
+                        Prerequisites: This seminar is primarily targeted at Master students, but is also open to advanced Bachelor students. We expect you to have a curious mind and some familiarity with large language models. At the very least, we expect all students to have read (and understood :-)) the <a href = "https://arxiv.org/pdf/1810.04805.pdf" >BERT paper</a> and the <a href = "https://arxiv.org/pdf/1706.03762.pdf" >Transformer paper</a>.
                     </div>
                     <!--<div class="container mt-2" style="background-color: #DFA69B">
                         * <font size="-1">Don't worry if you don't have a background in all of these areas. What you should bring is a basic understanding of deep learning methods and no fear of digging into a formula, if necessary. Still, this is going to be an application-oriented seminar rather than a mathematics course.</i></font>
                     </div>
                     -->
                     <hr>
-                    <!--<div class="container mt-2" style="background-color: #e3e3e3">
-                        <h4> Project Content </h4>
-                        <p>The advent of large-scale pretrained language models as "Swiss Army Knives" for various applications and problems in natural language understanding and computational semantics has drastically changed the natural language processing landscape.</p>
-                        <p>The <a href="https://aclanthology.org/N19-1423/">BERT</a> model is only the most prominent example. The publication of BERT caused a huge impact in the NLP research community and basically lead to a paradigm change: Pretraining language models based on large text collections and then adapting them to a task at hand has become the most prominent procedure for cutting edge and state of the art systems both in research and for industry applications.</p>
-                        <p>Since the birth of BERT, research has been flourishing that is targeted at finding smaller, faster and more accurate variants and that investigates the adaptation of BERT-like transformer models to new tasks. In this software project, we will investigate the implementation and application of diverse BERT-like models. Students will work out own project ideas, re-train their own models and implement them in applications. <!--In this seminar, we will look at such variants and adaptations of pretrained language models. We will cover papers on diverse new and effective pretraining methods for such language models, as well as papers that investigate how to use and adapt pretrained models for selected tasks in natural language understanding and computational semantics. We will look into prominent use cases such as machine reading comprehension and open question answering, but also read papers on multilinguality, natural language inference or text classification (based on the interest of participants).--></p>
+                    <div class="container mt-2" style="background-color: #e3e3e3">
+                        <h4> Seminar Content </h4>
+                        <p>
+                            The rise of deep learning in AI has dramatically increased the performance of models across many sub-fields such as natural language processing or computer vision. In the last 5 years, large petrained language models (LLMs) and their variants (BERT, ChatGPT etc.) have changed the NLP landscape drastically. Such models got larger and larger over the last years, reaching  increasingly impressive performance peeks, sometimes even surpassing humans.
+                        </p>
+                        <p>
+                            A central issue with deep learning models with millions or billions of parameters is that they are essentially <strong>black boxes</strong>: From the model's parameters, it is not inherently clear why a model exhibits a certain behavior or makes certain classification decision. Understanding the inner workings of such large models is however extremely important, especially when AI takes on critical tasks e.g. in the medical or financial domain. Trustworthiness and fairness are important dimensions that such large models should adhere to, that are often not taken into account.
+                        </p>
+                        <p>
+                            In this seminar we will try to shine a spotlight on the rapidly growing field of interpretable and explainable AI (XAI), that develops methods to peak into the black box that LLMs are. We will introduce general methods used in XAI, and look into insights gained from applying these methods to LLMs. Depending on the students' preferences, we will cover some of the topics listed below.
+                        </p>
                         <hr>
-                        <!--<h4> Selection of Relevant Papers </h4>
-                        <h5>Pretraining</h5>
+                        <h4> List of relevant Papers and Topics (subject to smaller changes) </h4>
+                        <h5>Methods of XAI</h5>
                         <ul>
-                            <li> <strong>XLNet</strong>: Generalized Autoregressive Pretraining for Language Understanding | <a href='https://proceedings.neurips.cc/paper/2019/file/dc6a7e655d7e5840e66733e9ee67cc69-Paper.pdf'> paper </a> </li>
-                            <li> <strong>ALBERT</strong>: A Lite BERT for Self-Supervised Learning of Language Representations | <a href='https://arxiv.org/pdf/1909.11942.pdf'> paper </a> </li>
-                            <li> <strong>RoBERTa</strong>: A Robustly Optimized BERT Pretraining Approach | <a href='https://arxiv.org/pdf/1907.11692.pdf'> paper </a> </li>
-                            <li> <strong>GPT-2</strong>: Language Models are Unsupervised Multitask Learners | <a href='http://www.persagen.com/files/misc/radford2019language.pdf'> paper </a> </li>
-                            <li> <strong>GPT-3</strong>: Language Models are Few-Shot Learners | <a href='https://proceedings.neurips.cc/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf'> paper </a> </li>
-                            <li> <strong>T5</strong>: Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer | <a href='https://www.jmlr.org/papers/volume21/20-074/20-074.pdf'> paper </a> </li>
-                            <li> <strong>ELECTRA</strong>: Pre-training Text Encoders as Discriminators Rather Than Generators | <a href='https://arxiv.org/abs/2003.10555'> paper </a> </li>
-                            <li> <strong>BART</strong>: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension | <a href='https://arxiv.org/abs/1910.13461'> paper </a> </li>
-                            <li> <strong>SpanBERT</strong>: Improving Pre-training by Representing and Predicting Spans | <a href='https://aclanthology.org/2020.tacl-1.5.pdf'> paper </a> </li>
+                            <li> <strong>Probing</strong>: What you can cram into a single $&!#* vector: Probing sentence embeddings for linguistic properties | <a href='https://aclanthology.org/P18-1198.pdf'> paper </a> </li>
+                            <li> <strong>Amnesic Probing</strong>: Amnesic Probing: Behavioral Explanation with Amnesic Counterfactuals | <a href='https://arxiv.org/pdf/2006.00995.pdf'> paper </a> </li>
+                            <li> <strong>LIME</strong>: "Why Should I Trust You?": Explaining the Predictions of Any Classifier | <a href='https://arxiv.org/pdf/1602.04938.pdf'> paper </a> </li>
+                            <li> <strong>Attention Interpretation</strong>:
+                                <ul>
+                                    <li>Is Attention Interpretable? | <a href='https://aclanthology.org/P19-1282.pdf'> paper </a> </li>
+                                    <li>Attention is not Explanation | <a href='https://aclanthology.org/N19-1357.pdf'> paper </a> </li>
+                                    <li>Attention is not not Explanation | <a href='https://aclanthology.org/D19-1002.pdf'> paper </a> </li>
+                                </ul>
+                             <li> Axiomatic Attribution for Deep Networks | <a href='https://proceedings.mlr.press/v70/sundararajan17a.html'> paper </a> </li>
+
                         </ul>
-                        <h5>Tasks</h5>
-                        <h6>Open Question Answering/Neural Retrieval</h6>
+                        <h5>Interpreting Language Models</h5>
                         <ul>
-                            <li> Dense Passage Retrieval for Open-Domain Question Answering | <a href='https://aclanthology.org/2020.emnlp-main.550.pdf'> paper </a> </li>
-                            <li> How Much Knowledge Can You Pack Into the Parameters of a Language Model? | <a href='http://aclanthology.lst.uni-saarland.de/2020.emnlp-main.437.pdf'> paper </a> </li>
-                            <li> RocketQA: An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering | <a href='https://aclanthology.org/2021.naacl-main.466.pdf'> paper </a> </li>
-                            <li> Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks | <a href='https://proceedings.neurips.cc/paper/2020/file/6b493230205f780e1bc26945df7481e5-Paper.pdf?ref=https://githubhelp.com'> paper </a> </li>
-                            <li> REALM: Retrieval-Augmented Language Model Pre-Training | <a href='https://arxiv.org/pdf/2002.08909.pdf'> paper </a> </li>
+                            <li> <strong>Prompt Learning</strong>: Personalized Prompt Learning for Explainable Recommendation  | <a href='https://dl.acm.org/doi/abs/10.1145/3580488'> paper </a> </li>
+                            <li> <strong>Syntax</strong>:
+                                <ul>
+                                    <li>  Open Sesame: Getting Inside BERT’s Linguistic Knowledge | <a href='https://aclanthology.org/W19-4825.pdf'> paper </a> </li>
+                                    <li>  A Structural Probe for Finding Syntax in Word Representations | <a href='https://aclanthology.org/N19-1419.pdf'> paper </a> </li>
+                                </ul>
+                            </li>
+                            <li> <strong>Semantics </strong>:
+                                <ul>
+                                    <li>  What do you learn from context? Probing for sentence structure in contextualized word representations | <a href='https://openreview.net/pdf?id=SJzSgnRcKX'> paper </a> </li>
+                                    <li>  What’s in a Name? Are BERT Named Entity Representations just as Good for any other Name? | <a href='https://aclanthology.org/2020.repl4nlp-1.24.pdf'> paper </a> </li>
+                                </ul>
+                            </li>
+                            <li> <strong>(World) Knowledge</strong>:
+                                <ul>
+                                    <li>  Do Neural Language Representations Learn Physical Commonsense? | <a href='https://arxiv.org/pdf/1908.02899.pdf'> paper </a> </li>
+                                    <li>  Language Models as Knowledge Bases? | <a href='https://arxiv.org/abs/1909.01066'> paper </a> </li>
+                                    <li>  BERT is Not a Knowledge Base (Yet): Factual Knowledge vs. Name-Based Reasoning in Unsupervised QA | <a href='https://arxiv.org/pdf/1911.03681v1.pdf'> paper </a> </li>
+                                    <li>  Do NLP Models Know Numbers? Probing Numeracy in Embeddings | <a href='https://aclanthology.org/D19-1534/'> paper </a> </li>
+                                    <li>  Language Models Represent Space and Time | <a href='https://openreview.net/forum?id=jE8xbmvFin'> paper </a> </li>
+                                </ul>
+                            </li>
                         </ul>
-                        <h6>Machine Comprehension</h6>
+
+                        <h5>Fairness and Bias</h5>
                         <ul>
-                            <li> TANDA: Transfer and Adapt Pre-Trained Transformer Models for Answer Sentence Selection | <a href='https://ojs.aaai.org/index.php/AAAI/article/view/6282'> paper </a> </li>
-                            <li> The Cascade Transformer: an Application for Efficient Answer Sentence Selection | <a href='https://aclanthology.org/2020.acl-main.504.pdf'> paper </a> </li>
-                            <li> Retrospective Reader for Machine Reading Comprehension | <a href='https://www.aaai.org/AAAI21Papers/AAAI-1640.ZhangZ.pdf'> paper </a> </li>
+                            <li>  Measuring Fairness with Biased Rulers: A Comparative Study on Bias Metrics for Pre-trained Language Models | <a href='https://aclanthology.org/2022.naacl-main.122.pdf'> paper </a>
+                            <li>  Bigger Data or Fairer Data? Augmenting BERT via Active Sampling for Educational Text Classification | <a href='https://aclanthology.org/2022.coling-1.109.pdf'> paper </a> </li>
+                            <li>  Mitigating Language-Dependent Ethnic Bias in BERT | <a href='https://aclanthology.org/2021.emnlp-main.42.pdf'> paper </a> </li>
+                            <li>  Identifying and Adapting Transformer-Components Responsible for Gender Bias in an English Language Model  | <a href='https://aclanthology.org/2023.blackboxnlp-1.29/'> paper </a> </li>
+                            <li>  Investigating Gender Bias in Language Models Using Causal Mediation Analysis | <a href='https://proceedings.neurips.cc/paper/2020/hash/92650b2e92217715fe312e6fa7b90d82-Abstract.html'> paper </a> </li>
+                            </li>
                         </ul>
-                        <h6>Natural Language Inference, Entailment and Similarity</h6>
+
+                        <h5>Can Models learn to Understand?</h5>
                         <ul>
-                            <li> Semantics-aware BERT for Language Understanding | <a href='https://ojs.aaai.org/index.php/AAAI/article/view/6510'> paper </a> </li>
-                            <li> Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks | <a href='https://aclanthology.org/D19-1410.pdf'> paper </a> </li>
-                            <li> Making Monolingual Sentence Embeddings Multilingual using Knowledge Distillation | <a href='https://aclanthology.org/2020.emnlp-main.365.pdf'> paper </a> </li>
-                            <li> Multi-Task Deep Neural Networks for Natural Language Understanding | <a href='https://aclanthology.org/P19-1441.pdf'> paper </a> </li>
-                            <li> SimCSE: Simple Contrastive Learning of Sentence Embeddings | <a href='https://aclanthology.org/2021.emnlp-main.552.pdf'> paper </a> </li>
+                            <li>  On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? | <a href='https://dl.acm.org/doi/abs/10.1145/3442188.3445922'> paper </a> </li>
+                            <li>  Climbing towards NLU: On Meaning, Form, and Understanding in the Age of Data | <a href='https://aclanthology.org/2020.acl-main.463/'> paper </a> </li>
+                            <li>  On the paradox of learning to reason from data | <a href='https://dl.acm.org/doi/abs/10.24963/ijcai.2023/375'> paper </a> </li>
+                            <li>  Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models | <a href='https://openreview.net/forum?id=uyTL5Bvosj&nesting=2&sort=date-desc'> paper </a> </li>
                         </ul>
-                        <h6>Multilingual Models</h6>
+
+                        <h5>Mechanistic Interpretability</h5>
                         <ul>
-                            <li> mT5: A Massively Multilingual Pre-trained Text-to-Text Transformer <a href='https://arxiv.org/pdf/2010.11934.pdf'> paper </a> </li>
-                            <li> Unsupervised Cross-lingual Representation Learning at Scale <a href='https://arxiv.org/pdf/1911.02116.pdf'> paper </a> </li>
-                            <li> Multilingual Denoising Pre-training for Neural Machine Translation <a href='https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00343/96484/Multilingual-Denoising-Pre-training-for-Neural'> paper </a> </li>
-                        </ul>-->
-                    <!--</div>-->
-                    <!--<div class="container mt-2" style="background-color: #9AD5A3">
+                             <li> <strong>Basics</strong>:
+                                <ul>
+                                    <li>  Zoom In: An Introduction to Circuits | <a href='https://distill.pub/2020/circuits/zoom-in/?ref=cold-takes'> paper </a> </li>
+                                    <li>  A Mathematical Framework for Transformer Circuits | <a href='https://transformer-circuits.pub/2021/framework/index.html'> paper </a> </li>
+                                    <li>  Transformer Feed-Forward Layers Are Key-Value Memories | <a href='https://aclanthology.org/2021.emnlp-main.446/'> paper </a> </li>
+                                </ul>
+                            </li>
+                             <li> <strong>Knowledge: Locating, Extracting, Editing & Forgetting</strong>:
+                                <ul>
+                                    <li>  Crawling The Internal Knowledge-Base of Language Models | <a href='https://aclanthology.org/2023.findings-eacl.139/'> paper </a> </li>
+                                    <li>  Locating and Editing Factual Associations in GPT | <a href='https://proceedings.neurips.cc/paper_files/paper/2022/hash/6f1d43d5a82a37e89b0665b33bf3a182-Abstract-Conference.html'> paper </a> </li>
+                                    <li>  Mass-Editing Memory in a Transformer | <a href='https://openreview.net/forum?id=MkbcAHIYgyS'> paper </a> </li>
+                                    <li>  Does Localization Inform Editing? Surprising Differences in Causality-Based Localization vs. Knowledge Editing in Language Models | <a href='https://openreview.net/forum?id=EldbUlZtbd'> paper </a> </li>
+                                    <li>  In-Context Unlearning: Language Models as Few Shot Unlearners | <a href='https://arxiv.org/abs/2310.07579'> paper </a> </li>
+                                </ul>
+                             <li> <strong>World Representation</strong>:
+                                <ul>
+                                    <li>  Emergent World Representations: Exploring a Sequence Model Trained on a Synthetic Task | <a href='https://openreview.net/forum?id=DeG07_TcZvT'> paper </a> </li>
+                                    <li>  Emergent Linear Representations in World Models of Self-Supervised Sequence Models | <a href='https://aclanthology.org/2023.blackboxnlp-1.2/'> paper </a> </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h5>Reasoning in LLMs</h5>
+                        <ul>
+                            <li>  A Mechanistic Interpretation of Arithmetic Reasoning in Language Models using Causal Mediation Analysis | <a href='https://aclanthology.org/2023.emnlp-main.435/'> paper </a> </li>
+                            <li>  Reasoning with Language Model is Planning with World Model | <a href='https://aclanthology.org/2023.emnlp-main.507/'> paper </a> </li>
+                            <li>  Understanding the Reasoning Ability of Language Models From the Perspective of Reasoning Paths Aggregation | <a href='https://arxiv.org/abs/2402.03268'> paper </a> </li>
+                        </ul>
+
+                          <h5>Interpreting Model Weights</h5>
+                        <ul>
+                            <li> Analyzing Transformers in Embedding Space | <a href='https://virtual2023.aclweb.org/paper_P676.html'> paper </a> </li>
+                            <li> Prompt Waywardness: The Curious Case of Discretized Interpretation of Continuous Prompts | <a href='https://aclanthology.org/2022.naacl-main.266/'> paper </a> </li>
+                            <li> Transformer Feed-Forward Layers Build Predictions by Promoting Concepts in the Vocabulary Space | <a href='https://aclanthology.org/2022.emnlp-main.3/'> paper </a> </li>
+                            <li> Backward Lens: Projecting Language Model Gradients into the Vocabulary Space | <a href='https://arxiv.org/abs/2402.12865'> paper </a> </li>
+                            <li> The Hidden Space of Transformer Language Adapters | <a href='https://arxiv.org/abs/2402.13137'> paper </a> </li>
+                        </ul>
+
+                        <h5>Can Models explain Models? On the Faithfulness of Explanations</h5>
+                        <ul>
+                            <li>  Language models can explain neurons in language models | <a href='https://openai.com/research/language-models-can-explain-neurons-in-language-models'> paper </a>
+                            <li>  Faithfulness vs. Plausibility: On the (Un)Reliability of Explanations from Large Language Models | <a href='https://arxiv.org/abs/2402.04614'> paper </a> </li>
+                            </li>
+                        </ul>
+
+                        <h5>Interpreting Individual Neurons in NLP Models</h5>
+                        <ul>
+                            <li>  Knowledge Neurons in Pretrained Transformers | <a href='https://aclanthology.org/2022.acl-long.581/'> paper </a>
+                            <li>  On the Pitfalls of Analyzing Individual Neurons in Language Models | <a href='https://openreview.net/forum?id=8uz0EWPQIMu'> paper </a> </li>
+                            <li>  An Interpretability Illusion for BERT | <a href='https://arxiv.org/abs/2104.07143'> paper </a> </li>
+                            <li>  Finding Neurons in a Haystack: Case Studies with Sparse Probing | <a href='https://openreview.net/forum?id=JYs1R9IMJr'> paper </a> </li>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="container mt-2" style="background-color: #9AD5A3">
                         <font size="-1"><p>Some words on grading: This seminar is meant to be as interactive as possible. Final grades will be based on students' presentations, term papers (optional), but also on participation and discussion in class.</p>
                         <p>The participants are expected to prepare for classes accordingly, by reading the relevant papers and also doing background reading, if necessary. Based on this preparation, the participants should be able to discuss the presented papers in depth and to understand relevant context during the discussion.</p></font>
-                    </div>-->
+                    </div>
                     
                 </div>
                 <div class="col">
