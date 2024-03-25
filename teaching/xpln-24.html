@@ -73,7 +73,7 @@
                         </p>
                         <hr>
                         <h4> List of relevant Papers and Topics (subject to smaller changes) </h4>
-                        <h5>Methods of XAI</h5>
+                        <h5>Basic XAI Methods</h5>
                         <ul>
                             <li> <strong>Probing</strong>: What you can cram into a single $&!#* vector: Probing sentence embeddings for linguistic properties | <a href='https://aclanthology.org/P18-1198.pdf'> paper </a> </li>
                             <li> <strong>Amnesic Probing</strong>: Amnesic Probing: Behavioral Explanation with Amnesic Counterfactuals | <a href='https://arxiv.org/pdf/2006.00995.pdf'> paper </a> </li>
@@ -87,7 +87,7 @@
                              <li> Axiomatic Attribution for Deep Networks | <a href='https://proceedings.mlr.press/v70/sundararajan17a.html'> paper </a> </li>
 
                         </ul>
-                        <h5>Interpreting Language Models</h5>
+                        <h5>Linguistic Interpretations of Language Models</h5>
                         <ul>
                             <li> <strong>Prompt Learning</strong>: Personalized Prompt Learning for Explainable Recommendation  | <a href='https://dl.acm.org/doi/abs/10.1145/3580488'> paper </a> </li>
                             <li> <strong>Syntax</strong>:
@@ -111,24 +111,6 @@
                                     <li>  Language Models Represent Space and Time | <a href='https://openreview.net/forum?id=jE8xbmvFin'> paper </a> </li>
                                 </ul>
                             </li>
-                        </ul>
-
-                        <h5>Fairness and Bias</h5>
-                        <ul>
-                            <li>  Measuring Fairness with Biased Rulers: A Comparative Study on Bias Metrics for Pre-trained Language Models | <a href='https://aclanthology.org/2022.naacl-main.122.pdf'> paper </a>
-                            <li>  Bigger Data or Fairer Data? Augmenting BERT via Active Sampling for Educational Text Classification | <a href='https://aclanthology.org/2022.coling-1.109.pdf'> paper </a> </li>
-                            <li>  Mitigating Language-Dependent Ethnic Bias in BERT | <a href='https://aclanthology.org/2021.emnlp-main.42.pdf'> paper </a> </li>
-                            <li>  Identifying and Adapting Transformer-Components Responsible for Gender Bias in an English Language Model  | <a href='https://aclanthology.org/2023.blackboxnlp-1.29/'> paper </a> </li>
-                            <li>  Investigating Gender Bias in Language Models Using Causal Mediation Analysis | <a href='https://proceedings.neurips.cc/paper/2020/hash/92650b2e92217715fe312e6fa7b90d82-Abstract.html'> paper </a> </li>
-                            </li>
-                        </ul>
-
-                        <h5>Can Models learn to Understand?</h5>
-                        <ul>
-                            <li>  On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? | <a href='https://dl.acm.org/doi/abs/10.1145/3442188.3445922'> paper </a> </li>
-                            <li>  Climbing towards NLU: On Meaning, Form, and Understanding in the Age of Data | <a href='https://aclanthology.org/2020.acl-main.463/'> paper </a> </li>
-                            <li>  On the paradox of learning to reason from data | <a href='https://dl.acm.org/doi/abs/10.24963/ijcai.2023/375'> paper </a> </li>
-                            <li>  Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models | <a href='https://openreview.net/forum?id=uyTL5Bvosj&nesting=2&sort=date-desc'> paper </a> </li>
                         </ul>
 
                         <h5>Mechanistic Interpretability</h5>
@@ -156,20 +138,46 @@
                             </li>
                         </ul>
 
-                        <h5>Reasoning in LLMs</h5>
+                        <h5>Interpreting Individual Neurons or Model Weights</h5>
                         <ul>
+                            <li> <strong>Neuron Interpretations</strong>:
+                                <ul>
+                                    <li>  Knowledge Neurons in Pretrained Transformers | <a href='https://aclanthology.org/2022.acl-long.581/'> paper </a>
+                                    <li>  Investigating the Encoding of Words in BERT’s Neurons Using Feature Textualization | <a href='https://aclanthology.org/2023.blackboxnlp-1.20/'> paper </a>
+                                    <li>  On the Pitfalls of Analyzing Individual Neurons in Language Models | <a href='https://openreview.net/forum?id=8uz0EWPQIMu'> paper </a> </li>
+                                    <li>  An Interpretability Illusion for BERT | <a href='https://arxiv.org/abs/2104.07143'> paper </a> </li>
+                                    <li>  Finding Neurons in a Haystack: Case Studies with Sparse Probing | <a href='https://openreview.net/forum?id=JYs1R9IMJr'> paper </a> </li>
+                                    </li>
+                                </ul>
+                            <li> <strong>Model Weights</strong>:
+                                <ul>
+                                    <li> Analyzing Transformers in Embedding Space | <a href='https://virtual2023.aclweb.org/paper_P676.html'> paper </a> </li>
+                                    <li> Prompt Waywardness: The Curious Case of Discretized Interpretation of Continuous Prompts | <a href='https://aclanthology.org/2022.naacl-main.266/'> paper </a> </li>
+                                    <li> Transformer Feed-Forward Layers Build Predictions by Promoting Concepts in the Vocabulary Space | <a href='https://aclanthology.org/2022.emnlp-main.3/'> paper </a> </li>
+                                    <li> Backward Lens: Projecting Language Model Gradients into the Vocabulary Space | <a href='https://arxiv.org/abs/2402.12865'> paper </a> </li>
+                                    <li> The Hidden Space of Transformer Language Adapters | <a href='https://arxiv.org/abs/2402.13137'> paper </a> </li>
+                                </ul>
+                        </ul>
+
+                        <h5>Understanding and Reasoning</h5>
+                        <ul>
+                            <li>  On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? | <a href='https://dl.acm.org/doi/abs/10.1145/3442188.3445922'> paper </a> </li>
+                            <li>  Climbing towards NLU: On Meaning, Form, and Understanding in the Age of Data | <a href='https://aclanthology.org/2020.acl-main.463/'> paper </a> </li>
+                            <li>  On the paradox of learning to reason from data | <a href='https://dl.acm.org/doi/abs/10.24963/ijcai.2023/375'> paper </a> </li>
+                            <li>  Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models | <a href='https://openreview.net/forum?id=uyTL5Bvosj&nesting=2&sort=date-desc'> paper </a> </li>
                             <li>  A Mechanistic Interpretation of Arithmetic Reasoning in Language Models using Causal Mediation Analysis | <a href='https://aclanthology.org/2023.emnlp-main.435/'> paper </a> </li>
                             <li>  Reasoning with Language Model is Planning with World Model | <a href='https://aclanthology.org/2023.emnlp-main.507/'> paper </a> </li>
                             <li>  Understanding the Reasoning Ability of Language Models From the Perspective of Reasoning Paths Aggregation | <a href='https://arxiv.org/abs/2402.03268'> paper </a> </li>
                         </ul>
 
-                          <h5>Interpreting Model Weights</h5>
+                        <h5>Fairness and Bias</h5>
                         <ul>
-                            <li> Analyzing Transformers in Embedding Space | <a href='https://virtual2023.aclweb.org/paper_P676.html'> paper </a> </li>
-                            <li> Prompt Waywardness: The Curious Case of Discretized Interpretation of Continuous Prompts | <a href='https://aclanthology.org/2022.naacl-main.266/'> paper </a> </li>
-                            <li> Transformer Feed-Forward Layers Build Predictions by Promoting Concepts in the Vocabulary Space | <a href='https://aclanthology.org/2022.emnlp-main.3/'> paper </a> </li>
-                            <li> Backward Lens: Projecting Language Model Gradients into the Vocabulary Space | <a href='https://arxiv.org/abs/2402.12865'> paper </a> </li>
-                            <li> The Hidden Space of Transformer Language Adapters | <a href='https://arxiv.org/abs/2402.13137'> paper </a> </li>
+                            <li>  Measuring Fairness with Biased Rulers: A Comparative Study on Bias Metrics for Pre-trained Language Models | <a href='https://aclanthology.org/2022.naacl-main.122.pdf'> paper </a>
+                            <li>  Bigger Data or Fairer Data? Augmenting BERT via Active Sampling for Educational Text Classification | <a href='https://aclanthology.org/2022.coling-1.109.pdf'> paper </a> </li>
+                            <li>  Mitigating Language-Dependent Ethnic Bias in BERT | <a href='https://aclanthology.org/2021.emnlp-main.42.pdf'> paper </a> </li>
+                            <li>  Identifying and Adapting Transformer-Components Responsible for Gender Bias in an English Language Model  | <a href='https://aclanthology.org/2023.blackboxnlp-1.29/'> paper </a> </li>
+                            <li>  Investigating Gender Bias in Language Models Using Causal Mediation Analysis | <a href='https://proceedings.neurips.cc/paper/2020/hash/92650b2e92217715fe312e6fa7b90d82-Abstract.html'> paper </a> </li>
+                            </li>
                         </ul>
 
                         <h5>Can Models explain Models? On the Faithfulness of Explanations</h5>
@@ -179,14 +187,7 @@
                             </li>
                         </ul>
 
-                        <h5>Interpreting Individual Neurons in NLP Models</h5>
-                        <ul>
-                            <li>  Knowledge Neurons in Pretrained Transformers | <a href='https://aclanthology.org/2022.acl-long.581/'> paper </a>
-                            <li>  On the Pitfalls of Analyzing Individual Neurons in Language Models | <a href='https://openreview.net/forum?id=8uz0EWPQIMu'> paper </a> </li>
-                            <li>  An Interpretability Illusion for BERT | <a href='https://arxiv.org/abs/2104.07143'> paper </a> </li>
-                            <li>  Finding Neurons in a Haystack: Case Studies with Sparse Probing | <a href='https://openreview.net/forum?id=JYs1R9IMJr'> paper </a> </li>
-                            </li>
-                        </ul>
+                        
 
                     </div>
                     <div class="container mt-2" style="background-color: #9AD5A3">
