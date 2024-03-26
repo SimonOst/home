@@ -30,87 +30,79 @@
                 <h4>Mo 14:15–15:45, Seminarraum 1.12</h4>
                 <h6>Dr. Simon Ostermann, Tatiana Anikina, Natalia Skachkova</h6>
                 <h6>Deutsches Forschungszentrum für Künstliche Intelligenz (DFKI)</h6>
-                <h5></h5>
-            </div>
+                </div>
             <div class="row align-items-start">
                 <div class="col">
+
                 </div>
                 <div class="col-8">
                     <div class="container mt-2" style="background-color: #D19589">
-                    	<h5>Coming Soon.</h5>
-                    	<!--
-                        <h5>If you would like to participate, please drop an email to <i>simon.ostermann (at) dfki.de</i><strong> until April 12 (23:59)</strong>.</h5>
+                        <!--<h6>The registration to the seminar is now closed. I've dropped an email to everybody that asked to join. Many thanks for your interest! :-) </h6>-->
+                        <h5>If you would like to participate, please drop an email to <i>simon.ostermann@dfki.de</i><br><strong> until April 17 (23:59)</strong>.</h5>
                         In your email, please:
                         <ul>
-                            <li>Give your name, semester, area of study</li>
+                            <li>Give your name, semester, study program</li>
                             <li>Write some words on why you want to take part in this course</li>
                             <li>List some of your previous experience:
                                 <ul>
-                                    <li>your background in <strong>deep learning</strong></li>
-                                    <li>your background in <strong>natural language understanding</strong></li>
-                                    <li>your previous hands-on experience in <strong>programming/implementing NLP models</strong></li>
+                                    <li>your background in <strong>deep learning or machine learning</strong></li>
+                                    <li>your background in <strong>natural language processing in general</strong></li>
+                                    <!--<li>your previous hands-on experience in <strong>programming/implementing NLP models</strong></li>-->
                                 </ul>
                             </li>
-                        </ul>-->
+                        </ul>
+
+                    </div>
+                    <div class="container mt-2" style="background-color: #D19589">
+                        Prerequisites: This seminar is primarily targeted at Master students, but is also open to advanced Bachelor students. We expect you to have a curious mind and some familiarity with large language models. At the very least, we expect all students to have read (and understood :-)) the <a href = "https://arxiv.org/pdf/1810.04805.pdf" >BERT paper</a> and the <a href = "https://arxiv.org/pdf/1706.03762.pdf" >Transformer paper</a>.
                     </div>
                     <!--<div class="container mt-2" style="background-color: #DFA69B">
                         * <font size="-1">Don't worry if you don't have a background in all of these areas. What you should bring is a basic understanding of deep learning methods and no fear of digging into a formula, if necessary. Still, this is going to be an application-oriented seminar rather than a mathematics course.</i></font>
                     </div>
                     -->
                     <hr>
-                    <!--<div class="container mt-2" style="background-color: #e3e3e3">
-                        <h4> Project Content </h4>
-                        <p>The advent of large-scale pretrained language models as "Swiss Army Knives" for various applications and problems in natural language understanding and computational semantics has drastically changed the natural language processing landscape.</p>
-                        <p>The <a href="https://aclanthology.org/N19-1423/">BERT</a> model is only the most prominent example. The publication of BERT caused a huge impact in the NLP research community and basically lead to a paradigm change: Pretraining language models based on large text collections and then adapting them to a task at hand has become the most prominent procedure for cutting edge and state of the art systems both in research and for industry applications.</p>
-                        <p>Since the birth of BERT, research has been flourishing that is targeted at finding smaller, faster and more accurate variants and that investigates the adaptation of BERT-like transformer models to new tasks. In this software project, we will investigate the implementation and application of diverse BERT-like models. Students will work out own project ideas, re-train their own models and implement them in applications. <!--In this seminar, we will look at such variants and adaptations of pretrained language models. We will cover papers on diverse new and effective pretraining methods for such language models, as well as papers that investigate how to use and adapt pretrained models for selected tasks in natural language understanding and computational semantics. We will look into prominent use cases such as machine reading comprehension and open question answering, but also read papers on multilinguality, natural language inference or text classification (based on the interest of participants).--></p>
+                    <div class="container mt-2" style="background-color: #e3e3e3">
+                        <h4> Seminar Content </h4>
+                        <p>
+                           Nowadays, Large Language Models (LLMs) achieve impressive results on a variety of NLP tasks and languages. This increase in performance comes with a specific cost: Better performance is typically attributed to an increased number of parameters and training data. This means that better and larger models also need more computational resources, more time, more memory, and more energy, which makes training processes prohibitively expensive. 
+                        </p>
+                        <p>
+                            How can we solve the problem of ever larger and ever hungrier models? Efficient NLP is an umbrella term that includes a lot of different approaches to address these problems in terms of model design and data efficiency, by introducing more efficient fine-tuning, inference, or hardware utilization. In this seminar we will mostly focus on model and data-level efficiency and will explore various approaches including efficient prompting methods, adapters, transfer learning, data augmentation and active learning. 
+                        </p>
+
                         <hr>
-                        <!--<h4> Selection of Relevant Papers </h4>
-                        <h5>Pretraining</h5>
+                        <h4> List of relevant Papers and Topics (subject to smaller changes) </h4>
+                        <h5>Data Efficiency</h5>
                         <ul>
-                            <li> <strong>XLNet</strong>: Generalized Autoregressive Pretraining for Language Understanding | <a href='https://proceedings.neurips.cc/paper/2019/file/dc6a7e655d7e5840e66733e9ee67cc69-Paper.pdf'> paper </a> </li>
-                            <li> <strong>ALBERT</strong>: A Lite BERT for Self-Supervised Learning of Language Representations | <a href='https://arxiv.org/pdf/1909.11942.pdf'> paper </a> </li>
-                            <li> <strong>RoBERTa</strong>: A Robustly Optimized BERT Pretraining Approach | <a href='https://arxiv.org/pdf/1907.11692.pdf'> paper </a> </li>
-                            <li> <strong>GPT-2</strong>: Language Models are Unsupervised Multitask Learners | <a href='http://www.persagen.com/files/misc/radford2019language.pdf'> paper </a> </li>
-                            <li> <strong>GPT-3</strong>: Language Models are Few-Shot Learners | <a href='https://proceedings.neurips.cc/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf'> paper </a> </li>
-                            <li> <strong>T5</strong>: Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer | <a href='https://www.jmlr.org/papers/volume21/20-074/20-074.pdf'> paper </a> </li>
-                            <li> <strong>ELECTRA</strong>: Pre-training Text Encoders as Discriminators Rather Than Generators | <a href='https://arxiv.org/abs/2003.10555'> paper </a> </li>
-                            <li> <strong>BART</strong>: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension | <a href='https://arxiv.org/abs/1910.13461'> paper </a> </li>
-                            <li> <strong>SpanBERT</strong>: Improving Pre-training by Representing and Predicting Spans | <a href='https://aclanthology.org/2020.tacl-1.5.pdf'> paper </a> </li>
+                            <li> FreeAL: Towards Human-Free Active Learning in the Era of Large Language Models | <a href='https://aclanthology.org/2023.emnlp-main.896/'> paper </a> </li>
+                            <li> MELM: Data Augmentation with Masked Entity Language Modeling for Low-Resource NER | <a href='https://aclanthology.org/2022.acl-long.160/'> paper </a> </li>
+                            <li> A Survey of Data Augmentation Approaches for NLP | <a href='https://aclanthology.org/2021.findings-acl.84/'> paper </a> </li>
+                            <li> Does the Order of Training Samples Matter? Improving Neural Data-to-Text Generation with Curriculum Learning | <a href='https://aclanthology.org/2021.eacl-main.61.pdf'> paper </a> </li>
+                            <li> Applying Natural Annotation and Curriculum Learning to Named Entity Recognition for Under-Resourced Languages | <a href='https://aclanthology.org/2022.coling-1.394.pdf'> paper </a> </li>
+                            <li> Do We Need to Create Big Datasets to Learn a Task? | <a href='https://aclanthology.org/2020.sustainlp-1.23/'> paper </a> </li>
+                            <li> NLP From Scratch Without Large-Scale Pretraining: A Simple and Efficient Framework | <a href='https://proceedings.mlr.press/v162/yao22c/yao22c.pdf'> paper </a> </li>
+                            <li> Distilling Step-by-Step! Outperforming Larger Language Models with Less Training Data and Smaller Model Sizes | <a href='https://arxiv.org/pdf/2305.02301.pdf?utm_referrer=https%3A%2F%2Fdzen.ru%2Fmedia%2Fid%2F5a2a9f9bfd96b1d33aaf1ec9%2F6457f09f7906327d86410618'> paper </a> </li>
                         </ul>
-                        <h5>Tasks</h5>
-                        <h6>Open Question Answering/Neural Retrieval</h6>
+                        <h5>Model Efficiency</h5>
                         <ul>
-                            <li> Dense Passage Retrieval for Open-Domain Question Answering | <a href='https://aclanthology.org/2020.emnlp-main.550.pdf'> paper </a> </li>
-                            <li> How Much Knowledge Can You Pack Into the Parameters of a Language Model? | <a href='http://aclanthology.lst.uni-saarland.de/2020.emnlp-main.437.pdf'> paper </a> </li>
-                            <li> RocketQA: An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering | <a href='https://aclanthology.org/2021.naacl-main.466.pdf'> paper </a> </li>
-                            <li> Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks | <a href='https://proceedings.neurips.cc/paper/2020/file/6b493230205f780e1bc26945df7481e5-Paper.pdf?ref=https://githubhelp.com'> paper </a> </li>
-                            <li> REALM: Retrieval-Augmented Language Model Pre-Training | <a href='https://arxiv.org/pdf/2002.08909.pdf'> paper </a> </li>
+                            <li> ATTEMPT: Parameter-Efficient Multi-task Tuning via Attentional Mixtures of Soft Prompts  | <a href='https://aclanthology.org/2022.emnlp-main.446'> paper </a> </li>
+                            <li> Parameter-Efficient Transfer Learning for NLP | <a href='https://proceedings.mlr.press/v97/houlsby19a/houlsby19a.pdf'> paper </a> </li>
+                            <li> SPoT: Better Frozen Model Adaptation through Soft Prompt Transfer | <a href='https://aclanthology.org/2022.acl-long.346'> paper </a> </li>
+                            <li> The Power of Scale for Parameter-Efficient Prompt Tuning | <a href='https://aclanthology.org/2021.emnlp-main.243'> paper </a> </li>
+                            <li> SparseGPT: Massive Language Models Can be Accurately Pruned in One-Shot | <a href='https://arxiv.org/pdf/2301.00774.pdf'> paper </a> </li>
+                            <li> An Efficient Memory-Augmented Transformer for Knowledge-Intensive NLP Tasks | <a href='https://arxiv.org/pdf/2210.16773.pdf'> paper </a> </li>
+                            <li> Hyperdecoders: Instance-specific decoders for multi-task NLP | <a href='https://arxiv.org/pdf/2203.08304.pdf'> paper </a> </li>
+                            <li> Don’t Stop Pretraining? Make Prompt-based Fine-tuning Powerful Learner | <a href='https://proceedings.neurips.cc/paper_files/paper/2023/file/1289f9195d2ef8cfdfe5f50930c4a7c4-Paper-Conference.pdf'> paper </a> </li>
+                            <li> Efficient Multimodal Fusion via Interactive Prompting | <a href='https://openaccess.thecvf.com/content/CVPR2023/papers/Li_Efficient_Multimodal_Fusion_via_Interactive_Prompting_CVPR_2023_paper.pdf'> paper </a> </li>
+                            <li> HyperPrompt: Prompt-based Task-Conditioning of Transformers | <a href='https://proceedings.mlr.press/v162/he22f/he22f.pdf'> paper </a> </li>
+                            <li> PERFECT: Prompt-free and Efficient Few-shot Learning with Language Models | <a href='https://arxiv.org/pdf/2204.01172.pdf'> paper </a> </li>
+                            <li> Learning to Compress Prompts with Gist Tokens | <a href='https://proceedings.neurips.cc/paper_files/paper/2023/file/3d77c6dcc7f143aa2154e7f4d5e22d68-Paper-Conference.pdf'> paper </a> </li>
                         </ul>
-                        <h6>Machine Comprehension</h6>
-                        <ul>
-                            <li> TANDA: Transfer and Adapt Pre-Trained Transformer Models for Answer Sentence Selection | <a href='https://ojs.aaai.org/index.php/AAAI/article/view/6282'> paper </a> </li>
-                            <li> The Cascade Transformer: an Application for Efficient Answer Sentence Selection | <a href='https://aclanthology.org/2020.acl-main.504.pdf'> paper </a> </li>
-                            <li> Retrospective Reader for Machine Reading Comprehension | <a href='https://www.aaai.org/AAAI21Papers/AAAI-1640.ZhangZ.pdf'> paper </a> </li>
-                        </ul>
-                        <h6>Natural Language Inference, Entailment and Similarity</h6>
-                        <ul>
-                            <li> Semantics-aware BERT for Language Understanding | <a href='https://ojs.aaai.org/index.php/AAAI/article/view/6510'> paper </a> </li>
-                            <li> Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks | <a href='https://aclanthology.org/D19-1410.pdf'> paper </a> </li>
-                            <li> Making Monolingual Sentence Embeddings Multilingual using Knowledge Distillation | <a href='https://aclanthology.org/2020.emnlp-main.365.pdf'> paper </a> </li>
-                            <li> Multi-Task Deep Neural Networks for Natural Language Understanding | <a href='https://aclanthology.org/P19-1441.pdf'> paper </a> </li>
-                            <li> SimCSE: Simple Contrastive Learning of Sentence Embeddings | <a href='https://aclanthology.org/2021.emnlp-main.552.pdf'> paper </a> </li>
-                        </ul>
-                        <h6>Multilingual Models</h6>
-                        <ul>
-                            <li> mT5: A Massively Multilingual Pre-trained Text-to-Text Transformer <a href='https://arxiv.org/pdf/2010.11934.pdf'> paper </a> </li>
-                            <li> Unsupervised Cross-lingual Representation Learning at Scale <a href='https://arxiv.org/pdf/1911.02116.pdf'> paper </a> </li>
-                            <li> Multilingual Denoising Pre-training for Neural Machine Translation <a href='https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00343/96484/Multilingual-Denoising-Pre-training-for-Neural'> paper </a> </li>
-                        </ul>-->
-                    <!--</div>-->
-                    <!--<div class="container mt-2" style="background-color: #9AD5A3">
+                    </div>
+                    <div class="container mt-2" style="background-color: #9AD5A3">
                         <font size="-1"><p>Some words on grading: This seminar is meant to be as interactive as possible. Final grades will be based on students' presentations, term papers (optional), but also on participation and discussion in class.</p>
                         <p>The participants are expected to prepare for classes accordingly, by reading the relevant papers and also doing background reading, if necessary. Based on this preparation, the participants should be able to discuss the presented papers in depth and to understand relevant context during the discussion.</p></font>
-                    </div>-->
+                    </div>
                     
                 </div>
                 <div class="col">
@@ -124,3 +116,4 @@
         <script src="../js/scripts.js"></script>
     </body>
 </html>
+
