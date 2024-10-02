@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Simon Ostermann</title>
+        <!-- Favicon-->
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">Simon Ostermann</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Home</a></li>
+                </div>
+            </div>
+        </nav>
+        <!-- Page content-->
+        <div class="container">
+            <div class="text-center mt-5">
+                <h3>Seminar: Recent Advances in Mechanistic Interpretability</h3>
+                <h4>Mon 12:15–14:45, Room -1.05</h4>
+                <h6>Dr. Simon Ostermann, Natalia Skachkova</h6>
+                <h6>Deutsches Forschungszentrum für Künstliche Intelligenz (DFKI)</h6>
+            </div>
+            <div class="row align-items-start">
+                <div class="col">
+
+                </div>
+                <div class="col-8">
+                    <div class="container mt-2" style="background-color: #D19589">
+                        <!--<h6>The registration to the seminar is now closed. I've dropped an email to everybody that asked to join. Many thanks for your interest! :-) </h6>-->
+                        <h5>If you would like to participate, please drop an email to <i>mechanistic-interpretability-seminar@googlegroups.com</i><strong> until October 17 (23:59)</strong>.</h5>
+                        In your email, please:
+                        <ul>
+                            <li>Give your name, semester, study program</li>
+                            <li>Write some words on why you want to take part in this course</li>
+                            <li>List some of your previous experience:
+                                <ul>
+                                    <li>your background in <strong>deep learning or machine learning</strong></li>
+                                    <li>your background in <strong>natural language processing in general</strong></li>
+                                    <!--<li>your previous hands-on experience in <strong>programming/implementing NLP models</strong></li>-->
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="container mt-2" style="background-color: #D19589">
+                        Prerequisites: This seminar is primarily targeted at Master students, but is also open to advanced Bachelor students. We expect you to have a curious mind and advanced familiarity with large language models. At the very least, we expect all students to have read (and understood :-)) the <a href = "https://arxiv.org/pdf/1810.04805.pdf" >BERT paper</a> and the <a href = "https://arxiv.org/pdf/1706.03762.pdf" >Transformer paper</a>.
+                    </div>
+                    <!--<div class="container mt-2" style="background-color: #DFA69B">
+                        * <font size="-1">Don't worry if you don't have a background in all of these areas. What you should bring is a basic understanding of deep learning methods and no fear of digging into a formula, if necessary. Still, this is going to be an application-oriented seminar rather than a mathematics course.</i></font>
+                    </div>
+                    -->
+                    <hr>
+                    <div class="container mt-2" style="background-color: #e3e3e3">
+                        <h4> Seminar Content </h4>
+                        <p>
+                            The rise of deep learning in AI has dramatically increased the performance of models across many sub-fields such as natural language processing or computer vision. In the last 5 years, large petrained language models (LLMs) and their variants (BERT, ChatGPT etc.) have changed the NLP landscape drastically. Such models got larger and larger over the last years, reaching  increasingly impressive performance peeks, sometimes even surpassing humans.
+                        </p>
+                        <p>
+                            A central issue with deep learning models with millions or billions of parameters is that they are essentially <strong>black boxes</strong>: From the model's parameters, it is not inherently clear why a model exhibits a certain behavior or makes certain classification decision. the The rapidly growing field of interpretable and explainable AI (XAI) develops methods to peak into the black box that LLMs are, trying to understand the inner workings of such large models.
+                        </p>
+                        <p>
+                            In this seminar we will investiagte a subfield in XAI, namely Mechanistic Interpretability (MI). MI aims to understand and explain the internal workings of complex machine learning models, in particular deep neural networks, by "reverse-engineering" internal mechanisms and computations inside a network's parameters. This involves analysing how certain mechanisms in the model contribute to decisions and results. The aim is to break down the ‘black box’ nature of these models and reveal the underlying calculations and internal representations that lead to predictions or behaviours.
+                        </p>
+                        <p>
+                            We will concentrate on a range of basic methods in MI and then focus on their applications within natural language processing.
+                        </p>
+                        <hr>
+                        <h4> List of relevant Papers and Topics (subject to changes) </h4>
+                        <h5>MI Basics</h5>
+                        <ul>
+                            <li>Zoom In: An Introduction to Circuits </li>
+                            <li>A Mathematical Framework for Transformer Circuits </li>
+                            <li>Transformer Feed-Forward Layers Are Key-Value Memories</li>
+                            <li>Talking Heads: Understanding Inter-layer Communication in Transformer Language Models </li>
+                        </ul>
+                        <h5>Model Editing Editing, Knowledge Location and Extraction</h5>
+                        <ul>
+                            <li>Crawling The Internal Knowledge-Base of Language Models </li>
+                            <li>Locating and Editing Factual Associations in GPT </li>
+                            <li>Mass-Editing Memory in a Transformer </li>
+                            <li>Does Localization Inform Editing? Surprising Differences in Causality-Based Localization vs. Knowledge Editing in Language Models </li>
+                            <li>Identifying and Adapting Transformer-Components Responsible for Gender Bias in an English Language Model </li>
+                            <li>Evaluating ripple effects </li>
+                            <li>Aging with GRACE: Lifelong Model Editing with Discrete Key-Value Adaptors </li>
+                        </ul>
+
+                        <h5>Sparse Autoencoders and Monosemanticity</h5>
+                        <ul>
+                            <li>Knowledge Neurons in Pretrained Transformers</li>
+                            <li>Towards Monosemanticity: Decomposing Language Models With Dictionary Learning</li>
+                            <li>Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet</li>
+                            <li>Sparse Feature Circuits: Discovering and Editing Interpretable Causal Graphs in Language Models</li>
+                            <li>Transcoders Find Interpretable LLM Feature Circuits</li>
+                        </ul>
+                        
+
+                    </div>
+                    <div class="container mt-2" style="background-color: #9AD5A3">
+                        <font size="-1"><p>Some words on grading: This seminar is meant to be as interactive as possible. Final grades will be based on students' presentations, term papers (optional), but also on participation and discussion in class.</p>
+                        <p>The participants are expected to prepare for classes accordingly, by reading the relevant papers and also doing background reading, if necessary. Based on this preparation, the participants should be able to discuss the presented papers in depth and to understand relevant context during the discussion.</p></font>
+                    </div>
+                    
+                </div>
+                <div class="col">
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>
