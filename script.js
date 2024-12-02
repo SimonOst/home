@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     li.innerHTML = `
                         <img src="${pub.Image}" alt="${pub.Topic}" class="rounded me-3" style="width: 60px; height: 60px;">
                         <div>
-                            <p class="mb-1" style="color: #1a1a1a"><strong>${pub.Title}</strong> - <i>${pub.Source}</i> - <a href="${pub.Link}">paper link</a></p>
+                            <p class="mb-1" style="color: #1a1a1a"><strong>${pub.Title}</strong> - <i>${pub.Source}</i> - <strong><a href="${pub.Link}">paper link</a></strong></p>
                             <p class="mb-0" style="color: #1a1a1a">${pub.Topic}</p>
                         </div>
                     `;
