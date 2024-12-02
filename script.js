@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     const li = document.createElement("li");
                     li.classList.add("d-flex", "align-items-center", "p-3", "bg-light", "rounded", "mb-3");
                     li.innerHTML = `
-                        <img src="${pub.Image}" alt="${pub.Topic}" class="rounded me-3" style="width: 60px; height: 60px;">
+                        <img class="modal-target" src="${pub.Image}" alt="${pub.Topic}" class="rounded me-3" style="width: 60px; height: 60px;">
                         <div>
                             <p class="mb-1" style="color: #1a1a1a"><strong>${pub.Title}</strong> - <i>${pub.Source}</i> - <strong><a href="${pub.Link}">paper link</a></strong></p>
                             <p class="mb-0" style="color: #1a1a1a">${pub.Topic}</p>
@@ -49,3 +49,25 @@ function parseTSV(data) {
         }, {});
     });
 }
+
+
+// Modal Setup
+var modal = document.getElementById('modal');
+
+var modalClose = document.getElementById('modal-close');
+modalClose.addEventListener('click', function() { 
+  modal.style.display = "none";
+});
+
+// global handler
+document.addEventListener('click', function (e) { 
+  if (e.target.className.indexOf('modal-target') !== -1) {
+      var img = e.target;
+      var modalImg = document.getElementById("modal-content");
+      var captionText = document.getElementById("modal-caption");
+      modal.style.display = "block";
+      modalImg.src = img.src;
+      captionText.innerHTML = img.alt;
+   }
+});
+
