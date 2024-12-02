@@ -10,6 +10,9 @@ body {
 /* Header Styling */
 header {
     background-color: #1a1a1a;
+    position: sticky;
+    top: 0;
+    z-index: 1020; /* Higher z-index to ensure it stays on top */
 }
     
 header .container {
@@ -34,6 +37,12 @@ header .rounded-circle {
 }
 
 /* Navbar */
+.navbar {
+    position: sticky;
+    top: 136px; /* Adjust this based on the header height */
+    z-index: 1010; /* Ensure navbar stays below the header */
+}
+
 .navbar-nav .nav-link {
     color: white; /* Default color for navbar links */
     font-weight: 500;
