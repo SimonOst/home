@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Simon Ostermann</title>
+        <!-- Favicon-->
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">Simon Ostermann</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Home</a></li>
+                </div>
+            </div>
+        </nav>
+        <!-- Page content-->
+        <div class="container">
+            <div class="text-center mt-5">
+                <h3>Lecture: Prompting LLMs</h3>
+                <h6>Dr. Simon Ostermann</h6>
+                <h6>Deutsches Forschungszentrum für Künstliche Intelligenz (DFKI)</h6>
+                </div>
+            <div class="row align-items-start">
+                <div class="col">
+
+                </div>
+                <div class="col-8">
+
+                    <div class="container mt-2" style="background-color: #e3e3e3">
+                        <h4> Links to Models </h4>
+                        To try out the HuggingFace models you'll need to create an account <a href="https://huggingface.co/join">here</a>.
+                        <ul>
+                            <li>German BERT: <a href="https://huggingface.co/dbmdz/bert-base-german-cased">HuggingFace-Link</a></li>
+                            <li>Flan-T5 (English only): <a href="https://huggingface.co/google/flan-t5-small">HuggingFace-Link</a></li>
+                            <li>ChatGPT: <a href="https://chatgpt.com/">OpenAI-Link</a></li>
+                        </ul>
+                        
+                    </div>
+                    <hr>
+                    <div class="container mt-2" style="background-color: #e3e3e3">
+                        <h4> Example Prompts </h4>
+                        <h5>Zero Shot</h5>
+                        <div class="container mt-3" style="background-color: white;">
+                                <code>Extrahiere mir aus dem folgenden Text alle benannten Entitäten und ordne sie eindeutig zu:  Margreth schwieg eine Weile, dann sagte sie: »Höre, Fritz, das Holz läßt unser Herrgott frei wachsen, und das Wild wechselt aus eines Herren Lande in das andere; die können niemand angehören. Doch das verstehst du noch nicht; jetzt geh in den Schuppen und hole mir Reisig.«
+                                </code>
+                        </div>
+                        <div class="container mt-3" style="background-color: white">
+                                <code>Extrahiere mir aus dem folgenden Text alle benannten Entitäten und ordne sie eindeutig zu. Beachte auch Pronomen.  Margreth schwieg eine Weile, dann sagte sie: »Höre, Fritz, das Holz läßt unser Herrgott frei wachsen, und das Wild wechselt aus eines Herren Lande in das andere; die können niemand angehören. Doch das verstehst du noch nicht; jetzt geh in den Schuppen und hole mir Reisig.«
+                                </code>
+                        </div>
+                        <br>
+                        <h5>One Shot</h5>
+                            <div class="container mt-3" style="background-color: white;">
+                                <code>Nach der Markierung „###“ findest du einen Text. Extrahiere daraus alle benannten Entitäten und ordne sie eindeutig zu. Beachte auch Pronomen.  Hier ist ein Beispiel:
+                                <br>
+                                <br>
+                                Margreth schwieg eine Weile, dann sagte sie: »Höre, Fritz, das Holz läßt unser Herrgott frei wachsen, und das Wild wechselt aus eines Herren Lande in das andere; die können niemand angehören. Doch das verstehst du noch nicht; jetzt geh in den Schuppen und hole mir Reisig.«
+                                <br>
+                                Margreth: Margreth
+                                <br>
+                                sie: Margreth
+                                <br>
+                                Fritz: Fritz
+                                <br>
+                                unser: Margreth, Fritz
+                                <br>
+                                Herrgott: Herrgott
+                                <br>
+                                Wild: Wild
+                                <br>
+                                die: Wild
+                                <br>
+                                Du: Fritz
+                                <br>
+                                mir: Margreth
+                                <br>
+                                ###
+                                <br>
+                                Margreth stand still; ihre Blicke wurden ängstlich. Der Knabe erschien ihr wie zusammengeschrumpft, auch seine Kleider waren nicht dieselben, nein, das war ihr Kind nicht! und dennoch –. »Friedrich, Friedrich!« rief sie.</code>
+                            </div>
+                            <div class="container mt-3" style="background-color: white;">
+                                <code>Nach der Markierung „###“ findest du einen Text. Extrahiere daraus alle benannten Entitäten und ordne sie eindeutig zu. Beachte auch Pronomen.  Hier ist ein Beispiel dafür, wie du den Output formatieren solltest. Generiere nur die Liste, die auf OUTPUT folgt, sonst keinen Text.
+                                <br>INPUT:
+                                <br><br>Margreth schwieg eine Weile, dann sagte sie: »Höre, Fritz, das Holz läßt unser Herrgott frei wachsen, und das Wild wechselt aus eines Herren Lande in das andere; die können niemand angehören. Doch das verstehst du noch nicht; jetzt geh in den Schuppen und hole mir Reisig.«
+                                <br>OUTPUT:
+                                <br>Margreth: Margreth
+                                <br>sie: Margreth
+                                <br>Fritz: Fritz
+                                <br>unser: Margreth, Fritz
+                                <br>Herrgott: Herrgott
+                                <br>Wild: Wild
+                                <br>die: Wild
+                                <br>Du: Fritz
+                                <br>mir: Margreth
+                                <br>###
+                                <br>INPUT:
+                                <br>Margreth stand still; ihre Blicke wurden ängstlich. Der Knabe erschien ihr wie zusammengeschrumpft, auch seine Kleider waren nicht dieselben, nein, das war ihr Kind nicht! und dennoch –. »Friedrich, Friedrich!« rief sie.
+                                <br>OUTPUT:</code>
+                            </div>
+                        
+                        <h5>Few Shot</h5>
+                            <div class="container mt-3" style="background-color: white;">
+                                <code>Nach der Markierung „###“ ganz unten findest du einen Text. Extrahiere daraus alle benannten Entitäten und ordne sie eindeutig zu. Beachte auch Pronomen. Hier sind einige Beispiel dafür, wie du den Output formatieren solltest. Generiere nur die Liste, die auf OUTPUT folgt, sonst keinen Text. Die Beispiele sind mit "###" getrennt.
+                                <br><br>INPUT:
+                                <br>Margreth schwieg eine Weile, dann sagte sie: »Höre, Fritz, das Holz läßt unser Herrgott frei wachsen, und das Wild wechselt aus eines Herren Lande in das andere; die können niemand angehören. Doch das verstehst du noch nicht; jetzt geh in den Schuppen und hole mir Reisig.«
+                                <br>OUTPUT:
+                                <br>Margreth: Margreth
+                                <br>sie: Margreth
+                                <br>Fritz: Fritz
+                                <br>unser: Margreth, Fritz
+                                <br>Herrgott: Herrgott
+                                <br>Wild: Wild
+                                <br>die: Wild
+                                <br>Du: Fritz
+                                <br>mir: Margreth
+                                <br>###
+                                <br>INPUT:
+                                <br>Simon schien dies zu überhören; er reckte den Hals zur Türe hinaus: »Ei, da kommt der Gesell! Vaterssohn! Er schlenkert gerade so mit den Armen wie dein seliger Mann. Und schau mal an! Wahrhaftig, der Junge hat meine blonden Haare!«
+                                <br>OUTPUT:
+                                <br>Simon: Simon
+                                <br>er: Simon
+                                <br>Gesell: Gesell
+                                <br>Vaterssohn: Gesell
+                                <br>Er: Gesell
+                                <br>Mann: Simon
+                                <br>Junge: Gesell
+                                <br>meine: Simon
+                                <br>###
+                                <br>INPUT:
+                                <br>Margreth stand still; ihre Blicke wurden ängstlich. Der Knabe erschien ihr wie zusammengeschrumpft, auch seine Kleider waren nicht dieselben, nein, das war ihr Kind nicht! und dennoch –. »Friedrich, Friedrich!« rief sie.
+                                <br>OUTPUT:
+                                </code>
+                            </div>
+
+                        <h5>Chain-of-Thought</h5>
+                            <div class="container mt-3" style="background-color: white;">
+                                <code>Nach der Markierung „###“ ganz unten findest du einen Text. Extrahiere daraus alle benannten Entitäten und ordne sie eindeutig zu. Beachte auch Pronomen. Hier sind einige Beispiel dafür, wie du den Output formatieren solltest. Generiere nur die Liste, die auf OUTPUT folgt, sonst keinen Text. Die Beispiele sind mit "###" getrennt.
+                                <br> INPUT:
+                                <br> Margreth schwieg eine Weile, dann sagte sie: »Höre, Fritz, das Holz läßt unser Herrgott frei wachsen, und das Wild wechselt aus eines Herren Lande in das andere; die können niemand angehören. Doch das verstehst du noch nicht; jetzt geh in den Schuppen und hole mir Reisig.«
+                                <br> OUTPUT:
+                                <br> Die Entitäten im Paragraph sind: Margreth, sie, Gritz, Holz, Herrgott, Wild, Herren, Lande, andere, die, du, Schuppen, Reisig. Daraus sind die folgenden benannt:
+                                <br> Margreth: Margreth
+                                <br> sie: Margreth
+                                <br> Fritz: Fritz
+                                <br> unser: Margreth, Fritz
+                                <br> Herrgott: Herrgott
+                                <br> Wild: Wild
+                                <br> die: Wild
+                                <br> Du: Fritz
+                                <br> mir: Margreth
+                                <br> ###
+                                <br> INPUT:
+                                <br> Margreth stand still; ihre Blicke wurden ängstlich. Der Knabe erschien ihr wie zusammengeschrumpft, auch seine Kleider waren nicht dieselben, nein, das war ihr Kind nicht!  und dennoch –. »Friedrich, Friedrich!« rief sie.
+                                <br> OUTPUT:
+                                </code>
+                            </div>
+
+                        <h5>Self-Refine</h5>
+                            <div class="container mt-3" style="background-color: white;">
+                                <code>Mache Vorschläge, wie man diesen Text lesbarer machen kann:
+                                <br>Margreth schwieg eine Weile, dann sagte sie: »Höre, Fritz, das Holz läßt unser Herrgott frei wachsen, und das Wild wechselt aus eines Herren Lande in das andere; die können niemand angehören. Doch das verstehst du noch nicht; jetzt geh in den Schuppen und hole mir Reisig.«
+                                <br>
+                                <br>#RESPONSE
+                                <br>
+                                <br>Text: Margreth schwieg eine Weile, dann sagte sie: »Höre, Fritz, das Holz läßt unser Herrgott frei wachsen, und das Wild wechselt aus eines Herren Lande in das andere; die können niemand angehören. Doch das verstehst du noch nicht; jetzt geh in den Schuppen und hole mir Reisig.«
+                                <br>Liste von Verbesserungen:
+                                <br>#COPY
+                                <br>Wende die Verbesserungen auf den Text an!
+                                </code>
+                            </div>
+                        
+                    </div>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>
+

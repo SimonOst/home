@@ -7,18 +7,35 @@ body {
     background-color: #1a1a1a;
 }
 
-/* General Text */
-p, li {
-    font-weight: 300;
-    color: #d6d6d6;
+/* Header Styling */
+header {
+    background-color: #1a1a1a;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Profile Picture Styling */
+header .rounded-circle {
+    width: 120px; /* Increased size */
+    height: 120px; /* Maintain circular shape */
+    object-fit: cover; /* Prevent distortion */
+    border: 3px solid #ffffff; /* Optional: Add a border */
+}
+
+/* Affiliation Logo Styling */
+.affiliation-img {
+    max-height: 100px; /* Increased size */
+    object-fit: contain; /* Maintain aspect ratio */
 }
 
 /* Navbar */
-.navbar {
-    font-family: 'Poppins', sans-serif;
-}
-
 .navbar-nav .nav-link {
+    color: white; /* Default color for navbar links */
     font-weight: 500;
     padding: 10px 15px;
     border-radius: 8px;
@@ -26,9 +43,11 @@ p, li {
 }
 
 .navbar-nav .nav-link:hover {
-    background: #4a4a4a;
-    color: #ffffff;
+    background-color: #FF4081; /* Corporate pink color */
+    color: white; /* Ensure text remains readable */
+    text-decoration: none;
 }
+
 
 /* Publications */
 .publication-year h3 {
@@ -58,23 +77,46 @@ p, li {
     object-fit: cover;
 }
 
-.publication-info p {
-    margin: 0;
-    color: #dcdcdc;
-}
-
-.publication-info p strong {
-    color: #ffffff;
-    font-weight: 600;
-}
-
-.publication-info p i {
-    color: #bdbdbd;
-}
-
 /* Footer */
 footer p {
     font-weight: 400;
     font-size: 0.9rem;
     color: #d6d6d6;
+}
+
+/* Link styles matching the DFKI logo color */
+a {
+    color: #FF4081; /* Matches the pink color of the logo */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #FF5A93; /* Slightly lighter pink for hover effect */
+    text-decoration: underline;
+}
+
+/* Button styles matching the DFKI logo color */
+.btn-secondary {
+    background-color: #FF4081; /* Matches the pink color */
+    border-color: #FF4081;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #FF5A93; /* Slightly lighter pink for hover effect */
+    border-color: #FF5A93;
+    color: white;
+}
+
+/* Adjust hover color for "Details" buttons */
+.btn-link {
+    color: #FF4081; /* Matches the pink color */
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    color: #FF5A93; /* Slightly lighter pink for hover effect */
+    text-decoration: underline;
 }

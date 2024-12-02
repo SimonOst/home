@@ -3,77 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic Profile - [Your Name]</title>
+    <title>Simon Ostermann</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="bg-dark text-white py-4">
-        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-            <div class="d-flex align-items-center">
-                <img src="images/profile.jpg" alt="Your Picture" class="rounded-circle me-3" style="width: 80px; height: 80px;">
-                <div>
-                    <h1 class="h3 mb-0">[Your Name]</h1>
-                    <p class="mb-0 text-muted">Researcher in Artificial Intelligence</p>
-                </div>
-            </div>
-            <img src="images/affiliation.jpg" alt="Affiliation Logo" class="affiliation-img mt-3 mt-md-0" style="max-height: 60px;">
-        </div>
-    </header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#students">Supervised Students</a></li>
-                </ul>
+    <header class="bg-dark text-white py-2">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <img src="images/profile.png" alt="Simon Ostermann" class="rounded-circle me-3" style="width: 120px; height: 120px; object-fit: cover; border: 3px solid #fff;">
+            <div>
+                <h1 class="h2 mb-0">Simon Ostermann</h1>
+                <p class="h4 mb-0">AI Researcher | DFKI</p>
             </div>
         </div>
-    </nav>
+        <div class="mt-3 mt-md-0 text-md-end">
+            <p class="mb-0"><strong>Email:</strong> simon.ostermann@dfki.de</p>
+            <p class="mb-0"><strong>Address:</strong> Stuhlsatzenhausweg 3<br>66123 Saarbrücken
+            </p>
+        </div>
+        <img src="images/dfki.png" alt="DFKI" class="affiliation-img mt-3 mt-md-0" style="max-height: 100px; object-fit: contain;">
+    </div>
+</header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+                <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
+                <li class="nav-item"><a class="nav-link" href="#students">Supervision</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
     <main class="container my-4">
         <section id="research" class="mb-5">
             <h2 class="text-secondary">Research</h2>
-            <p>I focus on cutting-edge topics in artificial intelligence, including:</p>
+            <p>I am a computational linguist and senior researcher at the <a href="https://www.dfki.de/web/forschung/forschungsbereiche/sprachtechnologie-und-multilingualitaet">Multilinguality and Language Technology</a> lab at the <a href="https://www.dfki.de">German Research Center for Artificial Intelligence</a>, where I am currently leading mid-sized research projects both administratively and scientifically. I manage the MLT lab with over 20 employees and lead <a href="https://www.dfki.de/web/forschung/forschungsbereiche/sprachtechnologie-und-multilingualitaet/ee-team">one of the four research groups</a> at the lab.</p>
+            <p>My research interests are mainly on transparent and robust language models and language technology.</p>
             <ul>
-                <li>Deep Learning and Neural Networks</li>
-                <li>Explainable AI</li>
-                <li>Natural Language Processing (NLP)</li>
-                <li>Computer Vision</li>
+                <li><strong>Transparency:</strong> Making the parameters and behavior of language models more explainable and understandable to both end users and researchers.</li>
+                <li><strong>Robustness:</strong> Improving language models in two dimensions:
+                    <ul>
+                        <li>Data consumption (e.g., for low-resource settings or languages) by using structured data, new learning techniques, or other modalities.</li>
+                        <li>Size (e.g., for settings without powerful hardware).</li>
+                    </ul>
+                </li>
             </ul>
-        </section>
-        <section id="teaching" class="mb-5">
-            <h2 class="text-secondary">Teaching</h2>
-            <p>I am passionate about teaching and mentoring the next generation of AI researchers. My courses include:</p>
-            <ul>
-                <li>"Introduction to Artificial Intelligence"</li>
-                <li>"Machine Learning Fundamentals"</li>
-                <li>"Deep Learning in Practice"</li>
-            </ul>
+            <p>In my work, I mostly use large language models trained with deep learning methods. I also have profound experience in data acquisition and crowdsourcing, as well as educational NLP.</p>
         </section>
         <section id="publications" class="mb-5">
-            <h2 class="text-secondary">Recent Publications</h2>
+            <h2 class="text-secondary">Selected Publications</h2>
             <div id="publication-list">
                 <!-- Publications will be dynamically loaded here -->
             </div>
         </section>
-        <section id="students">
-            <h2 class="text-secondary">Supervised Students</h2>
+        <section id="teaching" class="mb-5">
+            <h2 class="text-secondary">Teaching</h2>
+            <p>I am also teaching at Saarland University. Here is a list of my ongoing courses:</p>
             <ul>
-                <li><strong>Student Name 1</strong> – Topic: Explainable AI for Autonomous Systems</li>
-                <li><strong>Student Name 2</strong> – Topic: NLP in Healthcare Applications</li>
-                <li><strong>Student Name 3</strong> – Topic: Deep Learning for Computer Vision</li>
+                <li>
+                    Seminar, Winter 2024: Recent Advances in Mechanistic Interpretability
+                    <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ai-details" aria-expanded="false" aria-controls="ai-details">Details</button>
+                    <div class="collapse" id="ai-details">
+                        <p>A course examining the latest developments in understanding the mechanisms of AI models.</p>
+                        <p><a href="teaching/mechanistic-24.html" target="_blank">Course Website</a></p>
+                    </div>
+                </li>
+                <li>
+                    Software Project, Winter 2024: Recent Advances in Mechanistic Interpretability 
+                    <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ml-details" aria-expanded="false" aria-controls="ml-details">Details</button>
+                    <div class="collapse" id="ml-details">
+                        <p>A practical course on applying mechanistic interpretability methods in natural language processing.</p>
+                        <p><a href="teaching/implementing-mechanistic-24.html" target="_blank">Course Website</a></p>
+                    </div>
+                </li>
             </ul>
+            <p>
+                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#finished" aria-expanded="false" aria-controls="ai-details">Finished Courses</button>
+                <div class="collapse" id="finished">
+                    <ul>
+                        <li>
+                            Seminar, Summer 2024: XPLN - Exploring Explainability in NLP
+                        </li>
+                        <li>
+                            Seminar, Summer 2024: Efficient and Robust Natural Language Processing
+                        </li>
+                        <li>
+                            Seminar, Summer 2023: XPLN - Exploring Explainability in NLP
+                        </li>
+                        <li>
+                            Software Project, Summer 2023: BERT and Friends – Pretrained LMs in Natural Language Understanding
+                        </li>
+                        <li>
+                            Seminar, Summer 2022: BERT and Friends - Pretrained LMs in Computational Semantics
+                        </li>
+                        
+                    </ul>
+                </div>
+            </p>
+        </section>
+        <section id="students" class="mb-5">
+            <h2 class="text-secondary">Supervision</h2>
+            <p>
+                If you are interested in writing your MSc thesis with me and my team, please send me a mail with a short topic outline, a CV and a transcript of records. Please note that we get many such requests and cannot collaborate with everybody that is interested.
+            </p>
+
+            <h4 class="text-secondary">Ongoing</h3>
+            <ul>
+                <li><strong>Lucas Lage, MSc</strong> – Topic: Hallucinations in RAG Systems</li>
+                <li><strong>Julian Schlenker, MSc</strong> – Topic: Language Transfer with Monolingual Models</li>
+                <li><strong>Daniil Gurgurov, MSc</strong> – Topic: Knowledge-Based Adaptation of Multilingual LMs for Low-Resource Languages</li>
+                <li><strong>Katja Konermann, MSc</strong> – Topic: Massive Multilabel Classification</li>
+                <li><strong>Gregory Charles Shook, MSc</strong> – Topic: Intrepretability of Language Adapters</li>
+            </ul>
+            <h4 class="text-secondary">Finished</h3>
+            <ul>
+                <li><strong>Akshai Joshi, MSc, 2024, Reviewer</strong> – "Self-Supervised Multimodal Representation Learning for Diagram Understanding"</li>
+                <li><strong>Konstantin Chernychew, MSc, 2024, Advisor</strong> – "Fast and Efficient Structured Pruning of LLMs with Gradient-Based Meta-Mask"</li>
+                <li><strong>Gokul Srinivasagan, MSc, 2023, Advisor</strong> – "Extreme model compression for large-scale transformer-based language models"</li>
+                <li><strong>Daria Fedorova, MSc, 2023, Advisor</strong> – "Cross-lingual and Cross-domain Knowledge Transfer for Sequence Labeling Tasks" </li>
+                <li><strong>Hannah Seitz, MSc, 2016, Advisor</strong> – "Investigating Instantiations of Script Structures in Narrative Texts"</li>
+            </ul>
+
+
         </section>
     </main>
     <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+        <p>&copy; 2024 Simon Ostermann. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
