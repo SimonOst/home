@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <img src="${pub.Image}" alt="${pub.Topic}" class="rounded me-3" style="width: 60px; height: 60px;">
                         <div>
                             <p class="mb-1" style="color: #1a1a1a"><strong>${pub.Title}</strong> - <i>${pub.Source}</i></p>
-                            <p class="mb-0">Topic: ${pub.Topic}</p>
+                            <p class="mb-0" style="color: #1a1a1a">${pub.Topic}</p>
                         </div>
                     `;
                     ul.appendChild(li);
