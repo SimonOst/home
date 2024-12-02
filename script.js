@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             for (const year of Object.keys(grouped).sort((a, b) => b - a)) {
                 const yearSection = document.createElement("div");
-                yearSection.innerHTML = `<h3 class="text-muted">${year}</h3>`;
+                yearSection.innerHTML = `<h3 class="text-secondary">${year}</h3>`;
                 const ul = document.createElement("ul");
                 ul.classList.add("list-unstyled");
 
