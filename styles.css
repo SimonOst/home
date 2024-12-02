@@ -1,0 +1,122 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0;
+    background-color: #1a1a1a;
+}
+
+/* Header Styling */
+header {
+    background-color: #1a1a1a;
+}
+    
+header .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Profile Picture Styling */
+header .rounded-circle {
+    width: 120px; /* Increased size */
+    height: 120px; /* Maintain circular shape */
+    object-fit: cover; /* Prevent distortion */
+    border: 3px solid #ffffff; /* Optional: Add a border */
+}
+
+/* Affiliation Logo Styling */
+.affiliation-img {
+    max-height: 100px; /* Increased size */
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* Navbar */
+.navbar-nav .nav-link {
+    color: white; /* Default color for navbar links */
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #FF4081; /* Corporate pink color */
+    color: white; /* Ensure text remains readable */
+    text-decoration: none;
+}
+
+
+/* Publications */
+.publication-year h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #303030;
+    margin-top: 40px;
+    border-bottom: 1px solid #4a4a4a;
+    padding-bottom: 5px;
+}
+
+.publication-list li {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    background: #2e2e2e;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.publication-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer p {
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #d6d6d6;
+}
+
+/* Link styles matching the DFKI logo color */
+a {
+    color: #FF4081; /* Matches the pink color of the logo */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #FF5A93; /* Slightly lighter pink for hover effect */
+    text-decoration: underline;
+}
+
+/* Button styles matching the DFKI logo color */
+.btn-secondary {
+    background-color: #FF4081; /* Matches the pink color */
+    border-color: #FF4081;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #FF5A93; /* Slightly lighter pink for hover effect */
+    border-color: #FF5A93;
+    color: white;
+}
+
+/* Adjust hover color for "Details" buttons */
+.btn-link {
+    color: #FF4081; /* Matches the pink color */
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    color: #FF5A93; /* Slightly lighter pink for hover effect */
+    text-decoration: underline;
+}
