@@ -21,15 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 grouped[year].forEach((pub) => {
                     const li = document.createElement("li");
                     li.classList.add("d-flex", "align-items-center", "p-3", "bg-light", "rounded", "mb-3");
-                    console.warn(pub.Authors);
-                    const authors = new String(pub.Authors).replace("Simon Ostermann", "<strong>Simon Ostermann</strong>");
-                    console.warn(authors);
+                    const authors = new String(pub.Authors).replace("Simon Ostermann", "<strong>Simon Ostermann</strong>").replaceAll('"', '');
                     li.innerHTML = `
                         <img src="${pub.Image}" alt="${pub.Topic}" class="rounded me-3" style="width: 60px; height: 60px;">
                         <div>
-                            <p class="mb-1" style="color: #1a1a1a"><strong>${pub.Title}</strong> - <i>${pub.Source}</i> - <strong><a href="${pub.Link}">paper link</a></strong></p>
+                            <p class="mb-1" style="color: #1a1a1a"><strong>${pub.Title}</strong> - ${pub.Source} - <strong><a href="${pub.Link}">paper link</a></strong></p>
                             <p class="mb-0" style="color: #1a1a1a"><i>${authors}</i></p>
-                            <p class="mb-0" style="color: #1a1a1a">${pub.Topic}</p>
+                            <p class="mb-0" style="color: #1a1a1a">${pub.Topic.replaceAll('"', '');}</p>
                         </div>
                     `;
                     ul.appendChild(li);
