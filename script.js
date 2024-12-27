@@ -21,7 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 grouped[year].forEach((pub) => {
                     const li = document.createElement("li");
                     li.classList.add("d-flex", "align-items-center", "p-3", "bg-light", "rounded", "mb-3");
+                    console.warn(pub.Authors);
                     const authors = new String(pub.Authors).replace("Simon Ostermann", "<strong>Simon Ostermann</strong>");
+                    console.warn(authors);
                     li.innerHTML = `
                         <img src="${pub.Image}" alt="${pub.Topic}" class="rounded me-3" style="width: 60px; height: 60px;">
                         <div>
