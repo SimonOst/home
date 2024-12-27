@@ -44,7 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function parseTSV(data) {
     const lines = data.trim().split("\n");
-    const headers = lines.shift().split("\t");
+    const headers_orig = lines.shift().split("\t");
+    const headers = list.map(item => item.replace(/^\s+|\s+$/g, ''));
     console.warn(headers);
     return lines.map((line) => {
         const values = line.split("\t");
