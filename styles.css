@@ -10,7 +10,7 @@ body {
 /* Header Styling */
 header {
     background-color: #1a1a1a;
-    position: sticky;
+    /*position: sticky;*/
     top: 0;
     z-index: 1020; /* Higher z-index to ensure it stays on top */
 }
@@ -30,6 +30,24 @@ header .rounded-circle {
     border: 3px solid #ffffff; /* Optional: Add a border */
 }
 
+/* container */
+.responsive-two-column-grid {
+    display:block;
+}
+
+/* columns */
+.responsive-two-column-grid > * {
+    padding:1rem;
+}
+
+/* tablet breakpoint */
+@media (min-width:768px) {
+    .responsive-two-column-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
 /* Affiliation Logo Styling */
 .affiliation-img {
     max-height: 100px; /* Increased size */
@@ -39,7 +57,7 @@ header .rounded-circle {
 /* Navbar */
 .navbar {
     position: sticky;
-    top: 136px; /* Adjust this based on the header height */
+    top: 0px; /* Adjust this based on the header height */
     z-index: 1010; /* Ensure navbar stays below the header */
 }
 
