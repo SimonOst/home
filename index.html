@@ -48,7 +48,6 @@
         border-radius: 8px;
       }
     </style>
-    </style>
 </head>
 <body>
 <header class="bg-dark text-white py-2">
@@ -209,10 +208,13 @@ Order in Multilingual Language Models</li>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
+      function injectImagesIntoPapers() {
         const papers = document.querySelectorAll(".bibbase_paper");
 
         papers.forEach(function (paper) {
+          // Prevent duplicate insertion
+          if (paper.querySelector(".bibbase-thumb-wrapper")) return;
+
           const noteSpan = paper.querySelector(".note");
           const titleBlock = paper.querySelector(".bibbase_paper_titleauthoryear");
 
@@ -255,6 +257,26 @@ Order in Multilingual Language Models</li>
             paper.insertBefore(wrapper, titleBlock);
             noteSpan.remove();
           }
+        });
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        injectImagesIntoPapers();
+
+        // Observe BibBase changes
+        const container = document.querySelector("#bibbase_content") || document.body;
+
+        const observer = new MutationObserver((mutations) => {
+          for (const mutation of mutations) {
+            if (mutation.addedNodes.length > 0 || mutation.type === "childList") {
+              injectImagesIntoPapers();
+            }
+          }
+        });
+
+        observer.observe(container, {
+          childList: true,
+          subtree: true
         });
       });
     </script>
