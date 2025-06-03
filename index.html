@@ -9,7 +9,24 @@
     <link rel="stylesheet" href="styles.css">
     <!--<script src="script.js"></script>-->
     <style>
-      /* Lightbox styles */
+      .bibbase-thumb-wrapper {
+        width: 200px;
+        height: 150px;
+        overflow: hidden;
+        float: left;
+        margin-right: 1em;
+        border-radius: 6px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.2);
+      }
+
+      .bibbase-thumb-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+        display: block;
+      }
+
       .lightbox-overlay {
         position: fixed;
         top: 0;
@@ -198,18 +215,19 @@ Order in Multilingual Language Models</li>
           const titleBlock = paper.querySelector(".bibbase_paper_titleauthoryear");
 
           if (noteSpan && titleBlock) {
-            const imageUrl = "https://simonost.github.io/home/images/publications/" + noteSpan.textContent.trim();
+            const imageUrl = noteSpan.textContent.trim();
 
             if (imageUrl) {
+              // Create a wrapper div
+              const wrapper = document.createElement("div");
+              wrapper.className = "bibbase-thumb-wrapper";
+
+              // Create thumbnail image
               const thumbnail = document.createElement("img");
               thumbnail.src = imageUrl;
-              thumbnail.style.float = "left";
-              thumbnail.style.marginRight = "1em";
-              thumbnail.style.maxWidth = "200px";
-              thumbnail.style.cursor = "pointer";
               thumbnail.alt = "Click to enlarge";
 
-              // On click, show full-screen overlay
+              // Add lightbox click handler
               thumbnail.addEventListener("click", () => {
                 const overlay = document.createElement("div");
                 overlay.className = "lightbox-overlay";
@@ -221,11 +239,12 @@ Order in Multilingual Language Models</li>
                 document.body.appendChild(overlay);
 
                 overlay.addEventListener("click", () => {
-                  overlay.remove(); // Close on click
+                  overlay.remove();
                 });
               });
 
-              paper.insertBefore(thumbnail, titleBlock);
+              wrapper.appendChild(thumbnail);
+              paper.insertBefore(wrapper, titleBlock);
               noteSpan.remove();
             }
           }
