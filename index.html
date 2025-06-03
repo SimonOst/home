@@ -11,20 +11,21 @@
     <style>
       .bibbase-thumb-wrapper {
         width: auto;
+        height: 4.5em; /* Approx. 3 lines of text */
         float: left;
         margin-right: 1em;
         border-radius: 6px;
         overflow: hidden;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-        display: flex;
-        align-items: stretch;
       }
 
       .bibbase-thumb-wrapper img {
-        display: block;
         height: 100%;
+        width: auto;
+        max-width: 100%;
         object-fit: cover;
         cursor: pointer;
+        display: block;
       }
 
       .lightbox-overlay {
@@ -46,6 +47,7 @@
         box-shadow: 0 0 20px black;
         border-radius: 8px;
       }
+    </style>
     </style>
 </head>
 <body>
@@ -216,8 +218,8 @@ Order in Multilingual Language Models</li>
 
           if (noteSpan && titleBlock) {
             const fileName = noteSpan.textContent.trim();
-            
-            // Skip if the note doesn't contain a valid filename
+
+            // Only include if file name looks like an image
             if (!fileName || !fileName.match(/\.(jpg|jpeg|png|gif|webp)$/i)) {
               noteSpan.remove();
               return;
@@ -225,7 +227,7 @@ Order in Multilingual Language Models</li>
 
             const imageUrl = "https://simonost.github.io/home/images/publications/" + fileName;
 
-            // Create wrapper and image
+            // Create image wrapper
             const wrapper = document.createElement("div");
             wrapper.className = "bibbase-thumb-wrapper";
 
@@ -233,7 +235,7 @@ Order in Multilingual Language Models</li>
             thumbnail.src = imageUrl;
             thumbnail.alt = "Click to enlarge";
 
-            // Lightbox click
+            // Lightbox behavior
             thumbnail.addEventListener("click", () => {
               const overlay = document.createElement("div");
               overlay.className = "lightbox-overlay";
@@ -252,12 +254,6 @@ Order in Multilingual Language Models</li>
             wrapper.appendChild(thumbnail);
             paper.insertBefore(wrapper, titleBlock);
             noteSpan.remove();
-
-            // Match image height to title block after a short delay
-            setTimeout(() => {
-              const titleHeight = titleBlock.offsetHeight;
-              wrapper.style.height = `${titleHeight}px`;
-            }, 0);
           }
         });
       });
