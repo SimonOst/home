@@ -10,21 +10,21 @@
     <!--<script src="script.js"></script>-->
     <style>
       .bibbase-thumb-wrapper {
-        width: 200px;
-        height: 150px;
-        overflow: hidden;
+        width: auto;
         float: left;
         margin-right: 1em;
         border-radius: 6px;
-        box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        overflow: hidden;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: stretch;
       }
 
       .bibbase-thumb-wrapper img {
-        width: 100%;
+        display: block;
         height: 100%;
         object-fit: cover;
         cursor: pointer;
-        display: block;
       }
 
       .lightbox-overlay {
@@ -215,38 +215,49 @@ Order in Multilingual Language Models</li>
           const titleBlock = paper.querySelector(".bibbase_paper_titleauthoryear");
 
           if (noteSpan && titleBlock) {
-            const imageUrl = "https://simonost.github.io/home/images/publications/" + noteSpan.textContent.trim();
-
-            if (imageUrl) {
-              // Create a wrapper div
-              const wrapper = document.createElement("div");
-              wrapper.className = "bibbase-thumb-wrapper";
-
-              // Create thumbnail image
-              const thumbnail = document.createElement("img");
-              thumbnail.src = imageUrl;
-              thumbnail.alt = "Click to enlarge";
-
-              // Add lightbox click handler
-              thumbnail.addEventListener("click", () => {
-                const overlay = document.createElement("div");
-                overlay.className = "lightbox-overlay";
-
-                const fullImage = document.createElement("img");
-                fullImage.src = imageUrl;
-
-                overlay.appendChild(fullImage);
-                document.body.appendChild(overlay);
-
-                overlay.addEventListener("click", () => {
-                  overlay.remove();
-                });
-              });
-
-              wrapper.appendChild(thumbnail);
-              paper.insertBefore(wrapper, titleBlock);
+            const fileName = noteSpan.textContent.trim();
+            
+            // Skip if the note doesn't contain a valid filename
+            if (!fileName || !fileName.match(/\.(jpg|jpeg|png|gif|webp)$/i)) {
               noteSpan.remove();
+              return;
             }
+
+            const imageUrl = "https://simonost.github.io/home/images/publications/" + fileName;
+
+            // Create wrapper and image
+            const wrapper = document.createElement("div");
+            wrapper.className = "bibbase-thumb-wrapper";
+
+            const thumbnail = document.createElement("img");
+            thumbnail.src = imageUrl;
+            thumbnail.alt = "Click to enlarge";
+
+            // Lightbox click
+            thumbnail.addEventListener("click", () => {
+              const overlay = document.createElement("div");
+              overlay.className = "lightbox-overlay";
+
+              const fullImage = document.createElement("img");
+              fullImage.src = imageUrl;
+
+              overlay.appendChild(fullImage);
+              document.body.appendChild(overlay);
+
+              overlay.addEventListener("click", () => {
+                overlay.remove();
+              });
+            });
+
+            wrapper.appendChild(thumbnail);
+            paper.insertBefore(wrapper, titleBlock);
+            noteSpan.remove();
+
+            // Match image height to title block after a short delay
+            setTimeout(() => {
+              const titleHeight = titleBlock.offsetHeight;
+              wrapper.style.height = `${titleHeight}px`;
+            }, 0);
           }
         });
       });
