@@ -52,10 +52,11 @@
         display: inline-block;
         background-color: #e0e0e0;
         color: #333;
-        padding: 2px 8px;
-        border-radius: 12px;
+        padding: 2px 6px;
+        border-radius: 10px;
         font-size: 0.8em;
-        margin-bottom: 0.3em;
+        margin-right: 0.5em;
+        vertical-align: middle;
       }
     </style>
 </head>
@@ -222,13 +223,12 @@ Order in Multilingual Language Models</li>
         const papers = document.querySelectorAll(".bibbase_paper");
 
         papers.forEach(function (paper) {
-          // Prevent duplicate insertions
           if (paper.dataset.enhanced === "true") return;
 
           const noteSpan = paper.querySelector(".note");
           const titleBlock = paper.querySelector(".bibbase_paper_titleauthoryear");
 
-          // --- Add thumbnail image ---
+          // --- Image Handling ---
           if (noteSpan && titleBlock) {
             const fileName = noteSpan.textContent.trim();
 
@@ -259,33 +259,35 @@ Order in Multilingual Language Models</li>
               paper.insertBefore(wrapper, titleBlock);
             }
 
-            noteSpan.remove(); // Always clean up
+            noteSpan.remove();
           }
 
-          // --- Extract keyword from hidden BibTeX block ---
+          // --- Insert inline keyword before title ---
           const bibtexBlock = paper.querySelector('[data-type="bibtex"] pre');
-          if (bibtexBlock) {
+          const titleSpan = paper.querySelector(".bibbase_paper_title");
+
+          if (bibtexBlock && titleSpan) {
             const bibText = bibtexBlock.textContent;
             const keywordMatch = bibText.match(/keywords\s*=\s*{([^}]+)}/i);
             if (keywordMatch) {
               const firstKeyword = keywordMatch[1].split(",")[0].trim();
               if (firstKeyword) {
-                const tag = document.createElement("div");
+                const tag = document.createElement("span");
                 tag.className = "bibbase-keyword-tag";
                 tag.textContent = firstKeyword;
-                titleBlock.prepend(tag);
+
+                titleSpan.insertBefore(tag, titleSpan.firstChild);
               }
             }
           }
 
-          paper.dataset.enhanced = "true"; // Mark this paper as processed
+          paper.dataset.enhanced = "true";
         });
       }
 
       document.addEventListener("DOMContentLoaded", function () {
         injectEnhancementsIntoPapers();
 
-        // MutationObserver for resorting/grouping
         const container = document.querySelector("#bibbase_content") || document.body;
 
         const observer = new MutationObserver((mutations) => {
