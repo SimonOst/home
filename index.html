@@ -47,6 +47,16 @@
         box-shadow: 0 0 20px black;
         border-radius: 8px;
       }
+
+      .bibbase-keyword-tag {
+        display: inline-block;
+        background-color: #e0e0e0;
+        color: #333;
+        padding: 2px 8px;
+        border-radius: 12px;
+        font-size: 0.8em;
+        margin-bottom: 0.3em;
+      }
     </style>
 </head>
 <body>
@@ -208,68 +218,80 @@ Order in Multilingual Language Models</li>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-      function injectImagesIntoPapers() {
+      function injectEnhancementsIntoPapers() {
         const papers = document.querySelectorAll(".bibbase_paper");
 
         papers.forEach(function (paper) {
-          // Prevent duplicate insertion
-          if (paper.querySelector(".bibbase-thumb-wrapper")) return;
+          // Prevent duplicate insertions
+          if (paper.dataset.enhanced === "true") return;
 
           const noteSpan = paper.querySelector(".note");
           const titleBlock = paper.querySelector(".bibbase_paper_titleauthoryear");
 
+          // --- Add thumbnail image ---
           if (noteSpan && titleBlock) {
             const fileName = noteSpan.textContent.trim();
 
-            // Only include if file name looks like an image
-            if (!fileName || !fileName.match(/\.(jpg|jpeg|png|gif|webp)$/i)) {
-              noteSpan.remove();
-              return;
+            if (fileName && fileName.match(/\.(jpg|jpeg|png|gif|webp)$/i)) {
+              const imageUrl = "https://simonost.github.io/home/images/publications/" + fileName;
+
+              const wrapper = document.createElement("div");
+              wrapper.className = "bibbase-thumb-wrapper";
+
+              const thumbnail = document.createElement("img");
+              thumbnail.src = imageUrl;
+              thumbnail.alt = "Click to enlarge";
+
+              thumbnail.addEventListener("click", () => {
+                const overlay = document.createElement("div");
+                overlay.className = "lightbox-overlay";
+
+                const fullImage = document.createElement("img");
+                fullImage.src = imageUrl;
+
+                overlay.appendChild(fullImage);
+                document.body.appendChild(overlay);
+
+                overlay.addEventListener("click", () => overlay.remove());
+              });
+
+              wrapper.appendChild(thumbnail);
+              paper.insertBefore(wrapper, titleBlock);
             }
 
-            const imageUrl = "https://simonost.github.io/home/images/publications/" + fileName;
-
-            // Create image wrapper
-            const wrapper = document.createElement("div");
-            wrapper.className = "bibbase-thumb-wrapper";
-
-            const thumbnail = document.createElement("img");
-            thumbnail.src = imageUrl;
-            thumbnail.alt = "Click to enlarge";
-
-            // Lightbox behavior
-            thumbnail.addEventListener("click", () => {
-              const overlay = document.createElement("div");
-              overlay.className = "lightbox-overlay";
-
-              const fullImage = document.createElement("img");
-              fullImage.src = imageUrl;
-
-              overlay.appendChild(fullImage);
-              document.body.appendChild(overlay);
-
-              overlay.addEventListener("click", () => {
-                overlay.remove();
-              });
-            });
-
-            wrapper.appendChild(thumbnail);
-            paper.insertBefore(wrapper, titleBlock);
-            noteSpan.remove();
+            noteSpan.remove(); // Always clean up
           }
+
+          // --- Extract keyword from hidden BibTeX block ---
+          const bibtexBlock = paper.querySelector('[data-type="bibtex"] pre');
+          if (bibtexBlock) {
+            const bibText = bibtexBlock.textContent;
+            const keywordMatch = bibText.match(/keywords\s*=\s*{([^}]+)}/i);
+            if (keywordMatch) {
+              const firstKeyword = keywordMatch[1].split(",")[0].trim();
+              if (firstKeyword) {
+                const tag = document.createElement("div");
+                tag.className = "bibbase-keyword-tag";
+                tag.textContent = firstKeyword;
+                titleBlock.prepend(tag);
+              }
+            }
+          }
+
+          paper.dataset.enhanced = "true"; // Mark this paper as processed
         });
       }
 
       document.addEventListener("DOMContentLoaded", function () {
-        injectImagesIntoPapers();
+        injectEnhancementsIntoPapers();
 
-        // Observe BibBase changes
+        // MutationObserver for resorting/grouping
         const container = document.querySelector("#bibbase_content") || document.body;
 
         const observer = new MutationObserver((mutations) => {
           for (const mutation of mutations) {
             if (mutation.addedNodes.length > 0 || mutation.type === "childList") {
-              injectImagesIntoPapers();
+              injectEnhancementsIntoPapers();
             }
           }
         });
