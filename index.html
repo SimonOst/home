@@ -89,6 +89,7 @@
                 <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
                 <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
                 <li class="nav-item"><a class="nav-link" href="#students">Supervision</a></li>
+                <li class="nav-item"><a class="nav-link" href="#talks">Talks&Service</a></li>
                 <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.dfki.de/en/web/research/research-departments/multilinguality-and-language-technology/ee-team"><em>E&E Group @ DFKI</em></a></li>
             </ul>
         </div>
@@ -213,9 +214,29 @@ Order in Multilingual Language Models</li>
 
 
         </section>
+        <section id="talks" class="mb-5">
+            <h2 class="text-secondary">Talks and Service</h2>
+            <a href="#" id="toggle-talks" style="cursor: pointer; text-decoration: underline;">
+                Show
+            </a>
+          <div id="talks-content" style="display: none; margin-top: 1em;">
+            <h3 class="text-secondary">Invited Talks and Presentations</h3>
+            <ul>
+              <li><strong>May 2024:</strong> Keynote talk at TaCoS 2024 (Tagung der Computerlinguistik-Studierenden), Saarland University</li>
+              <li><strong>November 2024:</strong> Guest lecture at the HIDA lecture series (Helmholtz Information & Data Science Academy), virtual</li>
+              <li><strong>March 2025:</strong> Invited Lecture "Künstliche Intelligenz im Fokus", VHS Saarbrücken</li>
+            </ul>
+
+            <h3 class="text-secondary">Service and Organization</h3>
+            <ul>
+              <li>Reviewer and Area Chair for diverse iteratons of ARR, ACL, EMNLP.
+              <li>Organizer of several shared tasks and workshops, such as <a href="https://coinnlp.github.io/">COIN</a>, <a href="https://lrlnlp.github.io/website/">LowResNLP</a>, two SemEval shared tasks (in <a href="https://competitions.codalab.org/competitions/17184">2018</a> and <a href="https://disai.eu/semeval-2025/">2025</a>).</li>
+            </ul>
+          </div>
+        </div>
     </main>
     <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Simon Ostermann. All rights reserved.</p>
+        <p>&copy; 2025 Simon Ostermann. All rights reserved.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
@@ -301,6 +322,18 @@ Order in Multilingual Language Models</li>
         observer.observe(container, {
           childList: true,
           subtree: true
+        });
+      });
+
+       document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.getElementById("toggle-talks");
+        const content = document.getElementById("talks-content");
+
+        toggle.addEventListener("click", function (e) {
+          e.preventDefault();
+          const isVisible = content.style.display === "block";
+          content.style.display = isVisible ? "none" : "block";
+          toggle.textContent = isVisible ? "Show Talks&Service" : "Hide Talks&Service";
         });
       });
     </script>
