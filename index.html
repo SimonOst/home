@@ -1,14 +1,15 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simon Ostermann</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <!--<script src="script.js"></script>-->
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Simon Ostermann</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<!--<script src="script.js"></script>-->
+<style>
       .bibbase-thumb-wrapper {
         width: auto;
         height: 100px; /* Approx. 3 lines of text */
@@ -59,182 +60,200 @@
         vertical-align: middle;
       }
     </style>
-</head>
+<style>
+.pub-item{display:flex;gap:12px;align-items:flex-start;margin:10px 0;padding:10px;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.pub-thumb{width:110px;height:90px;object-fit:cover;border-radius:8px;background:#f2f2f2;flex:0 0 110px;cursor:pointer}
+.pub-meta{flex:1}
+.pub-title{font-weight:600;margin:0;font-size:0.95em}
+.pub-venue{opacity:.8;font-size:0.85em}
+.pub-authors{font-size:0.85em}
+.pub-authors b{font-weight:700}
+.pub-year{margin-top:24px;font-weight:700;font-size:1.05em}
+.badge{display:inline-block;padding:2px 8px;border-radius:999px;margin-right:6px;font-size:.75em;background:#fbe0f0;color:#d10074;font-weight:500}
+.badge:hover{background:#f5c2e0}
+.lightbox-overlay{position:fixed;inset:0;background:rgba(0,0,0,.85);display:flex;align-items:center;justify-content:center;z-index:1050}
+.lightbox-overlay img{max-width:90%;max-height:90%;border-radius:8px;box-shadow:0 0 20px black}
+#pub-search-wrap{display:flex;align-items:center;gap:10px;margin:8px 0 16px}
+#pub-search{
+  flex:1;
+  max-width:360px;
+  padding:4px 8px;
+  font-size:0.85em;
+  border:1px solid #ccc;
+  border-radius:8px
+}
+#pub-clear{
+  padding:4px 8px;
+  font-size:0.85em;
+  border:1px solid #ddd;
+  border-radius:8px;
+  background:#fafafa;
+  cursor:pointer
+}
+#pub-count{margin-left:auto;opacity:.75}</style></head>
 <body>
 <header class="bg-dark text-white py-2">
-    <!-- Modal Structure -->
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-        <div class="d-flex align-items-center">
-            <img src="images/profile.png" alt="Simon Ostermann" class="rounded-circle me-3" style="width: 120px; height: 120px; object-fit: cover; border: 3px solid #fff;">
-            <div>
-                <h1 class="h2 mb-0">Simon Ostermann</h1>
-                <p class="h4 mb-0">NLP &amp; AI Researcher @ DFKI</p>
-            </div>
-        </div>
-        <div class="mt-3 mt-md-0 text-md-end">
-            <p class="mb-0"><strong>Email:</strong> simon.ostermann@dfki.de</p>
-            <p class="mb-0"><strong>Address:</strong> Stuhlsatzenhausweg 3<br>66123 Saarbrücken
+<!-- Modal Structure -->
+<div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+<div class="d-flex align-items-center">
+<img alt="Simon Ostermann" class="rounded-circle me-3" src="images/profile.png" style="width: 120px; height: 120px; object-fit: cover; border: 3px solid #fff;"/>
+<div>
+<h1 class="h2 mb-0">Simon Ostermann</h1>
+<p class="h4 mb-0">NLP &amp; AI Researcher @ DFKI</p>
+</div>
+</div>
+<div class="mt-3 mt-md-0 text-md-end">
+<p class="mb-0"><strong>Email:</strong> simon.ostermann@dfki.de</p>
+<p class="mb-0"><strong>Address:</strong> Stuhlsatzenhausweg 3<br/>66123 Saarbrücken
             </p>
-        </div>
-    </div>
+</div>
+</div>
 </header>
 <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
-    <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
-                <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-                <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
-                <li class="nav-item"><a class="nav-link" href="#students">Supervision</a></li>
-                <li class="nav-item"><a class="nav-link" href="#talks">Talks&Service</a></li>
-                <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.dfki.de/en/web/research/research-departments/multilinguality-and-language-technology/ee-team"><em>E&E Group @ DFKI</em></a></li>
-            </ul>
-        </div>
-    </div>
+<div class="container">
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+<li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+<li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
+<li class="nav-item"><a class="nav-link" href="#students">Supervision</a></li>
+<li class="nav-item"><a class="nav-link" href="#talks">Talks&amp;Service</a></li>
+<li class="nav-item"><a class="nav-link" href="https://www.dfki.de/en/web/research/research-departments/multilinguality-and-language-technology/ee-team" target="_blank"><em>E&amp;E Group @ DFKI</em></a></li>
+</ul>
+</div>
+</div>
 </nav>
-
-    <main class="container my-4">
-        <section id="research" class="mb-5">
-            <h2 class="text-secondary">Welcome &#128075;</h2>
-            <div class="responsive-two-column-grid">
-                <div><p>I am a senior researcher and deputy director at the <a href="https://www.dfki.de/web/forschung/forschungsbereiche/sprachtechnologie-und-multilingualitaet">Multilinguality and Language Technology (MLT)</a> lab at the <a href="https://www.dfki.de">German Research Center for Artificial Intelligence</a>, where I am currently leading mid-sized research projects. I lead <a href="https://www.dfki.de/web/forschung/forschungsbereiche/sprachtechnologie-und-multilingualitaet/ee-team">the research group on Efficient and Explainable NLP (E&E)</a> at the MLT lab.</p></div>
-                <div><img src="images/dfki.png" alt="DFKI" class="affiliation-img" style="max-height: 100px; object-fit: contain;"> </div>
-            </div>
-            
-            <p style="padding: 0 1rem">
+<main class="container my-4">
+<section class="mb-5" id="research">
+<h2 class="text-secondary">Welcome 👋</h2>
+<div class="responsive-two-column-grid">
+<div><p>I am a senior researcher and deputy director at the <a href="https://www.dfki.de/web/forschung/forschungsbereiche/sprachtechnologie-und-multilingualitaet">Multilinguality and Language Technology (MLT)</a> lab at the <a href="https://www.dfki.de">German Research Center for Artificial Intelligence</a>, where I am currently leading mid-sized research projects. I lead <a href="https://www.dfki.de/web/forschung/forschungsbereiche/sprachtechnologie-und-multilingualitaet/ee-team">the research group on Efficient and Explainable NLP (E&amp;E)</a> at the MLT lab.</p></div>
+<div><img alt="DFKI" class="affiliation-img" src="images/dfki.png" style="max-height: 100px; object-fit: contain;"/> </div>
+</div>
+<p style="padding: 0 1rem">
               My research broadly focuses on making language technology more accessible and fair. I focus on <strong>transparent and robust language models and language technologies</strong>. Specifically, I aim to make the parameters and behavior of language models more interpretable to both end users and researchers, drawing on methods from <strong>  Explainable Artificial Intelligence</strong> and <strong>Mechanistic Interpretability</strong>. I also work on improving the robustness and efficiency of language models, particularly by enhancing their data efficiency using structured inputs, novel learning and adaptation techniques, and multimodal approaches. I especially focus on <strong>Low-Resource Languages</strong>. Additionally, I am interested in reducing model size to enable deployment in resource-constrained environments.
             </p>
-            <p style="padding: 0 1rem">
+<p style="padding: 0 1rem">
               In side projects, I'm also exploring the factuality of model-generated outputs and I have worked on multimodal models. My work primarily involves large language models trained using deep learning techniques. I also have extensive experience in data acquisition and crowdsourcing, as well as in educational NLP.
             </p>
-        </section>
-        <section id="publications" class="mb-5">
-            <h2 class="text-secondary">Selected Publications 📰</h2>
-                <p style="padding: 0 1rem">For a full list of publications, including preprints, please check my <a href="https://scholar.google.com/citations?user=kOHpHZsAAAAJ">Google Scholar Profile</a></p>
-                <script src="https://bibbase.org/show?bib=https://simonost.github.io/home/publications.bib&jsonp=1&theme=mila&showSearch=true&nocache=1"></script> 
-            </div>
-        </section>
-        <section id="teaching" class="mb-5">
-            <h2 class="text-secondary">Teaching &#x1f3eb;</h2>
-            <p>I am also teaching at Saarland University. Here is a list of my ongoing courses:</p>
-            <ul>
-                <li>
+</section>
+<section class="mb-5" id="publications">
+<h2 class="text-secondary">Selected Publications 📰</h2>
+<p style="padding: 0 1rem">For a full list of publications, including preprints, please check my <a href="https://scholar.google.com/citations?user=kOHpHZsAAAAJ">Google Scholar Profile</a></p>
+<div class="mb-3" id="pub-search-wrap"><input aria-label="Publications search" id="pub-search" placeholder="Search title, author, venue, keyword…" type="search"/><button id="pub-clear" type="button">Clear</button><span aria-live="polite" id="pub-count"></span></div><div id="pubs"></div></section>
+<section class="mb-5" id="teaching">
+<h2 class="text-secondary">Teaching 🏫</h2>
+<p>I am also teaching at Saarland University. Here is a list of my ongoing courses:</p>
+<ul>
+<li>
                     Seminar, Summer 2025: Efficient and Robust Natural Language Processing
-                    <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ai-details" aria-expanded="false" aria-controls="ai-details">Details</button>
-                    <div class="collapse" id="ai-details">
-                        <p>A course on efficient NLP, with a focus on robust models for low-resource data settings and parameter efficient models.</p>
-                        <p><a href="teaching/efficient-25.html" target="_blank">Course Website</a></p>
-                    </div>
-                </li>
-                <li>
+                    <button aria-controls="ai-details" aria-expanded="false" class="btn btn-link" data-bs-target="#ai-details" data-bs-toggle="collapse">Details</button>
+<div class="collapse" id="ai-details">
+<p>A course on efficient NLP, with a focus on robust models for low-resource data settings and parameter efficient models.</p>
+<p><a href="teaching/efficient-25.html" target="_blank">Course Website</a></p>
+</div>
+</li>
+<li>
                     Seminar, Winter 2024: Recent Advances in Mechanistic Interpretability
-                    <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ai-details" aria-expanded="false" aria-controls="ai-details">Details</button>
-                    <div class="collapse" id="ai-details">
-                        <p>A course examining the latest developments in understanding the mechanisms of AI models.</p>
-                        <p><a href="teaching/mechanistic-24.html" target="_blank">Course Website</a></p>
-                    </div>
-                </li>
-                <li>
+                    <button aria-controls="ai-details" aria-expanded="false" class="btn btn-link" data-bs-target="#ai-details" data-bs-toggle="collapse">Details</button>
+<div class="collapse" id="ai-details">
+<p>A course examining the latest developments in understanding the mechanisms of AI models.</p>
+<p><a href="teaching/mechanistic-24.html" target="_blank">Course Website</a></p>
+</div>
+</li>
+<li>
                     Software Project, Winter 2024: Recent Advances in Mechanistic Interpretability 
-                    <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ml-details" aria-expanded="false" aria-controls="ml-details">Details</button>
-                    <div class="collapse" id="ml-details">
-                        <p>A practical course on applying mechanistic interpretability methods in natural language processing.</p>
-                        <p><a href="teaching/implementing-mechanistic-24.html" target="_blank">Course Website</a></p>
-                    </div>
-                </li>
-            </ul>
-            <p>
-                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#finished" aria-expanded="false" aria-controls="ai-details">Finished Courses</button>
-                <div class="collapse" id="finished">
-                    <ul>
-                        <li>
+                    <button aria-controls="ml-details" aria-expanded="false" class="btn btn-link" data-bs-target="#ml-details" data-bs-toggle="collapse">Details</button>
+<div class="collapse" id="ml-details">
+<p>A practical course on applying mechanistic interpretability methods in natural language processing.</p>
+<p><a href="teaching/implementing-mechanistic-24.html" target="_blank">Course Website</a></p>
+</div>
+</li>
+</ul>
+<p>
+<button aria-controls="ai-details" aria-expanded="false" class="btn btn-link" data-bs-target="#finished" data-bs-toggle="collapse">Finished Courses</button>
+<div class="collapse" id="finished">
+<ul>
+<li>
                             Seminar, Summer 2024: XPLN - Exploring Explainability in NLP
                         </li>
-                        <li>
+<li>
                             Seminar, Summer 2024: Efficient and Robust Natural Language Processing
                         </li>
-                        <li>
+<li>
                             Seminar, Summer 2023: XPLN - Exploring Explainability in NLP
                         </li>
-                        <li>
+<li>
                             Software Project, Summer 2023: BERT and Friends – Pretrained LMs in Natural Language Understanding
                         </li>
-                        <li>
+<li>
                             Seminar, Summer 2022: BERT and Friends - Pretrained LMs in Computational Semantics
                         </li>
-                        
-                    </ul>
-                </div>
-            </p>
-        </section>
-        <section id="students" class="mb-5">
-            <h2 class="text-secondary">Supervision &#127891;</h2>
+</ul>
+</div>
+</p>
+</section>
+<section class="mb-5" id="students">
+<h2 class="text-secondary">Supervision 🎓</h2>
             I'm happy to collaborate with and advise the following PhD students:
             <ul>
-                <li><a href="https://cora4nlp.github.io/author/tatiana-anikina/">Tatiana Anikina</a> - Topic: Efficient Adaptation of Language Models for Low-Resource Natural Language Understanding</li>
-                <li><a href="https://www.dfki.de/web/ueber-uns/mitarbeiter/person/ceog01/">Cennet Oguz</a> - Topic: Multimodal Processing of Procedural Knowledge</li>
-                <li><a href="https://tbaeumel.github.io/">Tanja Bäumel</a> - Topic: Mechanistic Interpretability of LLMs</li>
-                <li><a href="https://www.linkedin.com/in/yusser-al-ghussin-402a30158/">Yusser al Ghussin</a> - Topic: Mechanistic Steering of LLMs in Multilingual and Multicultural Aspects</li>
-                <li><a href="https://d-gurgurov.github.io/">Daniil Gurgurov</a> - Topic: Interpretable NLP for Low Resource Languages</li>
-                <li><a href="https://kinit.sk/sk/clen/ivan-vykopal/">Ivan Vykopal</a> (at KInIT) - Topic: Multilingual Low-resource NLP</li>
-            </ul>
-
-            <h4 class="text-secondary">Ongoing MSc Theses</h4>
+<li><a href="https://cora4nlp.github.io/author/tatiana-anikina/">Tatiana Anikina</a> - Topic: Efficient Adaptation of Language Models for Low-Resource Natural Language Understanding</li>
+<li><a href="https://www.dfki.de/web/ueber-uns/mitarbeiter/person/ceog01/">Cennet Oguz</a> - Topic: Multimodal Processing of Procedural Knowledge</li>
+<li><a href="https://tbaeumel.github.io/">Tanja Bäumel</a> - Topic: Mechanistic Interpretability of LLMs</li>
+<li><a href="https://www.linkedin.com/in/yusser-al-ghussin-402a30158/">Yusser al Ghussin</a> - Topic: Mechanistic Steering of LLMs in Multilingual and Multicultural Aspects</li>
+<li><a href="https://d-gurgurov.github.io/">Daniil Gurgurov</a> - Topic: Interpretable NLP for Low Resource Languages</li>
+<li><a href="https://kinit.sk/sk/clen/ivan-vykopal/">Ivan Vykopal</a> (at KInIT) - Topic: Multilingual Low-resource NLP</li>
+</ul>
+<h4 class="text-secondary">Ongoing MSc Theses</h4>
             My team and I are happy to supervise the following MSc theses:
             <ul>
-                <li><strong>Lucas Lage, MSc</strong> – Topic: Hallucinations in RAG Systems</li>
-                <li><strong>Katja Konermann, MSc</strong> – Topic: Massive Multilabel Classification</li>
-                <li><strong>Gregory Charles Shook, MSc</strong> – Topic: Interpretability of Language Adapters</li>
-                <li><strong>Mikhail Sonkin, MSc</strong> – Topic: Explainability of Word and Subword Order in Multilingual Language Models</li>
-            </ul>
-            
-            <p>
-                <strong>If you are interested in writing your MSc thesis with my E&E group, please send me a mail with a short topic outline, a CV and a transcript of records. Please note that we get many such requests and cannot collaborate with everybody that is interested.</strong>
-            </p>
-
-            <h4 class="text-secondary">Finished MSc Theses</h4>
-            <ul>
-                <li><strong>Daniil Gurgurov, MSc, 2025, Adviros</strong> – "External Knowledge-Driven Adaptation of Multilingual Language Models for Low-Resource Language Enhancement"</li>
-                <li><strong>Julian Schlenker, MSc, 2025, Advisor</strong> – "On the Efficacy of Language Adapters for Cross-Lingual Transfer in English-Centric LLMs"</li>
-                <li><strong>Bangyao Tang, MSc, 2024, Reviewer</strong> – "Analysis of Calibrated Confident Text Classification"</li>
-                <li><strong>Akshai Joshi, MSc, 2024, Reviewer</strong> – "Self-Supervised Multimodal Representation Learning for Diagram Understanding"</li>
-                <li><strong>Konstantin Chernychew, MSc, 2024, Advisor</strong> – "Fast and Efficient Structured Pruning of LLMs with Gradient-Based Meta-Mask"</li>
-                <li><strong>Gokul Srinivasagan, MSc, 2023, Advisor</strong> – "Extreme model compression for large-scale transformer-based language models"</li>
-                <li><strong>Daria Fedorova, MSc, 2023, Advisor</strong> – "Cross-lingual and Cross-domain Knowledge Transfer for Sequence Labeling Tasks" </li>
-                <li><strong>Hannah Seitz, MSc, 2016, Advisor</strong> – "Investigating Instantiations of Script Structures in Narrative Texts"</li>
-            </ul>
-
-
-        </section>
-        <section id="talks" class="mb-5">
-            <h2 class="text-secondary">Talks and Service</h2>
-            <a href="#" id="toggle-talks" style="cursor: pointer; text-decoration: underline;">
+<li><strong>Lucas Lage, MSc</strong> – Topic: Hallucinations in RAG Systems</li>
+<li><strong>Katja Konermann, MSc</strong> – Topic: Massive Multilabel Classification</li>
+<li><strong>Gregory Charles Shook, MSc</strong> – Topic: Interpretability of Language Adapters</li>
+<li><strong>Mikhail Sonkin, MSc</strong> – Topic: Explainability of Word and Subword Order in Multilingual Language Models</li>
+</ul>
+<p>
+<strong>If you are interested in writing your MSc thesis with my E&amp;E group, please send me a mail with a short topic outline, a CV and a transcript of records. Please note that we get many such requests and cannot collaborate with everybody that is interested.</strong>
+</p>
+<h4 class="text-secondary">Finished MSc Theses</h4>
+<ul>
+<li><strong>Daniil Gurgurov, MSc, 2025, Adviros</strong> – "External Knowledge-Driven Adaptation of Multilingual Language Models for Low-Resource Language Enhancement"</li>
+<li><strong>Julian Schlenker, MSc, 2025, Advisor</strong> – "On the Efficacy of Language Adapters for Cross-Lingual Transfer in English-Centric LLMs"</li>
+<li><strong>Bangyao Tang, MSc, 2024, Reviewer</strong> – "Analysis of Calibrated Confident Text Classification"</li>
+<li><strong>Akshai Joshi, MSc, 2024, Reviewer</strong> – "Self-Supervised Multimodal Representation Learning for Diagram Understanding"</li>
+<li><strong>Konstantin Chernychew, MSc, 2024, Advisor</strong> – "Fast and Efficient Structured Pruning of LLMs with Gradient-Based Meta-Mask"</li>
+<li><strong>Gokul Srinivasagan, MSc, 2023, Advisor</strong> – "Extreme model compression for large-scale transformer-based language models"</li>
+<li><strong>Daria Fedorova, MSc, 2023, Advisor</strong> – "Cross-lingual and Cross-domain Knowledge Transfer for Sequence Labeling Tasks" </li>
+<li><strong>Hannah Seitz, MSc, 2016, Advisor</strong> – "Investigating Instantiations of Script Structures in Narrative Texts"</li>
+</ul>
+</section>
+<section class="mb-5" id="talks">
+<h2 class="text-secondary">Talks and Service</h2>
+<a href="#" id="toggle-talks" style="cursor: pointer; text-decoration: underline;">
                 Show
             </a>
-          <div id="talks-content" style="display: none; margin-top: 1em;">
-            <h3 class="text-secondary">Invited Talks and Presentations</h3>
-            <ul>
-              <li><strong>May 2024:</strong> Keynote talk at TaCoS 2024 (Tagung der Computerlinguistik-Studierenden), Saarland University</li>
-              <li><strong>November 2024:</strong> Guest lecture at the HIDA lecture series (Helmholtz Information & Data Science Academy), virtual</li>
-              <li><strong>March 2025:</strong> Invited Lecture "Künstliche Intelligenz im Fokus", VHS Saarbrücken</li>
-            </ul>
-
-            <h3 class="text-secondary">Service and Organization</h3>
-            <ul>
-              <li>Reviewer and Area Chair for diverse iteratons of ARR, ACL, EMNLP.
+<div id="talks-content" style="display: none; margin-top: 1em;">
+<h3 class="text-secondary">Invited Talks and Presentations</h3>
+<ul>
+<li><strong>May 2024:</strong> Keynote talk at TaCoS 2024 (Tagung der Computerlinguistik-Studierenden), Saarland University</li>
+<li><strong>November 2024:</strong> Guest lecture at the HIDA lecture series (Helmholtz Information &amp; Data Science Academy), virtual</li>
+<li><strong>March 2025:</strong> Invited Lecture "Künstliche Intelligenz im Fokus", VHS Saarbrücken</li>
+</ul>
+<h3 class="text-secondary">Service and Organization</h3>
+<ul>
+<li>Reviewer and Area Chair for diverse iteratons of ARR, ACL, EMNLP.
               <li>Organizer of several shared tasks and workshops, such as <a href="https://coinnlp.github.io/">COIN</a>, <a href="https://lrlnlp.github.io/website/">LowResNLP</a>, two SemEval shared tasks (in <a href="https://competitions.codalab.org/competitions/17184">2018</a> and <a href="https://disai.eu/semeval-2025/">2025</a>).</li>
-            </ul>
-          </div>
-        </div>
-    </main>
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Simon Ostermann. All rights reserved.</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
+</li></ul>
+</div>
+</section></main>
+<footer class="bg-dark text-white text-center py-3">
+<p>© 2025 Simon Ostermann. All rights reserved.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
       function injectEnhancementsIntoPapers() {
         const papers = document.querySelectorAll(".bibbase_paper");
 
@@ -332,5 +351,217 @@
         });
       });
     </script>
-</body>
+<script defer="True" src="publications.bib.js"></script><script defer="True">
+// Config
+const MY_NAME = (document.querySelector("h1")?.textContent || "Simon Ostermann").trim();
+const IMAGE_BASE = "images/publications/";
+
+// Utils
+const stripBraces = s => (s||"").replace(/[{}]/g,"").replace(/\s{2,}/g," ").trim();
+function monthToNum(m){
+  if(!m) return 0;
+  const t = String(m).trim().toLowerCase();
+  const map = {jan:1,feb:2,mar:3,apr:4,may:5,jun:6,jul:7,aug:8,sep:9,sept:9,oct:10,nov:11,dec:12};
+  const long = {january:1,february:2,march:3,april:4,may:5,june:6,july:7,august:8,september:9,october:10,november:11,december:12};
+  if (map[t]) return map[t];
+  if (long[t]) return long[t];
+  const n = parseInt(t,10);
+  if (!isNaN(n) && n>=1 && n<=12) return n;
+  const tri = t.slice(0,3);
+  if (map[tri]) return map[tri];
+  return 0;
+}
+function parseBibtex(text) {
+  const entries = [];
+  const chunks = text.split(/(?=@[a-zA-Z]+\s*[\{(])/g).filter(s => s.trim().startsWith('@'));
+  for (const chunk of chunks) {
+    const m = chunk.match(/^@(\w+)\s*[\{(]\s*([^,]+)\s*,([\s\S]*)[\})]\s*$/);
+    if (!m) continue;
+    const [, type, citekey, body] = m;
+    const fields = {};
+    const re = /(\w+)\s*=\s*({([^{}]*|{[^{}]*})*}|\"[^\"]*\"|[^,\n]+)\s*,?/g;
+    let fm;
+    while ((fm = re.exec(body)) !== null) {
+      const key = fm[1].toLowerCase();
+      let val = fm[2].trim();
+      if (val.startsWith("{") && val.endsWith("}")) val = val.slice(1, -1);
+      if (val.startsWith('"') && val.endsWith('"')) val = val.slice(1, -1);
+      fields[key] = stripBraces(val);
+    }
+    fields.type = type.toLowerCase();
+    fields.citekey = citekey;
+    fields._month = monthToNum(fields.month);
+    entries.push(fields);
+  }
+  return entries;
+}
+function authorListToHtml(raw, myName) {
+  if (!raw) return "";
+  const parts = raw.split(/\s+and\s+/i).map(s => s.trim()).filter(Boolean);
+  const names = parts.map(p => {
+    if (p.includes(",")) {
+      const [last, first] = p.split(",").map(x => x.trim());
+      return `${first} ${last}`.trim();
+    }
+    return p;
+  });
+  return names.map(n => {
+    const norm = n.replace(/\./g,'').toLowerCase();
+    const myNorm = myName.replace(/\./g,'').toLowerCase();
+    return norm.includes(myNorm) ? `<b>${n}</b>` : n;
+  }).join(", ");
+}
+function pickLink(e) {
+  if (e.url) return e.url;
+  if (e.doi) return "https://doi.org/" + e.doi.replace(/^https?:\/\/(dx\.)?doi\.org\//, "");
+  return null;
+}
+function pickImage(e) {
+  const raw = e.extra || e.note || "";
+  if (!raw) return null;
+  if (/^https?:\/\//i.test(raw)) return raw;
+  return IMAGE_BASE + raw;
+}
+function venueLine(e) {
+  return e.journal || e.booktitle || e.publisher || e.school || e.institution || "";
+}
+function byYear(entries) {
+  const map = new Map();
+  for (const e of entries) {
+    const y = e.year || "Unknown";
+    if (!map.has(y)) map.set(y, []);
+    map.get(y).push(e);
+  }
+  // Sort within each year by month (desc), then title
+  for (const arr of map.values()) arr.sort((a,b)=> (b._month||0)-(a._month||0) || (a.title||"").localeCompare(b.title||""));
+  // Sort years desc
+  return Array.from(map.entries()).sort((a,b) => (parseInt(b[0])||0) - (parseInt(a[0])||0));
+}
+// Search helpers
+function buildSearchText(e) {
+  const fields = [e.title, e.author, e.authors, venueLine(e), e.keywords, e.abstract];
+  return fields.filter(Boolean).map(s => stripBraces(String(s))).join(" ").toLowerCase();
+}
+function tokenize(q) {
+  const m = q.match(/"([^"]+)"|(\S+)/g) || [];
+  return m.map(x => (x.startsWith('"') && x.endsWith('"')) ? x.slice(1,-1).toLowerCase() : x.toLowerCase());
+}
+function matches(text, terms) {
+  for (const t of terms) { if (!text.includes(t)) return false; }
+  return true;
+}
+function debounce(fn, ms){ let t; return (...args)=>{ clearTimeout(t); t=setTimeout(()=>fn(...args), ms); }; }
+
+// Lightbox
+function showLightbox(src) {
+  const overlay = document.createElement("div");
+  overlay.className = "lightbox-overlay";
+  overlay.addEventListener("click", () => overlay.remove());
+  const img = document.createElement("img");
+  img.src = src;
+  overlay.appendChild(img);
+  document.body.appendChild(overlay);
+}
+
+function render(entries) {
+  const mount = document.getElementById("pubs");
+  if (!mount) return;
+  mount.innerHTML = "";
+  const grouped = byYear(entries);
+  for (const [year, items] of grouped) {
+    const y = document.createElement("div");
+    y.className = "pub-year";
+    y.textContent = year;
+    mount.appendChild(y);
+    for (const e of items) {
+      const wrap = document.createElement("div");
+      wrap.className = "pub-item";
+      wrap.dataset.search = buildSearchText(e);
+      const imgSrc = pickImage(e);
+      if (imgSrc) {
+        const img = document.createElement("img");
+        img.loading = "lazy";
+        img.alt = e.title || "thumbnail";
+        img.className = "pub-thumb";
+        img.src = imgSrc;
+        img.addEventListener("click", ()=> showLightbox(imgSrc));
+        wrap.appendChild(img);
+      }
+      const meta = document.createElement("div");
+      meta.className = "pub-meta";
+      const link = pickLink(e);
+      const title = document.createElement(link ? "a" : "div");
+      if (link) { title.href = link; title.target="_blank"; title.rel = "noopener"; }
+      title.className = "pub-title";
+      title.textContent = stripBraces(e.title || "(untitled)");
+      meta.appendChild(title);
+      const authors = document.createElement("div");
+      authors.className = "pub-authors";
+      authors.innerHTML = authorListToHtml(e.author || e.authors, MY_NAME);
+      meta.appendChild(authors);
+      const venue = document.createElement("div");
+      venue.className = "pub-venue";
+      const v = stripBraces(venueLine(e));
+      if (v) venue.textContent = v;
+      meta.appendChild(venue);
+      if (e.keywords) {
+        const kw = e.keywords.split(/[;,]/).map(s => s.trim()).filter(Boolean).slice(0,4);
+        if (kw.length) {
+          const row = document.createElement("div");
+          for (const k of kw) {
+            const b = document.createElement("span");
+            b.className = "badge";
+            b.textContent = k;
+            row.appendChild(b);
+          }
+          meta.appendChild(row);
+        }
+      }
+      wrap.appendChild(meta);
+      mount.appendChild(wrap);
+    }
+  }
+  // Wire up search
+  const input = document.getElementById("pub-search");
+  const clear = document.getElementById("pub-clear");
+  const counter = document.getElementById("pub-count");
+  if (input) {
+    const update = () => {
+      const q = input.value.trim();
+      const terms = tokenize(q);
+      let visible = 0;
+      const itemsByYear = new Map();
+      let currentYear = null;
+      const children = Array.from(mount.children);
+      for (const el of children) {
+        if (el.classList.contains("pub-year")) { currentYear = el; itemsByYear.set(currentYear, []); }
+        else if (el.classList.contains("pub-item")) { if (currentYear) itemsByYear.get(currentYear).push(el); }
+      }
+      for (const [header, items] of itemsByYear.entries()) {
+        let yearVisible = 0;
+        for (const it of items) {
+          const text = it.dataset.search || "";
+          const ok = terms.length ? matches(text, terms) : true;
+          it.style.display = ok ? "" : "none";
+          if (ok) { visible++; yearVisible++; }
+        }
+        header.style.display = yearVisible ? "" : "none";
+      }
+      if (counter) counter.textContent = visible ? `${visible} result${visible===1?'':'s'}` : "No results";
+    };
+    const deb = debounce(update, 120);
+    input.addEventListener("input", deb);
+    if (clear) clear.addEventListener("click", ()=>{ input.value=""; input.focus(); deb(); });
+    const params = new URLSearchParams(location.search);
+    if (params.has("q")) { input.value = params.get("q"); }
+    update();
+  }
+}
+
+window.addEventListener("DOMContentLoaded", function(){
+  const text = (window.BIBTEX_RAW || "").trim();
+  const entries = parseBibtex(text);
+  render(entries);
+});
+</script></body>
 </html>
