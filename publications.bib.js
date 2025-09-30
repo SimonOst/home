@@ -1,5 +1,4 @@
 window.BIBTEX_RAW = String.raw`
-
 @inproceedings{oguz_find-2-find_2023,
 	location = {Singapore},
 	title = {Find-2-Find: Multitask Learning for Anaphora Resolution and Object Localization},
@@ -21,7 +20,7 @@ window.BIBTEX_RAW = String.raw`
 
 @inproceedings{baeumel_investigating_2023,
 	location = {Singapore},
-	title = {Investigating the Encoding of Words in {BERT}`s Neurons Using Feature Textualization},
+	title = {Investigating the Encoding of Words in {BERT}'s Neurons Using Feature Textualization},
 	url = {https://aclanthology.org/2023.blackboxnlp-1.20/},
 	doi = {10.18653/v1/2023.blackboxnlp-1.20},
 	abstract = {Pretrained language models ({PLMs}) form the basis of most state-of-the-art {NLP} technologies. Nevertheless, they are essentially black boxes: Humans do not have a clear understanding of what knowledge is encoded in different parts of the models, especially in individual neurons. A contrast is in computer vision, where feature visualization provides a decompositional interpretability technique for neurons of vision models. Activation maximization is used to synthesize inherently interpretable visual representations of the information encoded in individual neurons. Our work is inspired by this but presents a cautionary tale on the interpretability of single neurons, based on the first large-scale attempt to adapt activation maximization to {NLP}, and, more specifically, large {PLMs}. We propose feature textualization, a technique to produce dense representations of neurons in the {PLM} word embedding space. We apply feature textualization to the {BERT} model to investigate whether the knowledge encoded in individual neurons can be interpreted and symbolized. We find that the produced representations can provide insights about the knowledge encoded in individual neurons, but that individual neurons do not represent clear-cut symbolic units of language such as words. Additionally, we use feature textualization to investigate how many neurons are needed to encode words in {BERT}.},
@@ -33,7 +32,7 @@ window.BIBTEX_RAW = String.raw`
 	date = {2023-12},
 	note = {bert\_neurons.jpg},
 	keywords = {{BlackBox}},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/QLC6YLID/Baeumel et al. - 2023 - Investigating the Encoding of Words in BERT`s Neur.pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/QLC6YLID/Baeumel et al. - 2023 - Investigating the Encoding of Words in BERT's Neur.pdf:application/pdf},
 }
 
 @inproceedings{rehm_common_2024,
