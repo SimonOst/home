@@ -527,8 +527,6 @@ window.BIBTEX_RAW = String.raw`
 @inproceedings{baeumel_disentangling_2025,
 	title = {Disentangling {Mathematical} {Reasoning} in {LLMs}: {A} {Methodological} {Investigation} of {Internal} {Mechanisms}},
 	shorttitle = {Disentangling {Mathematical} {Reasoning}},
-	doi = {10.48550/arXiv.2502.19981},
-	urldate = {2025-08-22},
 	booktitle = {Accepted at the 3rd {Workshop} on {Mathematical} {Natural} {Language} {Processing}},
 	author = {Baeumel, Tanja and Genabith, Josef van and Ostermann, Simon},
 	month = nov,
@@ -536,7 +534,7 @@ window.BIBTEX_RAW = String.raw`
 	note = {disentangling.jpg},
 	keywords = {MathNLP},
 	annote = {Comment: Pre-print},
-	file = {Preprint PDF:/Users/sios01-admin/Zotero/storage/SM873RWL/Baeumel et al. - 2025 - The Lookahead Limitation Why Multi-Operand Additi.pdf:application/pdf;Snapshot:/Users/sios01-admin/Zotero/storage/2PMG25I8/2502.html:text/html},
+	url = {},
 }
 
 @inproceedings{baeumel_lookahead_2025,
