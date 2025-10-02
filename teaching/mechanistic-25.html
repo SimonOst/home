@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminar: Recent Advances in Mechanistic Interpretability</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header class="bg-dark text-white py-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <h1 class="h3 mb-0">Simon Ostermann</h1>
+            <a href="http://www.dfki.de"><img src="../images/dfki.png" alt="DFKI" class="affiliation-img" style="max-height: 100px; object-fit: contain;"></a>
+        </div>
+    </header>
+    <main class="container my-4">
+        <section class="mb-5">
+            <h2 class="text-secondary">Seminar: Recent Advances in Mechanistic Interpretability</h2>
+            <strong><h4>Tuesday 14:15–15:45, Room 1.14</h4></strong>
+            <h6>Dr. Simon Ostermann, Yusser al Ghussin</h6>
+            <h6>Deutsches Forschungszentrum für Künstliche Intelligenz (DFKI)</h6>
+
+            <h5>If you would like to participate, please drop an email to <i>mechanistic-interpretability-seminar@googlegroups.com</i><br><strong> until Oct 16 (23:59)</strong>.</h5>
+            In your email, please:
+            <ul>
+                <li>Give your name, semester, study program</li>
+                <li>Write a few words on why you want to take part in this course</li>
+                <li>List some of your previous experience:
+                    <ul>
+                        <li>your background in <strong>deep learning or machine learning</strong></li>
+                        <li>your background in <strong>natural language processing in general</strong></li>
+                        <li>in case you have it: Any previous exposure to interpretability or explainability methods</strong></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Prerequisites</h3>
+            <p>
+                This seminar is primarily targeted at Master students, but is also open to advanced Bachelor students. We expect you to have a curious mind and advanced familiarity with large language models. At the very least, we expect all students to have read (and understood :-)) the <a href = "https://arxiv.org/pdf/1810.04805.pdf" >BERT paper</a> and the <a href = "https://arxiv.org/pdf/1706.03762.pdf" >Transformer paper</a>.
+            </p>
+
+            <h3> Seminar Content </h3>
+            <p>
+                The rise of deep learning in AI has dramatically increased the performance of models across many sub-fields such as natural language processing or computer vision. In the last 5 years, large pretrained language models (LLMs) and their variants (BERT, ChatGPT etc.) have changed the NLP landscape drastically. Such models got larger and larger over the last years, reaching  increasingly impressive performance peeks, sometimes even surpassing humans.
+            </p>
+            <p>
+                A central issue with deep learning models with millions or billions of parameters is that they are essentially <strong>black boxes</strong>: From the model's parameters, it is not inherently clear why a model exhibits a certain behavior or makes certain classification decision. The rapidly growing field of interpretable and explainable AI (XAI) develops methods to peek into the black box that LLMs are, trying to understand the inner workings of such large models.
+            </p>
+            <p>
+                In this seminar we will investiagte a subfield in XAI, namely Mechanistic Interpretability (MI). MI aims to understand and explain the internal workings of complex machine learning models, in particular deep neural networks, by "reverse-engineering" internal mechanisms and computations inside a network's parameters. This involves analysing how certain mechanisms in the model contribute to decisions and results. The aim is to break down the ‘black box’ nature of these models and reveal the underlying calculations and internal representations that lead to predictions or behaviours.
+            </p>
+            <p>
+                We will concentrate on a range of basic methods in MI and then focus on their applications within natural language processing.
+            </p>
+
+            <h3> List of relevant Papers and Topics (subject to changes) </h3>
+            <h4>Mechanistic Interpretability Methods</h4>
+            <ul>
+                <li>Vig et al. (2020) – Causal Mediation Analysis for Interpreting Neural NLP: The Case of Gender Bias | <a href='https://proceedings.neurips.cc/paper/2020/hash/92650b2e92217715fe312e6fa7b90d82-Abstract.html'>paper</a></li>
+                <li>Nostalgebraist (2020) - Interpreting GPT: the logit lens | <a href='https://www.lesswrong.com/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens'>blog post</a></li>
+                <li>Geiger et al. (2021) – Causal Abstractions of Neural Networks | <a href='https://arxiv.org/abs/2106.02997'>paper</a></li>
+                <li>Goldowsky-Dill et al. (2023) – Localizing Model Behavior with Path Patching | <a href='https://arxiv.org/abs/2304.05969'>paper</a></li>
+                <li>Conmy et al. (2023) – Towards Automated Circuit Discovery for Mechanistic Interpretability | <a href='https://arxiv.org/abs/2304.14997'>paper</a></li>
+            </ul>
+            <h4>Findings of Mechanistic Interpretability</h4>
+            <ul>
+                <li>Wang et al. (2023) – Interpretability in the Wild: a Circuit for Indirect Object Identification in GPT-2 small | <a href='https://arxiv.org/abs/2211.00593'>paper</a></li>
+                <li>Hanna et al. (2023) – How does GPT-2 compute greater-than?: Interpreting mathematical abilities in a pre-trained language model | <a href='https://arxiv.org/abs/2305.00586'>paper</a></li>
+                <li>Prakash et al. (2024) – Fine-Tuning Enhances Existing Mechanisms: A Case Study on Entity Tracking | <a href='https://arxiv.org/abs/2402.14811'>paper</a></li>
+                <li>Merullo et al. (2024) – Circuit Component Reuse Across Tasks in Transformer Language Models | <a href='https://arxiv.org/abs/2310.08744'>paper</a></li>
+                <li>Nanda et al. (2023) – Progress measures for grokking via mechanistic interpretability | <a href='https://arxiv.org/abs/2301.05217'>paper</a></li>
+                <li>Geva et al. (2023) - Dissecting Recall of Factual Associations in Auto-Regressive Language Models – Geva et al. (2023) | <a href='https://arxiv.org/abs/2304.14767'>paper</a></li>
+                <li>Merullo et al. (2024) - Talking Heads: Understanding Inter-layer Communication in Transformer Language Models | <a href='https://arxiv.org/abs/2406.09519'>paper</a></li>
+                <li>Gould et al. (2024) – Successor Heads: Recurring, Interpretable Attention Heads In The Wild | <a href='https://arxiv.org/abs/2312.09230'>paper</a></li>
+                <li>McDougall et al. (2024) – Copy Suppression: Comprehensively Understanding an Attention Head | <a href='https://arxiv.org/abs/2310.04625'>paper</a></li>
+                <li>Gurnee et al. (2023) – FINDING NEURONS IN A HAYSTACK: CASE STUDIES WITH SPARSE PROBING | <a href='https://arxiv.org/pdf/2305.01610'>paper</a></li>
+                <li>Geva et al. (2022) - Transformer Feed-Forward Layers Are Key-Value Memories | <a href='https://arxiv.org/abs/2012.14913'>paper</a></li>
+                <li>Todd et al. (2024) – Function Vectors in Large Language Models | <a href='https://arxiv.org/abs/2310.15213'>paper</a></li>
+                <li>Nanda et al. (2022) – Emergent Linear Representations in World Models of Self-Supervised Sequence Models | <a href='https://arxiv.org/abs/2309.00941'> paper </a></li>
+                <li>Dai et al. (2022) - Knowledge Neurons in Pretrained Transformers | <a href="https://arxiv.org/abs/2104.08696"> paper </a> </li>
+                <li>Geva et al. (2022) - Transformer feed-forward layers build predictions by promoting concepts in the vocabulary space | <a href="https://arxiv.org/abs/2203.14680"> paper </a> </li>
+                <li>Geva et al. (2024) - Do Large Language Models Latently Perform Multi-Hop Reasoning? | <a href="https://arxiv.org/abs/2402.16837"> paper </a> </li>
+                <li>Mueller et al. (2025) - Arithmetic without algorithms: Language models solve math with a bag of heuristics | <a href="https://arxiv.org/abs/2410.21272"> paper </a> </li>
+                <li>Arditi et al. (2025) - Refusal in Language Models Is Mediated by a Single Direction | <a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/f545448535dfde4f9786555403ab7c49-Abstract-Conference.html"> paper </a> </li>
+            </ul>
+            <h4>Model Editing Editing, Knowledge Location and Extraction</h4>
+            <ul>
+                <li>Cohen et al. (2023) - Crawling The Internal Knowledge-Base of Language Models | <a href='https://arxiv.org/abs/2301.12810'> paper </a> </li>
+                <li>Meng et al. (2022) - Locating and Editing Factual Associations in GPT | <a href='https://arxiv.org/abs/2202.05262'> paper </a> </li>
+                <li>Hase et al. (2023) - Does Localization Inform Editing? Surprising Differences in Causality-Based Localization vs. Knowledge Editing in Language Models | <a href='https://arxiv.org/abs/2301.04213'> paper </a> </li>
+                <li>Chintam et al. (2023) - Identifying and Adapting Transformer-Components Responsible for Gender Bias in an English Language Model | <a href='https://aclanthology.org/2023.blackboxnlp-1.29/'> paper </a> </li>
+                <li>Cohen et al. (2023) - Evaluating the Ripple Effects of Knowledge Editing in Language Models | <a href='https://arxiv.org/abs/2307.12976'> paper </a></li>
+                <li>Hartvigsen et al. (2022) - Aging with GRACE: Lifelong Model Editing with Discrete Key-Value Adaptors | <a href='https://arxiv.org/abs/2211.11031'> paper </a> </li>
+            </ul>
+
+            <h4>Sparse Autoencoders and Monosemanticity</h4>
+            <ul>
+                <li>Towards Monosemanticity: Decomposing Language Models With Dictionary Learning (2023) | <a href='https://transformer-circuits.pub/2023/monosemantic-features'> blog post </a> </li>
+                <li>Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet (2024) | <a href='https://transformer-circuits.pub/2024/scaling-monosemanticity/'> blog post </a> </li>
+                <li>Marks et al. (2024) - Sparse Feature Circuits: Discovering and Editing Interpretable Causal Graphs in Language Models | <a href='https://arxiv.org/abs/2403.19647'> paper </a> </li>
+                <li>Kissane et al. (2024) - Interpreting Attention Layer Outputs with Sparse Autoencoders | <a href='https://arxiv.org/abs/2406.17759'> paper </a> </li>
+                <li>Arad et al. (2025) - SAEs Are Good for Steering -- If You Select the Right Features | <a href='https://arxiv.org/abs/2505.20063'> paper </a> </li>
+                <li>Wu et al. (2024) - AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders  | <a href='https://arxiv.org/abs/2501.17148'> paper </a> </li>
+            </ul>
+            
+            <font size="-1"><p>Some words on grading: This seminar is meant to be as interactive as possible. Final grades will be based on students' presentations, term papers (optional), but also on participation and discussion in class.</p>
+            <p>The participants are expected to prepare for classes accordingly, by reading the relevant papers and also doing background reading, if necessary. Based on this preparation, the participants should be able to discuss the presented papers in depth and to understand relevant context during the discussion.</p></font>
+
+            <p><a href="../index.html#teaching" class="btn btn-secondary mt-3">Back to Main Page</a></p>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Simon Ostermann. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
