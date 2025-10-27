@@ -262,6 +262,8 @@ Interim chair holder for <i>translation-oriented language technologies</i> @ <a 
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
+
+
       function injectEnhancementsIntoPapers() {
         const papers = document.querySelectorAll(".bibbase_paper");
 
@@ -379,6 +381,28 @@ function monthToNum(m){
   if (map[tri]) return map[tri];
   return 0;
 }
+
+// Turn "2025-11-01", "2025-07", "2024-05", "2020" into a Date
+function parseFlexibleDate(raw) {
+  if (!raw) return null;
+  let txt = String(raw).trim();
+
+  // If it's just YYYY, or YYYY-MM, pad it so Date() is well-defined.
+  if (/^\d{4}$/.test(txt)) {
+    // "2025" -> "2025-01-01"
+    txt = txt + "-01-01";
+  } else if (/^\d{4}-\d{2}$/.test(txt)) {
+    // "2025-07" -> "2025-07-01"
+    txt = txt + "-01";
+  }
+
+  // Now txt should look like YYYY-MM-DD.
+  // Force UTC so we don't get timezone shifts.
+  const d = new Date(txt + "T00:00:00Z");
+  if (isNaN(d.getTime())) return null;
+  return d;
+}
+
 function parseBibtex(text) {
   const entries = [];
   const chunks = text.split(/(?=@[a-zA-Z]+\s*[\{(])/g).filter(s => s.trim().startsWith('@'));
@@ -398,8 +422,45 @@ function parseBibtex(text) {
     }
     fields.type = type.toLowerCase();
     fields.citekey = citekey;
-    fields._month = monthToNum(fields.month);
+
+    // legacy fallback values
+    const legacyMonthNum = monthToNum(fields.month);
+    const legacyDayNum = parseInt(fields.day || "1", 10) || 1;
+    const legacyYearNum = parseInt(fields.year || "0", 10) || 0;
+
+    // --- NEW DATE LOGIC ---
+    // Prefer the new `date = {YYYY[-MM[-DD]]}` field from publications.bib.js
+    let dObj = parseFlexibleDate(fields.date);
+
+    // Fallback to old year/month/day if no `date`
+    if (!dObj) {
+      if (legacyYearNum > 0) {
+        const mNum = legacyMonthNum || 1;
+        const dNum = legacyDayNum || 1;
+        dObj = new Date(Date.UTC(legacyYearNum, mNum - 1, dNum));
+      } else {
+        dObj = null;
+      }
+    }
+
+    // Store for later sorting
+    fields._dateObj = dObj;
+
+    // Derive the year we’ll display/group by.
+    // Use the parsed date first, fall back to old `year` if needed.
+    if (dObj) {
+      fields._year = String(dObj.getUTCFullYear());
+    } else {
+      fields._year = fields.year || "Unknown";
+    }
+
+    // Keep old fields (not strictly needed for sorting now,
+    // but doesn't hurt if other code still touches them)
+    fields._month = legacyMonthNum;
+    fields._day = legacyDayNum;
+
     entries.push(fields);
+
   }
   return entries;
 }
@@ -435,16 +496,33 @@ function venueLine(e) {
 }
 function byYear(entries) {
   const map = new Map();
+
+  // group by derived _year
   for (const e of entries) {
-    const y = e.year || "Unknown";
+    const y = e._year || "Unknown";
     if (!map.has(y)) map.set(y, []);
     map.get(y).push(e);
   }
-  // Sort within each year by month (desc), then title
-  for (const arr of map.values()) arr.sort((a,b)=> (b._month||0)-(a._month||0) || (a.title||"").localeCompare(b.title||""));
-  // Sort years desc
-  return Array.from(map.entries()).sort((a,b) => (parseInt(b[0])||0) - (parseInt(a[0])||0));
+
+  // sort inside each year: newest date first.
+  for (const arr of map.values()) {
+    arr.sort((a, b) => {
+      const ad = a._dateObj ? a._dateObj.getTime() : 0;
+      const bd = b._dateObj ? b._dateObj.getTime() : 0;
+      if (bd !== ad) return bd - ad; // newer first
+      // tie-breaker: alphabetical by title
+      return (a.title || "").localeCompare(b.title || "");
+    });
+  }
+
+  // finally sort the years themselves descending
+  return Array.from(map.entries()).sort((a,b) => {
+    const ya = parseInt(a[0]) || 0;
+    const yb = parseInt(b[0]) || 0;
+    return yb - ya;
+  });
 }
+
 // Search helpers
 function buildSearchText(e) {
   const fields = [e.title, e.author, e.authors, venueLine(e), e.keywords, e.abstract];
