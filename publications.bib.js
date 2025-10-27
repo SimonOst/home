@@ -1,5 +1,6 @@
 window.BIBTEX_RAW = String.raw`
 
+
 @inproceedings{oguz_find-2-find_2023,
 	address = {Singapore},
 	title = {Find-2-{Find}: {Multitask} {Learning} for {Anaphora} {Resolution} and {Object} {Localization}},
@@ -34,6 +35,7 @@ window.BIBTEX_RAW = String.raw`
 	note = {bert\_neurons.jpg},
 	keywords = {BlackBoxNLP},
 	pages = {261--270},
+	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/QLC6YLID/Baeumel et al. - 2023 - Investigating the Encoding of Words in BERT's Neur.pdf:application/pdf},
 }
 
 @inproceedings{rehm_common_2024,
@@ -474,12 +476,14 @@ window.BIBTEX_RAW = String.raw`
 
 @inproceedings{wang_multilingual_2025,
 	title = {Multilingual {Datasets} for {Custom} {Input} {Extraction} and {Explanation} {Requests} {Parsing} in {Conversational} {XAI} {Systems}},
+	url = {https://arxiv.org/abs/2508.14982},
 	abstract = {Conversational explainable artificial intelligence (ConvXAI) systems based on large language models (LLMs) have garnered considerable attention for their ability to enhance user comprehension through dialogue-based explanations. Current ConvXAI systems are often based on intent recognition to accurately identify the user’s desired intention and map it to an explainability method. While such methods offer great precision and reliability in discerning users’ underlying intentions for English, a significant challenge in the scarcity of training data persists, which impedes multilingual generalization. Besides, the support for free-form custom inputs, which are user-defined data distinct from pre-configured dataset instances, remains largely limited. To bridge these gaps, we first introduce MultiCoXQL, a multilingual extension of the CoXQL dataset spanning five typologically diverse languages, including one low-resource language. Subsequently, we propose a new parsing approach aimed at enhancing multilingual parsing performance, and evaluate three LLMs on MultiCoXQL using various parsing strategies. Furthermore, we present Compass, a new multilingual dataset designed for custom input extraction in ConvXAI systems, encompassing 11 intents across the same five languages as MultiCoXQL1. We conduct monolingual, cross-lingual, and multilingual evaluations on Compass, employing three LLMs of varying sizes alongside BERT-type models.},
 	language = {en},
 	booktitle = {Accepted for {Findings} of {EMNLP} 2025},
 	author = {Wang, Qianli and Anikina, Tatiana and Feldhus, Nils and Ostermann, Simon and Splitt, Fedor and Li, Jiaao and Tsoneva, Yoana and Möller, Sebastian and Schmitt, Vera},
 	month = oct,
 	year = {2025},
+	note = {multicoxql.jpg},
 	keywords = {EMNLP},
 	file = {Wang et al. - Multilingual Datasets for Custom Input Extraction .pdf:/Users/sios01-admin/Zotero/storage/W96BGNDT/Wang et al. - Multilingual Datasets for Custom Input Extraction .pdf:application/pdf},
 }
@@ -527,6 +531,7 @@ window.BIBTEX_RAW = String.raw`
 @inproceedings{baeumel_disentangling_2025,
 	title = {Disentangling {Mathematical} {Reasoning} in {LLMs}: {A} {Methodological} {Investigation} of {Internal} {Mechanisms}},
 	shorttitle = {Disentangling {Mathematical} {Reasoning}},
+	urldate = {2025-08-22},
 	booktitle = {Accepted at the 3rd {Workshop} on {Mathematical} {Natural} {Language} {Processing}},
 	author = {Baeumel, Tanja and Genabith, Josef van and Ostermann, Simon},
 	month = nov,
@@ -534,7 +539,7 @@ window.BIBTEX_RAW = String.raw`
 	note = {disentangling.jpg},
 	keywords = {MathNLP},
 	annote = {Comment: Pre-print},
-	url = {},
+	file = {Preprint PDF:/Users/sios01-admin/Zotero/storage/SM873RWL/Baeumel et al. - 2025 - The Lookahead Limitation Why Multi-Operand Additi.pdf:application/pdf;Snapshot:/Users/sios01-admin/Zotero/storage/2PMG25I8/2502.html:text/html},
 }
 
 @inproceedings{baeumel_lookahead_2025,
@@ -550,6 +555,68 @@ window.BIBTEX_RAW = String.raw`
 	year = {2025},
 	note = {lookahead.jpg},
 	keywords = {BlackBoxNLP},
+}
+
+@inproceedings{baeumel_modular_2025,
+	title = {Modular {Arithmetic}: {Language} {Models} {Solve} {Math} {Digit} by {Digit}},
+	url = {https://arxiv.org/abs/2508.02513},
+	abstract = {While recent work has begun to uncover the internal strategies that Large Language Models (LLMs) employ for simple arithmetic tasks, a unified understanding of their underlying mechanisms is still lacking. We extend recent findings showing that LLMs represent numbers in a digit-wise manner and present evidence for the existence of digit-position-specific circuits that LLMs use to perform simple arithmetic tasks, i.e. modular subgroups of MLP neurons that operate independently on different digit positions (units, tens, hundreds). Notably, such circuits exist independently of model size and of tokenization strategy, i.e. both for models that encode longer numbers digit-by-digit and as one token. Using Feature Importance and Causal Interventions, we identify and validate the digit-position-specific circuits, revealing a compositional and interpretable structure underlying the solving of arithmetic problems in LLMs. Our interventions selectively alter the model's prediction at targeted digit positions, demonstrating the causal role of digit-position circuits in solving arithmetic tasks.},
+	urldate = {2025-10-27},
+	booktitle = {Accepted at the {International} {Joint} {Conference} on {Natural} {Language} {Processing} \& {Asia}-{Pacific} {Chapter} of the {Association} for {Computational} {Linguistics}, 2025 ({Findings})},
+	author = {Baeumel, Tanja and Gurgurov, Daniil and Ghussin, Yusser al and Genabith, Josef van and Ostermann, Simon},
+	month = dec,
+	year = {2025},
+	note = {modulararithmetics.jpg},
+	keywords = {IJCNLP},
+	file = {Preprint PDF:/Users/sios01-admin/Zotero/storage/2BYZT7PW/Baeumel et al. - 2025 - Modular Arithmetic Language Models Solve Math Digit by Digit.pdf:application/pdf;Snapshot:/Users/sios01-admin/Zotero/storage/HKBYTVQM/2508.html:text/html},
+}
+
+@inproceedings{gurgurov_language_2025,
+	title = {Language {Arithmetics}: {Towards} {Systematic} {Language} {Neuron} {Identification} and {Manipulation}},
+	url = {http://arxiv.org/abs/2507.22608},
+	abstract = {Large language models (LLMs) exhibit strong multilingual abilities, yet the neural mechanisms behind language-specific processing remain unclear. We analyze language-specific neurons in Llama-3.1-8B, Mistral-Nemo-12B, and Aya-Expanse-8B \& 32B across 21 typologically diverse languages, identifying neurons that control language behavior. Using the Language Activation Probability Entropy (LAPE) method, we show that these neurons cluster in deeper layers, with non-Latin scripts showing greater specialization. Related languages share overlapping neurons, reflecting internal representations of linguistic proximity. Through language arithmetics, i.e. systematic activation addition and multiplication, we steer models to deactivate unwanted languages and activate desired ones, outperforming simpler replacement approaches. These interventions effectively guide behavior across five multilingual tasks: language forcing, translation, QA, comprehension, and NLI. Manipulation is more successful for high-resource languages, while typological similarity improves effectiveness. We also demonstrate that cross-lingual neuron steering enhances downstream performance and reveal internal "fallback" mechanisms for language selection when neurons are progressively deactivated. Our code is made publicly available at https://github.com/d-gurgurov/Language-Neurons-Manipulation.},
+	urldate = {2025-10-27},
+	booktitle = {Accepted at the {International} {Joint} {Conference} on {Natural} {Language} {Processing} \& {Asia}-{Pacific} {Chapter} of the {Association} for {Computational} {Linguistics}, 2025 ({Main})},
+	author = {Gurgurov, Daniil and Trinley, Katharina and Ghussin, Yusser Al and Baeumel, Tanja and Genabith, Josef van and Ostermann, Simon},
+	month = dec,
+	year = {2025},
+	note = {langarithmetics.jpg},
+	keywords = {IJCNLP},
+	annote = {Comment: preprint},
+	file = {Preprint PDF:/Users/sios01-admin/Zotero/storage/E5LDQ2DK/Gurgurov et al. - 2025 - Language Arithmetics Towards Systematic Language Neuron Identification and Manipulation.pdf:application/pdf;Snapshot:/Users/sios01-admin/Zotero/storage/KXTWVV5L/2507.html:text/html},
+}
+
+@inproceedings{gurgurov_multilingual_2025,
+	title = {Multilingual {Political} {Views} of {Large} {Language} {Models}: {Identification} and {Steering}},
+	url = {http://arxiv.org/abs/2507.22623},
+	doi = {10.48550/arXiv.2507.22623},
+	abstract = {Large language models (LLMs) are increasingly used in everyday tools and applications, raising concerns about their potential influence on political views. While prior research has shown that LLMs often exhibit measurable political biases--frequently skewing toward liberal or progressive positions--key gaps remain. Most existing studies evaluate only a narrow set of models and languages, leaving open questions about the generalizability of political biases across architectures, scales, and multilingual settings. Moreover, few works examine whether these biases can be actively controlled. In this work, we address these gaps through a large-scale study of political orientation in modern open-source instruction-tuned LLMs. We evaluate seven models, including LLaMA-3.1, Qwen-3, and Aya-Expanse, across 14 languages using the Political Compass Test with 11 semantically equivalent paraphrases per statement to ensure robust measurement. Our results reveal that larger models consistently shift toward libertarian-left positions, with significant variations across languages and model families. To test the manipulability of political stances, we utilize a simple center-of-mass activation intervention technique and show that it reliably steers model responses toward alternative ideological positions across multiple languages. Our code is publicly available at https://github.com/d-gurgurov/Political-Ideologies-LLMs.},
+	urldate = {2025-10-27},
+	booktitle = {Accepted at the {International} {Joint} {Conference} on {Natural} {Language} {Processing} \& {Asia}-{Pacific} {Chapter} of the {Association} for {Computational} {Linguistics}, 2025 ({Findings})},
+	publisher = {arXiv},
+	author = {Gurgurov, Daniil and Trinley, Katharina and Vykopal, Ivan and Genabith, Josef van and Ostermann, Simon and Zamparelli, Roberto},
+	month = dec,
+	year = {2025},
+	note = {political.jpg},
+	keywords = {IJCNLP},
+	annote = {Comment: pre-print},
+	file = {Preprint PDF:/Users/sios01-admin/Zotero/storage/BIKBARRZ/Gurgurov et al. - 2025 - Multilingual Political Views of Large Language Models Identification and Steering.pdf:application/pdf;Snapshot:/Users/sios01-admin/Zotero/storage/XRXI6343/2507.html:text/html},
+}
+
+@inproceedings{mikaberidze_cross-prompt_2025,
+	title = {Cross-{Prompt} {Encoder} for {Low}-{Performing} {Languages}},
+	url = {http://arxiv.org/abs/2508.10352},
+	doi = {10.48550/arXiv.2508.10352},
+	abstract = {Soft prompts have emerged as a powerful alternative to adapters in parameter-efficient fine-tuning (PEFT), enabling large language models (LLMs) to adapt to downstream tasks without architectural changes or parameter updates. While prior work has focused on stabilizing training via parameter interaction in small neural prompt encoders, their broader potential for transfer across languages remains unexplored. In this paper, we demonstrate that a prompt encoder can play a central role in improving performance on low-performing languages-those that achieve poor accuracy even under full-model fine-tuning. We introduce the Cross-Prompt Encoder (XPE), which combines a lightweight encoding architecture with multi-source training on typologically diverse languages - a design that enables the model to capture abstract and transferable patterns across languages. To complement XPE, we propose a Dual Soft Prompt mechanism that combines an encoder-based prompt with a directly trained standard soft prompt. This hybrid design proves especially effective for target languages that benefit from both broadly shared structure and language-specific alignment. Experiments on the SIB-200 benchmark reveal a consistent trade-off: XPE is most effective for low-performing languages, while hybrid variants offer broader adaptability across multilingual settings.},
+	urldate = {2025-10-27},
+	booktitle = {Accepted at the {International} {Joint} {Conference} on {Natural} {Language} {Processing} \& {Asia}-{Pacific} {Chapter} of the {Association} for {Computational} {Linguistics}, 2025 ({Findings})},
+	publisher = {arXiv},
+	author = {Mikaberidze, Beso and Saghinadze, Teimuraz and Ostermann, Simon and Muller, Philipp},
+	month = dec,
+	year = {2025},
+	note = {crossprompt.jpg},
+	keywords = {IJCNLP},
+	file = {Preprint PDF:/Users/sios01-admin/Zotero/storage/QS6PZ5W5/Mikaberidze et al. - 2025 - Cross-Prompt Encoder for Low-Performing Languages.pdf:application/pdf;Snapshot:/Users/sios01-admin/Zotero/storage/K8EK63DS/2508.html:text/html},
 }
 
 
