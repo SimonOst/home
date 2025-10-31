@@ -602,6 +602,21 @@ window.BIBTEX_RAW = String.raw`
 	file = {Preprint PDF:/Users/sios01-admin/Zotero/storage/QS6PZ5W5/Mikaberidze et al. - 2025 - Cross-Prompt Encoder for Low-Performing Languages.pdf:application/pdf;Snapshot:/Users/sios01-admin/Zotero/storage/K8EK63DS/2508.html:text/html},
 }
 
+@inproceedings{gurgurov_multilingual_2025-1,
+	title = {On Multilingual Encoder Language Model Compression for Low-Resource Languages},
+	url = {http://arxiv.org/abs/2505.16956},
+	doi = {10.48550/arXiv.2505.16956},
+	abstract = {In this paper, we combine two-step knowledge distillation, structured pruning, truncation, and vocabulary trimming for extremely compressing multilingual encoder-only language models for low-resource languages. Our novel approach systematically combines existing techniques and takes them to the extreme, reducing layer depth, feed-forward hidden size, and intermediate layer embedding size to create significantly smaller monolingual models while retaining essential language-specific knowledge. We achieve compression rates of up to 92\% with only a marginal performance drop of 2-10\% in four downstream tasks, including sentiment analysis, topic classification, named entity recognition, and part-of-speech tagging, across three low-resource languages. Notably, the performance degradation correlates with the amount of language-specific data in the teacher model, with larger datasets resulting in smaller performance losses. Additionally, we conduct extensive ablation studies to identify best practices for multilingual model compression using these techniques.},
+	booktitle = {Accepted at the International Joint Conference on Natural Language Processing \& Asia-Pacific Chapter of the Association for Computational Linguistics, 2025 (Student Research Workshop)},
+	publisher = {{arXiv}},
+	author = {Gurgurov, Daniil and Gregor, Michal and Genabith, Josef van and Ostermann, Simon},
+	urldate = {2025-10-31},
+	date = {2025-11},
+	note = {compression.jpg},
+	keywords = {{IJCNLP}-{SRW}},
+	annotation = {Comment: Pre-print},
+	file = {Preprint PDF:/Users/sios01-admin/Zotero/storage/77CAXGYU/Gurgurov et al. - 2025 - On Multilingual Encoder Language Model Compression for Low-Resource Languages.pdf:application/pdf;Snapshot:/Users/sios01-admin/Zotero/storage/Z6ZFPLXD/2505.html:text/html},
+}
 
 
 `;
