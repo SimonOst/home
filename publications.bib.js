@@ -17,7 +17,7 @@ window.BIBTEX_RAW = String.raw`
 	date = {2023-12},
 	note = {f2f.jpg},
 	keywords = {{EMNLP}},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/PXGQQHKK/Oguz et al. - 2023 - Find-2-Find Multitask Learning for Anaphora Resol.pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/PXGQQHKK/Oguz et al. - 2023 - Find-2-Find Multitask Learning for Anaphora Resol.pdf:application/pdf},
 }
 
 @inproceedings{baeumel_investigating_2023,
@@ -32,9 +32,9 @@ window.BIBTEX_RAW = String.raw`
 	author = {Baeumel, Tanja and Vijayakumar, Soniya and van Genabith, Josef and Neumann, Guenter and Ostermann, Simon},
 	urldate = {2025-05-22},
 	date = {2023-12},
-	note = {bert\_neurons.jpg},
+	note = {bert-neurons.jpg},
 	keywords = {{BlackBoxNLP}},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/QLC6YLID/Baeumel et al. - 2023 - Investigating the Encoding of Words in BERT's Neur.pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/QLC6YLID/Baeumel et al. - 2023 - Investigating the Encoding of Words in BERT's Neur.pdf:application/pdf},
 }
 
 @inproceedings{rehm_common_2024,
@@ -51,7 +51,7 @@ window.BIBTEX_RAW = String.raw`
 	date = {2024-05},
 	note = {lds.jpg},
 	keywords = {Coling},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/TZITTVGA/Rehm et al. - 2024 - Common European Language Data Space.pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/TZITTVGA/Rehm et al. - 2024 - Common European Language Data Space.pdf:application/pdf},
 }
 
 @inproceedings{srinivasagan_hybridbert_2024,
@@ -68,7 +68,7 @@ window.BIBTEX_RAW = String.raw`
 	date = {2024-06},
 	note = {hybridbert.jpg},
 	keywords = {{NAACL}-{SRW}},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/PSQT6Y2U/Srinivasagan und Ostermann - 2024 - HybridBERT - Making BERT Pretraining More Efficien.pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/PSQT6Y2U/Srinivasagan und Ostermann - 2024 - HybridBERT - Making BERT Pretraining More Efficien.pdf:application/pdf},
 }
 
 @inproceedings{wang_coxql_2024,
@@ -87,7 +87,7 @@ window.BIBTEX_RAW = String.raw`
 	date = {2024-11},
 	note = {coxql.jpg},
 	keywords = {{EMNLP}},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/2UNURE7Z/Wang et al. - 2024 - CoXQL A Dataset for Parsing Explanation Requests .pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/2UNURE7Z/Wang et al. - 2024 - CoXQL A Dataset for Parsing Explanation Requests .pdf:application/pdf},
 }
 
 @inproceedings{gurgurov_adapting_2024,
@@ -103,7 +103,7 @@ window.BIBTEX_RAW = String.raw`
 	urldate = {2025-05-22},
 	date = {2024-08},
 	keywords = {{KaLLM}},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/VIZY4KBI/Gurgurov et al. - 2024 - Adapting Multilingual LLMs to Low-Resource Languag.pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/VIZY4KBI/Gurgurov et al. - 2024 - Adapting Multilingual LLMs to Low-Resource Languag.pdf:application/pdf},
 }
 
 @inproceedings{vykopal_soft_2025,
@@ -121,7 +121,7 @@ window.BIBTEX_RAW = String.raw`
 	date = {2025-04},
 	note = {softprompts.png},
 	keywords = {{NAACL}},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/K38LKVSW/Vykopal et al. - 2025 - Soft Language Prompts for Language Transfer.pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/K38LKVSW/Vykopal et al. - 2025 - Soft Language Prompts for Language Transfer.pdf:application/pdf},
 }
 
 @inproceedings{wang_cross-refine_2025,
@@ -139,7 +139,7 @@ window.BIBTEX_RAW = String.raw`
 	date = {2025-04},
 	note = {cross-refine.jpg},
 	keywords = {Coling},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/534G7A97/Wang et al. - 2025 - Cross-Refine Improving Natural Language Explanati.pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/534G7A97/Wang et al. - 2025 - Cross-Refine Improving Natural Language Explanati.pdf:application/pdf},
 }
 
 @inproceedings{mikaberidze_comparison_2024,
@@ -154,7 +154,7 @@ window.BIBTEX_RAW = String.raw`
 	urldate = {2025-05-22},
 	date = {2024-10},
 	keywords = {{ICNLSP}},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/C8WMZELP/Mikaberidze et al. - 2024 - A Comparison of Different Tokenization Methods for.pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/C8WMZELP/Mikaberidze et al. - 2024 - A Comparison of Different Tokenization Methods for.pdf:application/pdf},
 }
 
 @inproceedings{oguz_mmar_2024,
@@ -173,7 +173,7 @@ window.BIBTEX_RAW = String.raw`
 	date = {2024-11},
 	note = {mmar.jpg},
 	keywords = {{EMNLP}},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/LDEL8BGI/Oguz et al. - 2024 - MMAR Multilingual and Multimodal Anaphora Resolut.pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/LDEL8BGI/Oguz et al. - 2024 - MMAR Multilingual and Multimodal Anaphora Resolut.pdf:application/pdf},
 }
 
 @inproceedings{anikina_reverse_2025,
@@ -191,7 +191,7 @@ window.BIBTEX_RAW = String.raw`
 	date = {2025-05},
 	note = {reverseprobing.jpg},
 	keywords = {Rep4NLP},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/DZDEHSHP/Anikina et al. - 2025 - Reverse Probing Evaluating Knowledge Transfer via.pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/DZDEHSHP/Anikina et al. - 2025 - Reverse Probing Evaluating Knowledge Transfer via.pdf:application/pdf},
 }
 
 @inproceedings{gurgurov_gremlin_2025,
@@ -209,7 +209,7 @@ window.BIBTEX_RAW = String.raw`
 	date = {2025-04},
 	note = {gremlin.jpg},
 	keywords = {{NAACL}},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/6GQ2UKAC/Gurgurov et al. - 2025 - GrEmLIn A Repository of Green Baseline Embeddings.pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/6GQ2UKAC/Gurgurov et al. - 2025 - GrEmLIn A Repository of Green Baseline Embeddings.pdf:application/pdf},
 }
 
 @thesis{ostermann_script_2020,
@@ -222,10 +222,8 @@ window.BIBTEX_RAW = String.raw`
 	urldate = {2025-06-02},
 	date = {2020},
 	langid = {english},
-	doi = {10.22028/D291-31301},
-	note = {Accepted: 2020-06-29T07:21:28Z},
 	keywords = {Thesis},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/4NPQLVG3/Ostermann - 2020 - Script Knowledge for Natural Language Understandin.pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/4NPQLVG3/Ostermann - 2020 - Script Knowledge for Natural Language Understandin.pdf:application/pdf},
 }
 
 @inproceedings{ostermann_commonsense_2019,
@@ -241,7 +239,7 @@ window.BIBTEX_RAW = String.raw`
 	urldate = {2025-06-02},
 	date = {2019-11},
 	keywords = {{COIN}},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/6QZPPI3Y/Ostermann et al. - 2019 - Commonsense Inference in Natural Language Processi.pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/6QZPPI3Y/Ostermann et al. - 2019 - Commonsense Inference in Natural Language Processi.pdf:application/pdf},
 }
 
 @inproceedings{ostermann_mcscript20_2019,
@@ -260,7 +258,7 @@ window.BIBTEX_RAW = String.raw`
 	date = {2019-06},
 	note = {mcscript2.jpg},
 	keywords = {*{SEM}},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/XPL3DYLS/Ostermann et al. - 2019 - MCScript2.0 A Machine Comprehension Corpus Focuse.pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/XPL3DYLS/Ostermann et al. - 2019 - MCScript2.0 A Machine Comprehension Corpus Focuse.pdf:application/pdf},
 }
 
 @inproceedings{ostermann_semeval-2018_2018,
@@ -278,7 +276,7 @@ window.BIBTEX_RAW = String.raw`
 	urldate = {2025-06-02},
 	date = {2018-06},
 	keywords = {{SemEval}},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/LDRMN4T7/Ostermann et al. - 2018 - SemEval-2018 Task 11 Machine Comprehension Using .pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/LDRMN4T7/Ostermann et al. - 2018 - SemEval-2018 Task 11 Machine Comprehension Using .pdf:application/pdf},
 }
 
 @inproceedings{ostermann_mcscript_2018,
@@ -294,7 +292,7 @@ window.BIBTEX_RAW = String.raw`
 	date = {2018-05},
 	note = {mcscript.jpg},
 	keywords = {{LREC}},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/SZDITZCC/Ostermann et al. - 2018 - MCScript A Novel Dataset for Assessing Machine Co.pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/SZDITZCC/Ostermann et al. - 2018 - MCScript A Novel Dataset for Assessing Machine Co.pdf:application/pdf},
 }
 
 @inproceedings{ostermann_mapping_2018,
@@ -309,7 +307,7 @@ window.BIBTEX_RAW = String.raw`
 	urldate = {2025-06-02},
 	date = {2018-05},
 	keywords = {{LREC}},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/LPPXJERI/Ostermann et al. - 2018 - Mapping Texts to Scripts An Entailment Study.pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/LPPXJERI/Ostermann et al. - 2018 - Mapping Texts to Scripts An Entailment Study.pdf:application/pdf},
 }
 
 @inproceedings{ostermann_aligning_2017,
@@ -325,9 +323,9 @@ window.BIBTEX_RAW = String.raw`
 	author = {Ostermann, Simon and Roth, Michael and Thater, Stefan and Pinkal, Manfred},
 	urldate = {2025-06-02},
 	date = {2017-08},
-	note = {aligning\_scripts.jpg},
+	note = {aligning-scripts.jpg},
 	keywords = {*{SEM}},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/AJCTSIIH/Ostermann et al. - 2017 - Aligning Script Events with Narrative Texts.pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/AJCTSIIH/Ostermann et al. - 2017 - Aligning Script Events with Narrative Texts.pdf:application/pdf},
 }
 
 @inproceedings{modi_inscript_2016,
@@ -344,7 +342,7 @@ window.BIBTEX_RAW = String.raw`
 	urldate = {2025-06-02},
 	date = {2016-05},
 	keywords = {{LREC}},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/VZ66Y6YA/Modi et al. - 2016 - InScript Narrative texts annotated with script in.pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/VZ66Y6YA/Modi et al. - 2016 - InScript Narrative texts annotated with script in.pdf:application/pdf},
 }
 
 @inproceedings{ostermann_annotating_2015,
@@ -360,7 +358,7 @@ window.BIBTEX_RAW = String.raw`
 	urldate = {2025-06-02},
 	date = {2015-07},
 	keywords = {{NLP}-{TEA}},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/WSLYEVRW/Ostermann et al. - 2015 - Annotating Entailment Relations for Shortanswer Qu.pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/WSLYEVRW/Ostermann et al. - 2015 - Annotating Entailment Relations for Shortanswer Qu.pdf:application/pdf},
 }
 
 @inproceedings{koleva_paraphrase_2014,
@@ -375,7 +373,7 @@ window.BIBTEX_RAW = String.raw`
 	urldate = {2025-06-02},
 	date = {2014-11},
 	keywords = {{NLP}4CALL},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/NAHJXY9H/Koleva et al. - 2014 - Paraphrase Detection for Short Answer Scoring.pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/NAHJXY9H/Koleva et al. - 2014 - Paraphrase Detection for Short Answer Scoring.pdf:application/pdf},
 }
 
 @inproceedings{belanec_task_2025,
@@ -391,7 +389,7 @@ window.BIBTEX_RAW = String.raw`
 	date = {2025-07},
 	note = {vectors.jpg},
 	keywords = {{ECML}},
-	file = {Preprint PDF:/Users/sios01-admin/Zotero/storage/FVMWMI7B/Belanec et al. - 2024 - Task Prompt Vectors Effective Initialization thro.pdf:application/pdf;Snapshot:/Users/sios01-admin/Zotero/storage/RRYXYI8X/2408.html:text/html},
+	file = {Preprint PDF:/Users/sios01-admin_1/Zotero/storage/FVMWMI7B/Belanec et al. - 2024 - Task Prompt Vectors Effective Initialization thro.pdf:application/pdf;Snapshot:/Users/sios01-admin_1/Zotero/storage/RRYXYI8X/2408.html:text/html},
 }
 
 @inproceedings{peng_semeval-2025_2025,
@@ -411,7 +409,7 @@ window.BIBTEX_RAW = String.raw`
 	date = {2025-07},
 	note = {semeval25.jpg},
 	keywords = {{SemEval}},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/ZL5W8L8I/Peng et al. - 2025 - SemEval-2025 Task 7 Multilingual and Crosslingual.pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/ZL5W8L8I/Peng et al. - 2025 - SemEval-2025 Task 7 Multilingual and Crosslingual.pdf:application/pdf},
 }
 
 @inproceedings{vykopal_large_2025,
@@ -426,7 +424,7 @@ window.BIBTEX_RAW = String.raw`
 	date = {2025-10},
 	note = {facts.jpg},
 	keywords = {{EMNLP}},
-	file = {Preprint PDF:/Users/sios01-admin/Zotero/storage/ZN8WTF7L/Vykopal et al. - 2025 - Large Language Models for Multilingual Previously .pdf:application/pdf;Snapshot:/Users/sios01-admin/Zotero/storage/56V2AF69/2503.html:text/html},
+	file = {Preprint PDF:/Users/sios01-admin_1/Zotero/storage/ZN8WTF7L/Vykopal et al. - 2025 - Large Language Models for Multilingual Previously .pdf:application/pdf;Snapshot:/Users/sios01-admin_1/Zotero/storage/56V2AF69/2503.html:text/html},
 }
 
 @inproceedings{anikina_rigorous_2025,
@@ -442,7 +440,7 @@ window.BIBTEX_RAW = String.raw`
 	note = {synthetic.jpg},
 	keywords = {{EMNLP}},
 	annotation = {Comment: 21 pages, fixed typo},
-	file = {Preprint PDF:/Users/sios01-admin/Zotero/storage/8KM5YHMJ/Anikina et al. - 2025 - A Rigorous Evaluation of LLM Data Generation Strat.pdf:application/pdf;Snapshot:/Users/sios01-admin/Zotero/storage/R2D8ACE5/2506.html:text/html},
+	file = {Preprint PDF:/Users/sios01-admin_1/Zotero/storage/8KM5YHMJ/Anikina et al. - 2025 - A Rigorous Evaluation of LLM Data Generation Strat.pdf:application/pdf;Snapshot:/Users/sios01-admin_1/Zotero/storage/R2D8ACE5/2506.html:text/html},
 }
 
 @inproceedings{wang_fitcf_2025,
@@ -463,7 +461,7 @@ window.BIBTEX_RAW = String.raw`
 	date = {2025-07},
 	note = {fitcf.jpg},
 	keywords = {{ACL}},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/5HQF2MJZ/Wang et al. - 2025 - FitCF A Framework for Automatic Feature Importanc.pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/5HQF2MJZ/Wang et al. - 2025 - FitCF A Framework for Automatic Feature Importanc.pdf:application/pdf},
 }
 
 @inproceedings{wang_multilingual_2025,
@@ -476,7 +474,7 @@ window.BIBTEX_RAW = String.raw`
 	langid = {english},
 	note = {multicoxql.jpg},
 	keywords = {{EMNLP}},
-	file = {Wang et al. - Multilingual Datasets for Custom Input Extraction .pdf:/Users/sios01-admin/Zotero/storage/W96BGNDT/Wang et al. - Multilingual Datasets for Custom Input Extraction .pdf:application/pdf},
+	file = {Wang et al. - Multilingual Datasets for Custom Input Extraction .pdf:/Users/sios01-admin_1/Zotero/storage/W96BGNDT/Wang et al. - Multilingual Datasets for Custom Input Extraction .pdf:application/pdf},
 }
 
 @inproceedings{schlenker_only_2025,
@@ -495,7 +493,7 @@ window.BIBTEX_RAW = String.raw`
 	urldate = {2025-08-22},
 	date = {2025-07},
 	keywords = {{ACL}-{SRW}},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/HCPFTIUL/Schlenker et al. - 2025 - Only for the Unseen Languages, Say the Llamas On .pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/HCPFTIUL/Schlenker et al. - 2025 - Only for the Unseen Languages, Say the Llamas On .pdf:application/pdf},
 }
 
 @inproceedings{gurgurov_small_2025,
@@ -514,7 +512,7 @@ window.BIBTEX_RAW = String.raw`
 	urldate = {2025-08-22},
 	date = {2025-07},
 	keywords = {{ACL}-{SRW}},
-	file = {Full Text PDF:/Users/sios01-admin/Zotero/storage/KEGDN9W6/Gurgurov et al. - 2025 - Small Models, Big Impact Efficient Corpus and Gra.pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/KEGDN9W6/Gurgurov et al. - 2025 - Small Models, Big Impact Efficient Corpus and Gra.pdf:application/pdf},
 }
 
 @inproceedings{baeumel_disentangling_2025,
@@ -527,7 +525,7 @@ window.BIBTEX_RAW = String.raw`
 	note = {disentangling.jpg},
 	keywords = {{MathNLP}},
 	annotation = {Comment: Pre-print},
-	file = {Preprint PDF:/Users/sios01-admin/Zotero/storage/SM873RWL/Baeumel et al. - 2025 - The Lookahead Limitation Why Multi-Operand Additi.pdf:application/pdf;Snapshot:/Users/sios01-admin/Zotero/storage/2PMG25I8/2502.html:text/html},
+	file = {Preprint PDF:/Users/sios01-admin_1/Zotero/storage/SM873RWL/Baeumel et al. - 2025 - The Lookahead Limitation Why Multi-Operand Additi.pdf:application/pdf;Snapshot:/Users/sios01-admin_1/Zotero/storage/2PMG25I8/2502.html:text/html},
 }
 
 @inproceedings{baeumel_lookahead_2025,
@@ -554,7 +552,7 @@ window.BIBTEX_RAW = String.raw`
 	date = {2025-12-02},
 	note = {modulararithmetics.jpg},
 	keywords = {{IJCNLP}},
-	file = {Preprint PDF:/Users/sios01-admin/Zotero/storage/2BYZT7PW/Baeumel et al. - 2025 - Modular Arithmetic Language Models Solve Math Digit by Digit.pdf:application/pdf;Snapshot:/Users/sios01-admin/Zotero/storage/HKBYTVQM/2508.html:text/html},
+	file = {Preprint PDF:/Users/sios01-admin_1/Zotero/storage/2BYZT7PW/Baeumel et al. - 2025 - Modular Arithmetic Language Models Solve Math Digit by Digit.pdf:application/pdf;Snapshot:/Users/sios01-admin_1/Zotero/storage/HKBYTVQM/2508.html:text/html},
 }
 
 @inproceedings{gurgurov_language_2025,
@@ -568,7 +566,7 @@ window.BIBTEX_RAW = String.raw`
 	note = {langarithmetics.jpg},
 	keywords = {{IJCNLP}},
 	annotation = {Comment: preprint},
-	file = {Preprint PDF:/Users/sios01-admin/Zotero/storage/E5LDQ2DK/Gurgurov et al. - 2025 - Language Arithmetics Towards Systematic Language Neuron Identification and Manipulation.pdf:application/pdf;Snapshot:/Users/sios01-admin/Zotero/storage/KXTWVV5L/2507.html:text/html},
+	file = {Preprint PDF:/Users/sios01-admin_1/Zotero/storage/E5LDQ2DK/Gurgurov et al. - 2025 - Language Arithmetics Towards Systematic Language Neuron Identification and Manipulation.pdf:application/pdf;Snapshot:/Users/sios01-admin_1/Zotero/storage/KXTWVV5L/2507.html:text/html},
 }
 
 @inproceedings{gurgurov_multilingual_2025,
@@ -584,7 +582,7 @@ window.BIBTEX_RAW = String.raw`
 	note = {political.jpg},
 	keywords = {{IJCNLP}},
 	annotation = {Comment: pre-print},
-	file = {Preprint PDF:/Users/sios01-admin/Zotero/storage/BIKBARRZ/Gurgurov et al. - 2025 - Multilingual Political Views of Large Language Models Identification and Steering.pdf:application/pdf;Snapshot:/Users/sios01-admin/Zotero/storage/XRXI6343/2507.html:text/html},
+	file = {Preprint PDF:/Users/sios01-admin_1/Zotero/storage/BIKBARRZ/Gurgurov et al. - 2025 - Multilingual Political Views of Large Language Models Identification and Steering.pdf:application/pdf;Snapshot:/Users/sios01-admin_1/Zotero/storage/XRXI6343/2507.html:text/html},
 }
 
 @inproceedings{mikaberidze_cross-prompt_2025,
@@ -599,7 +597,7 @@ window.BIBTEX_RAW = String.raw`
 	date = {2025-12-01},
 	note = {crossprompt.jpg},
 	keywords = {{IJCNLP}},
-	file = {Preprint PDF:/Users/sios01-admin/Zotero/storage/QS6PZ5W5/Mikaberidze et al. - 2025 - Cross-Prompt Encoder for Low-Performing Languages.pdf:application/pdf;Snapshot:/Users/sios01-admin/Zotero/storage/K8EK63DS/2508.html:text/html},
+	file = {Preprint PDF:/Users/sios01-admin_1/Zotero/storage/QS6PZ5W5/Mikaberidze et al. - 2025 - Cross-Prompt Encoder for Low-Performing Languages.pdf:application/pdf;Snapshot:/Users/sios01-admin_1/Zotero/storage/K8EK63DS/2508.html:text/html},
 }
 
 @inproceedings{gurgurov_multilingual_2025-1,
@@ -615,7 +613,21 @@ window.BIBTEX_RAW = String.raw`
 	note = {compression.jpg},
 	keywords = {{IJCNLP}-{SRW}},
 	annotation = {Comment: Pre-print},
-	file = {Preprint PDF:/Users/sios01-admin/Zotero/storage/77CAXGYU/Gurgurov et al. - 2025 - On Multilingual Encoder Language Model Compression for Low-Resource Languages.pdf:application/pdf;Snapshot:/Users/sios01-admin/Zotero/storage/Z6ZFPLXD/2505.html:text/html},
+	file = {Preprint PDF:/Users/sios01-admin_1/Zotero/storage/77CAXGYU/Gurgurov et al. - 2025 - On Multilingual Encoder Language Model Compression for Low-Resource Languages.pdf:application/pdf;Snapshot:/Users/sios01-admin_1/Zotero/storage/Z6ZFPLXD/2505.html:text/html},
+}
+
+@inproceedings{vykopal_assessing_2026,
+	title = {Assessing Web Search Credibility and Response Groundedness in Chat Assistants},
+	url = {http://arxiv.org/abs/2510.13749},
+	doi = {10.48550/arXiv.2510.13749},
+	abstract = {Chat assistants increasingly integrate web search functionality, enabling them to retrieve and cite external sources. While this promises more reliable answers, it also raises the risk of amplifying misinformation from low-credibility sources. In this paper, we introduce a novel methodology for evaluating assistants' web search behavior, focusing on source credibility and the groundedness of responses with respect to cited sources. Using 100 claims across five misinformation-prone topics, we assess {GPT}-4o, {GPT}-5, Perplexity, and Qwen Chat. Our findings reveal differences between the assistants, with Perplexity achieving the highest source credibility, whereas {GPT}-4o exhibits elevated citation of non-credibility sources on sensitive topics. This work provides the first systematic comparison of commonly used chat assistants for fact-checking behavior, offering a foundation for evaluating {AI} systems in high-stakes information environments.},
+	booktitle = {Accepted at 19th Conference of the European Chapter of the Association for Computational Linguistics (Main)},
+	publisher = {{arXiv}},
+	author = {Vykopal, Ivan and Pikuliak, Matúš and Ostermann, Simon and Šimko, Marián},
+	date = {2026-01},
+	note = {eacl-web.jpg},
+	keywords = {{EACL}},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/L8BXBXTP/Vykopal et al. - 2025 - Assessing Web Search Credibility and Response Groundedness in Chat Assistants.pdf:application/pdf;Snapshot:/Users/sios01-admin_1/Zotero/storage/B37C3K57/2510.html:text/html},
 }
 
 
