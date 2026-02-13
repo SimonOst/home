@@ -660,10 +660,11 @@ window.BIBTEX_RAW = String.raw`
 @inproceedings{piperidis_common_2026,
 	title = {Common {European} {Language} {Data} {Space}: {Development}, {Current} {Status}, and {Future} {Perspectives}},
 	booktitle = {Accepted at the 2026 {International} {Conference} on {Language} {Resources} and {Evaluation} ({LREC2026})},
-	editor = {Piperidis, Stelios and Labropoulou, Penny and Galanis, Dimitrios and Choukri, Khalid and Vasi\{ı\}l{\textbackslash}cjjevs, Andrejs and Deligiannis, Mitos and Gkirtzou, Katerina and Gkoumas, Dimitris and Kolovou, Athanasia and Voukoutis, Leon and Pouli, Kanella and Giagkou, Maria and Gavriilidou, Maria and Marheinecke, Katrin and Leitner, Elena and Ostermann, Simon and Raccioppa, Stefania and Talmoudi, Kossay and Arranz, Victoria and Mapelli, Valérie and Mazo, Helene and Campo, Fernanda González and Yu, Shi and Bērziņş, Aivars and Lagzdiņş, Andis and Rehm, Georg},
+	author = {Piperidis, Stelios and Labropoulou, Penny and Galanis, Dimitrios and Choukri, Khalid and Vasi\{ı\}l{\textbackslash}cjjevs, Andrejs and Deligiannis, Mitos and Gkirtzou, Katerina and Gkoumas, Dimitris and Kolovou, Athanasia and Voukoutis, Leon and Pouli, Kanella and Giagkou, Maria and Gavriilidou, Maria and Marheinecke, Katrin and Leitner, Elena and Ostermann, Simon and Raccioppa, Stefania and Talmoudi, Kossay and Arranz, Victoria and Mapelli, Valérie and Mazo, Helene and Campo, Fernanda González and Yu, Shi and Bērziņş, Aivars and Lagzdiņş, Andis and Rehm, Georg},
 	month = feb,
 	year = {2026},
 	keywords = {LREC},
 }
+
 
 `;
