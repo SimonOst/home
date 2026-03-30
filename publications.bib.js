@@ -528,7 +528,7 @@ window.BIBTEX_RAW = String.raw`
 @inproceedings{baeumel_disentangling_2025,
 	title = {Disentangling {Mathematical} {Reasoning} in {LLMs}: {A} {Methodological} {Investigation} of {Internal} {Mechanisms}},
 	shorttitle = {Disentangling {Mathematical} {Reasoning}},
-	url = {https://aclanthology.org/anthology-files/pdf/mathnlp/2025.mathnlp-main.16.pdf},
+	url = {https://aclanthology.org/2025.mathnlp-main.16/},
 	urldate = {2025-08-22},
 	booktitle = {Proceedings of {The} 3rd {Workshop} on {Mathematical} {Natural} {Language} {Processing} ({MathNLP} 2025)},
 	author = {Baeumel, Tanja and Genabith, Josef van and Ostermann, Simon},
