@@ -1,6 +1,7 @@
 window.BIBTEX_RAW = String.raw`
 
 
+
 @inproceedings{oguz_find-2-find_2023,
 	location = {Singapore},
 	title = {Find-2-Find: Multitask Learning for Anaphora Resolution and Object Localization},
@@ -654,6 +655,8 @@ window.BIBTEX_RAW = String.raw`
 	booktitle = {Accepted to the 64th Annual Meeting of the Association for Computational Linguistics (Main)},
 	author = {Ostermann, Simon and Gurgurov, Daniil and Baeumel, Tanja and Hedderich, Michael A. and Lapuschkin, Sebastian and Samek, Wojciech and Schmitt, Vera},
 	date = {2026-04-02},
+	note = {weights.jpg},
+	keywords = {{ACL}},
 }
 
 @inproceedings{shi_why_2026,
@@ -662,6 +665,7 @@ window.BIBTEX_RAW = String.raw`
 	booktitle = {Accepted to the 64th Annual Meeting of the Association for Computational Linguistics (Main)},
 	author = {Shi, Dan and Han, Zhuowen and Ostermann, Simon and Jin, Renren and Genabith, Josef van and Xiong, Deyi},
 	date = {2026-04-01},
+	keywords = {{ACL}},
 }
 
 @inproceedings{gurgurov_clas-bench_2026,
@@ -670,6 +674,8 @@ window.BIBTEX_RAW = String.raw`
 	booktitle = {Accepted to Findings of the 64th Annual Meeting of the Association for Computational Linguistics},
 	author = {Gurgurov, Daniil and Ghussin, Yusser Al and Baeumel, Tanja and Chou, Cheng-Ting and Schramowski, Patrick and Mosbach, Marius and Genabith, Josef van and Ostermann, Simon},
 	date = {2026-04},
+	note = {clas.jpg},
+	keywords = {{ACL}},
 }
 
 @inproceedings{oguz_dualfact_2026,
@@ -678,8 +684,8 @@ window.BIBTEX_RAW = String.raw`
 	booktitle = {Accepted to Findings of the 64th Annual Meeting of the Association for Computational Linguistics},
 	author = {Oguz, Cennet and Hamidullah, Yasser and Genabith, Josef van and Ostermann, Simon},
 	date = {2026-04},
+	keywords = {{ACL}},
 }
-
 
 
 `;
