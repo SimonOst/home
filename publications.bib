@@ -620,7 +620,7 @@
 	url = {http://arxiv.org/abs/2510.13749},
 	doi = {10.48550/arXiv.2510.13749},
 	abstract = {Chat assistants increasingly integrate web search functionality, enabling them to retrieve and cite external sources. While this promises more reliable answers, it also raises the risk of amplifying misinformation from low-credibility sources. In this paper, we introduce a novel methodology for evaluating assistants' web search behavior, focusing on source credibility and the groundedness of responses with respect to cited sources. Using 100 claims across five misinformation-prone topics, we assess {GPT}-4o, {GPT}-5, Perplexity, and Qwen Chat. Our findings reveal differences between the assistants, with Perplexity achieving the highest source credibility, whereas {GPT}-4o exhibits elevated citation of non-credibility sources on sensitive topics. This work provides the first systematic comparison of commonly used chat assistants for fact-checking behavior, offering a foundation for evaluating {AI} systems in high-stakes information environments.},
-	booktitle = {Accepted at 19th Conference of the European Chapter of the Association for Computational Linguistics (Main)},
+	booktitle = {Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)},
 	publisher = {{arXiv}},
 	author = {Vykopal, Ivan and Pikuliak, Matúš and Ostermann, Simon and Šimko, Marián},
 	date = {2026-01},
@@ -629,10 +629,12 @@
 	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/L8BXBXTP/Vykopal et al. - 2025 - Assessing Web Search Credibility and Response Groundedness in Chat Assistants.pdf:application/pdf;Snapshot:/Users/sios01-admin_1/Zotero/storage/B37C3K57/2510.html:text/html},
 }
 
-@inproceedings{christian_schuler_dialectal_2026,
+@inproceedings{schuler_christian_dialectal_2026,
 	title = {Dialectal Filtering: Synthesizing Kurdish Corpora for Low-Resource Varieties by Utilizing "Noise" in Large Textual Data},
+	url = {https://aclanthology.org/2026.eacl-long.115/},
+	eventtitle = {2026 International Conference on Language Resources and Evaluation ({LREC}2026)},
 	booktitle = {Accepted at the 2026 International Conference on Language Resources and Evaluation ({LREC}2026)},
-	author = {{Christian Schuler} and {Raman Ahmad} and {Ānrán Wáng} and {Daniil Gurgurov} and {Timo Baumann} and {Simon Ostermann} and {Josef van Genabith}},
+	author = {{Schuler, Christian} and {Raman Ahmad} and {Ānrán Wáng} and {Daniil Gurgurov} and {Timo Baumann} and {Simon Ostermann} and {Josef van Genabith}},
 	date = {2026-02},
 	keywords = {{LREC}},
 }
@@ -658,7 +660,7 @@
 
 @inproceedings{shi_why_2026,
 	title = {Why Does Reinforcement Learning Generalize? A Feature-Level Mechanistic Study of Post-Training in Large Language Models},
-	url = {https://openreview.net/forum?id=5xyYTiEsf1},
+	url = {https://arxiv.org/abs/2604.25011},
 	booktitle = {Accepted to the 64th Annual Meeting of the Association for Computational Linguistics (Main)},
 	author = {Shi, Dan and Han, Zhuowen and Ostermann, Simon and Jin, Renren and Genabith, Josef van and Xiong, Deyi},
 	date = {2026-04-01},
@@ -677,9 +679,38 @@
 
 @inproceedings{oguz_dualfact_2026,
 	title = {{DualFact}+: A Multimodal Fact Verification Framework for Procedural Video Captioning},
-	url = {https://openreview.net/forum?id=a5D2z42A18},
+	url = {https://arxiv.org/abs/2604.25584},
 	booktitle = {Accepted to Findings of the 64th Annual Meeting of the Association for Computational Linguistics},
 	author = {Oguz, Cennet and Hamidullah, Yasser and Genabith, Josef van and Ostermann, Simon},
 	date = {2026-04},
 	keywords = {{ACL}},
+}
+
+@inproceedings{ghussin_multilingual_2026,
+	title = {Multilingual Steering by Design: Multilingual Sparse Autoencoders and Principled Layer Selection},
+	shorttitle = {Multilingual Steering by Design},
+	abstract = {Sparse autoencoders ({SAEs}) enable feature-level mechanistic interpretability and activation steering in large language models ({LLMs}), but {SAE}-based language control remains unreliable in multilingual settings: most {SAEs} are trained on English-only data, and steering layers are chosen heuristically. We address these limitations by advancing a principled, mechanistic account of multilingual language steering with {SAEs}. First, we show that training {SAEs} on multilingual data consistently strengthens cross-lingual representations and yields more reliable, quality-preserving language control across layers and model families. Second, we introduce an {\textbackslash}emph\{a priori\} steering layer-selection rule based on the intersection of multilingual alignment and language separability, which predicts effective intervention depths without exhaustive layerwise search. We evaluate our approach on {LLaMA}-3.1-8B and Gemma-2-9B across machine translation and cross-lingual summarization ({CrossSumm}), using {SpBLEU}, {ROUGE}-L, {COMET}, and {LaSE}. Our results show that multilingual {SAEs} combined with intersection-selected layers stabilize the trade-off between language identification accuracy and generation quality, providing a principled, predictive, representation-level account of multilingual {SAE} steering.},
+	eventtitle = {The 6th Workshop on Trustworthy {NLP}},
+	booktitle = {Accepted at the 6th Workshop on Trustworthy {NLP}},
+	author = {Ghussin, Yusser Al and Gurgurov, Daniil and Baeumel, Tanja and Genabith, Josef van and Schramowski, Patrick and Ostermann, Simon},
+	urldate = {2026-05-08},
+	date = {2026-03-02},
+	langid = {english},
+	keywords = {{TrustNLP}},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/GRBXX7IE/Ghussin et al. - 2026 - Multilingual Steering by Design Multilingual Sparse Autoencoders and Principled Layer Selection.pdf:application/pdf},
+}
+
+@inproceedings{wang_through_2026,
+	title = {Through a Compressed Lens: Investigating The Impact of Quantization on Factual Knowledge Recall},
+	url = {https://arxiv.org/abs/2505.13963},
+	shorttitle = {Through a Compressed Lens},
+	abstract = {Quantization methods are widely used to accelerate inference and streamline the deployment of large language models ({LLMs}). Although quantization's effects on various {LLM} capabilities have been extensively studied, one critical area remains underexplored: factual knowledge recall ({FKR}), the process by which {LLMs} access stored knowledge. To this end, we conduct comprehensive experiments using three common quantization techniques at distinct bit widths, in conjunction with interpretability-driven analyses on two tasks, knowledge memorization and latent multi-hop reasoning. We show that quantization typically results in information loss within {LLMs}, consequently diminishing their capacity for {FKR}. This effect is particularly amplified in smaller models within the same architectural families. However, models quantized at reduced bit precision do not consistently exhibit inferior performance and occasionally quantization may even enhance model {FKR}. We find that {BitSandBytes} demonstrates highest preservation of the original full-precision model's {FKR}. Despite variability across models and methods, quantization causes modest performance degradation and remains an effective compression strategy.},
+	eventtitle = {The 6th Workshop on Trustworthy {NLP}},
+	booktitle = {Accepted at the 6th Workshop on Trustworthy {NLP}},
+	author = {Wang, Qianli and Wang, Mingyang and Feldhus, Nils and Ostermann, Simon and Cao, Yuan and Schuetze, Hinrich and Möller, Sebastian and Schmitt, Vera},
+	urldate = {2026-05-08},
+	date = {2026-03-01},
+	langid = {english},
+	keywords = {{TrustNLP}},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/66UWLU5W/Wang et al. - 2026 - Through a Compressed Lens Investigating The Impact of Quantization on Factual Knowledge Recall.pdf:application/pdf},
 }
