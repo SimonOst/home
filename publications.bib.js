@@ -1,7 +1,6 @@
 window.BIBTEX_RAW = String.raw`
 
 
-
 @inproceedings{oguz_find-2-find_2023,
 	location = {Singapore},
 	title = {Find-2-Find: Multitask Learning for Anaphora Resolution and Object Localization},
@@ -35,7 +34,7 @@ window.BIBTEX_RAW = String.raw`
 	date = {2023-12},
 	note = {bert-neurons.jpg},
 	keywords = {{BlackBoxNLP}},
-	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/QLC6YLID/Baeumel et al. - 2023 - Investigating the Encoding of Words in BERT's Neur.pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/QLC6YLID/Baeumel et al. - 2023 - Investigating the Encoding of Words in BERTs Neur.pdf:application/pdf},
 }
 
 @inproceedings{rehm_common_2024,
@@ -440,7 +439,6 @@ window.BIBTEX_RAW = String.raw`
 	date = {2025-10-01},
 	note = {synthetic.jpg},
 	keywords = {{EMNLP}},
-	annotation = {Comment: 21 pages, fixed typo},
 	file = {Preprint PDF:/Users/sios01-admin_1/Zotero/storage/8KM5YHMJ/Anikina et al. - 2025 - A Rigorous Evaluation of LLM Data Generation Strat.pdf:application/pdf;Snapshot:/Users/sios01-admin_1/Zotero/storage/R2D8ACE5/2506.html:text/html},
 }
 
@@ -526,7 +524,6 @@ window.BIBTEX_RAW = String.raw`
 	date = {2025-11},
 	note = {disentangling.jpg},
 	keywords = {{MathNLP}},
-	annotation = {Comment: Pre-print},
 	file = {Preprint PDF:/Users/sios01-admin_1/Zotero/storage/SM873RWL/Baeumel et al. - 2025 - The Lookahead Limitation Why Multi-Operand Additi.pdf:application/pdf;Snapshot:/Users/sios01-admin_1/Zotero/storage/2PMG25I8/2502.html:text/html},
 }
 
@@ -567,7 +564,6 @@ window.BIBTEX_RAW = String.raw`
 	date = {2025-12-03},
 	note = {langarithmetics.jpg},
 	keywords = {{IJCNLP}},
-	annotation = {Comment: preprint},
 	file = {Preprint PDF:/Users/sios01-admin_1/Zotero/storage/E5LDQ2DK/Gurgurov et al. - 2025 - Language Arithmetics Towards Systematic Language Neuron Identification and Manipulation.pdf:application/pdf;Snapshot:/Users/sios01-admin_1/Zotero/storage/KXTWVV5L/2507.html:text/html},
 }
 
@@ -583,7 +579,6 @@ window.BIBTEX_RAW = String.raw`
 	date = {2025-12-01},
 	note = {political.jpg},
 	keywords = {{IJCNLP}},
-	annotation = {Comment: pre-print},
 	file = {Preprint PDF:/Users/sios01-admin_1/Zotero/storage/BIKBARRZ/Gurgurov et al. - 2025 - Multilingual Political Views of Large Language Models Identification and Steering.pdf:application/pdf;Snapshot:/Users/sios01-admin_1/Zotero/storage/XRXI6343/2507.html:text/html},
 }
 
@@ -614,7 +609,6 @@ window.BIBTEX_RAW = String.raw`
 	date = {2025-11},
 	note = {compression.jpg},
 	keywords = {{IJCNLP}-{SRW}},
-	annotation = {Comment: Pre-print},
 	file = {Preprint PDF:/Users/sios01-admin_1/Zotero/storage/77CAXGYU/Gurgurov et al. - 2025 - On Multilingual Encoder Language Model Compression for Low-Resource Languages.pdf:application/pdf;Snapshot:/Users/sios01-admin_1/Zotero/storage/Z6ZFPLXD/2505.html:text/html},
 }
 
@@ -689,6 +683,7 @@ window.BIBTEX_RAW = String.raw`
 	booktitle = {Findings of the Association for Computational Linguistics: {ACL} 2026},
 	author = {Oguz, Cennet and Hamidullah, Yasser and Genabith, Josef van and Ostermann, Simon},
 	date = {2026-04},
+	note = {dualfact.jpg},
 	keywords = {{ACL}},
 }
 
@@ -723,6 +718,63 @@ window.BIBTEX_RAW = String.raw`
 	keywords = {{TrustNLP}},
 	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/66UWLU5W/Wang et al. - 2026 - Through a Compressed Lens Investigating The Impact of Quantization on Factual Knowledge Recall.pdf:application/pdf},
 }
+
+@inproceedings{cegin_want_2026,
+	title = {Want Better Synthetic Data? Steer It: Activation Steering for Low-Resource Language Generation},
+	url = {https://arxiv.org/abs/2606.18389},
+	booktitle = {Accepted at the 2026 Conference on Empirical Methods in Natural Language Processing (Main)},
+	author = {Cegin, Jan and Gurgurov, Daniil and Al Ghussin, Yusser and Ostermann, Simon},
+	date = {2026-10-02},
+	note = {syntsteer.jpg},
+	keywords = {{EMNLP}},
+}
+
+@inproceedings{al_ghussin_fineweb-clar_2026,
+	title = {{FineWeb}-{CLaR}: Culture, Language, and Region Annotations for Benchmark-Aligned Corpus Auditing},
+	booktitle = {Accepted at the 2026 Conference on Empirical Methods in Natural Language Processing (Main)},
+	author = {Al Ghussin, Yusser and Gavaller, Eva and España-Bonet, Cristina and van Genabith, Josef and Ostermann, Simon},
+	date = {2026-10-02},
+	note = {finewebclar.jpg},
+	keywords = {{EMNLP}},
+}
+
+@inproceedings{baeumel_when_2026,
+	title = {When Tokenization is Secretly Output Supervision},
+	booktitle = {Accepted at the 2026 Conference on Empirical Methods in Natural Language Processing (Main)},
+	author = {Baeumel, Tanja and van Genabith, Josef and Ostermann, Simon},
+	date = {2026-10-02},
+	keywords = {{EMNLP}},
+}
+
+@inproceedings{wang_can_2026,
+	title = {Can Large Language Models Still Explain Themselves? Investigating the Impact of Quantization on Self-Explanations},
+	url = {https://arxiv.org/abs/2601.00282},
+	booktitle = {Accepted at the Findings of the 2026 Conference on Empirical Methods in Natural Language Processing},
+	author = {Wang, Qianli and Feldhus, Nils and Atanasova, Pepa and Splitt, Fedor and Ostermann, Simon and Möller, Sebastian and Schmitt, Vera},
+	date = {2026-10-01},
+	note = {selfexplain.jpg},
+	keywords = {{EMNLP}},
+}
+
+@inproceedings{wang_macro_2026,
+	title = {Macro: Enhancing Multilingual Counterfactual Explanations through Alignment-as-Preference Optimization},
+	url = {https://arxiv.org/abs/2605.11632},
+	booktitle = {Accepted at the Findings of the 2026 Conference on Empirical Methods in Natural Language Processing},
+	author = {Wang, Yilong and Wang, Qianli and Chu, Bohao and Liu, Yihong and Yang, Jing and Ostermann, Simon},
+	date = {2026-10-01},
+	note = {macro.jpg},
+	keywords = {{EMNLP}},
+}
+
+@inproceedings{sonkin_separating_2026,
+	title = {Separating Syntax from Language: A Mechanistic Account of Translation in Multilingual {LLMs}},
+	booktitle = {Accepted at the Findings of the 2026 Conference on Empirical Methods in Natural Language Processing},
+	author = {Sonkin, Mikhail and Baeumel, Tanja and Gurgurov, Daniil and van Genabith, Josef and Ostermann, Simon},
+	date = {2026-10-01},
+	note = {separating.jpg},
+	keywords = {{EMNLP}},
+}
+
 
 
 `;
