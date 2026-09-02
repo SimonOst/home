@@ -34,7 +34,7 @@ window.BIBTEX_RAW = String.raw`
 	date = {2023-12},
 	note = {bert-neurons.jpg},
 	keywords = {{BlackBoxNLP}},
-	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/QLC6YLID/Baeumel et al. - 2023 - Investigating the Encoding of Words in BERTs Neur.pdf:application/pdf},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/QLC6YLID/Baeumel et al. - 2023 - Investigating the Encoding of Words in BERT's Neur.pdf:application/pdf},
 }
 
 @inproceedings{rehm_common_2024,
@@ -740,9 +740,11 @@ window.BIBTEX_RAW = String.raw`
 
 @inproceedings{baeumel_when_2026,
 	title = {When Tokenization is Secretly Output Supervision},
+	url = {https://arxiv.org/abs/2609.01386},
 	booktitle = {Accepted at the 2026 Conference on Empirical Methods in Natural Language Processing (Main)},
 	author = {Baeumel, Tanja and van Genabith, Josef and Ostermann, Simon},
 	date = {2026-10-02},
+	note = {tokenization.jpg},
 	keywords = {{EMNLP}},
 }
 
@@ -768,13 +770,13 @@ window.BIBTEX_RAW = String.raw`
 
 @inproceedings{sonkin_separating_2026,
 	title = {Separating Syntax from Language: A Mechanistic Account of Translation in Multilingual {LLMs}},
+	url = {https://arxiv.org/abs/2609.01356},
 	booktitle = {Accepted at the Findings of the 2026 Conference on Empirical Methods in Natural Language Processing},
 	author = {Sonkin, Mikhail and Baeumel, Tanja and Gurgurov, Daniil and van Genabith, Josef and Ostermann, Simon},
 	date = {2026-10-01},
-	note = {separating.jpg},
+	note = {translation.jpg},
 	keywords = {{EMNLP}},
 }
-
 
 
 `;
