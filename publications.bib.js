@@ -778,5 +778,48 @@ window.BIBTEX_RAW = String.raw`
 	keywords = {{EMNLP}},
 }
 
+@inproceedings{poche_limitations_2026,
+	title = {Limitations of Automated Simulatability: {LLM} Simulators Can Bypass Explanations},
+	shorttitle = {Limitations of Automated Simulatability},
+	abstract = {Simulatability is an evaluation protocol for explanations that quantifies their usefulness by how well they help a user predict a task model's outputs. Since human evaluation is costly, automated simulatability replaces human explainees with {LLM} simulators, as proposed in {ConSim} (Poché et al., 2025) for large-scale experiments. We qualitatively replicate and extend {ConSim}'s ranking of explanation methods across the tested datasets, explanation families, and simulator {LLMs}, and identify two limitations. First, when class names are meaningful, simulators can obtain high simulatability by solving the classification task directly, without relying on the explanations. Second, class anonymization can reward explanations for leaking the hidden label mapping, a limitation we expose with a new classes-as-concepts baseline. These results are consistent with a shortcut hypothesis: in the tested settings, simulator predictions mainly rely on task priors, while explanations produce small changes. We derive recommendations for more robust automated simulatability evaluations.},
+	booktitle = {Accepted at the 9th {BlackboxNLP} Workshop Special Track: Reproducibility and Reliability in Interpretability Analyses},
+	author = {Poché, Antonin and Jourdan, Fanny and Feldhus, Nils and Wang, Qianli and Yang, Jing and Ostermann, Simon and Asher, Nicholas and Muller, Philippe and Schmitt, Vera},
+	urldate = {2026-09-03},
+	date = {2026-09},
+	langid = {english},
+	note = {simulatability.jpg},
+	keywords = {{BlackBoxNLP}},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/SGL9XL67/Poché et al. - 2026 - Limitations of Automated Simulatability LLM Simulators Can Bypass Explanations.pdf:application/pdf},
+}
+
+@inproceedings{kang_compositional_2026,
+	title = {Compositional Multilingual and Behavioral Attribute Steering},
+	abstract = {This study examines the compositionality of steering vectors for language and behavioral control in large language models. Focusing on language, jailbreak, and conciseness, we investigate whether additive, training-free composition of attribute steering vectors can preserve the intended steering effect of each attribute, across four instruction-tuned models from two model families and two size scales. We find that single-attribute steering is reliable for all three attributes, but only within an appropriate combination of intervention layer and steering strength, with abstract behaviors (jailbreak, conciseness) favoring middle layers and language favoring earlier layers. We show that additive composition of two attribute vectors succeeds in steering both attributes simultaneously when each is injected at its own best-performing layer, and that this partially extends to three simultaneously composed attributes, addressing an inconsistency left open by prior work on training-free composition. We further analyze the geometric properties of these steering vectors, finding that they are approximately orthogonal in the residual stream, consistent with their compositional behavior.},
+	eventtitle = {Accepted at the 9th {BlackboxNLP} Workshop},
+	booktitle = {Accepted at the 9th {BlackboxNLP} Workshop},
+	author = {Kang, Hyun Gu and Gurgurov, Daniil and Baeumel, Tanja and Genabith, Josef van and Ostermann, Simon},
+	urldate = {2026-09-03},
+	date = {2026-09},
+	langid = {english},
+	note = {compositional.jpg},
+	keywords = {{BlackBoxNLP}},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/3MF8RNEV/Kang et al. - 2026 - Compositional Multilingual and Behavioral Attribute Steering.pdf:application/pdf},
+}
+
+@inproceedings{gurgurov_latin_2026,
+	title = {The Latin Substrate: How Language Models Represent and Mediate Script Choice},
+	shorttitle = {The Latin Substrate},
+	abstract = {Many languages are written in multiple scripts, requiring large language models ({LLMs}) to generate equivalent linguistic content in distinct orthographic forms. While prior work suggests that {LLMs} route information through shared latent representations, how they internally mediate script variation remains poorly understood. We study this question by first examining per-layer output distributions with the logit lens, which reveals consistent latent romanization during transliteration, and then through representational and mechanistic analyses of script generation. At the \${\textbackslash}textit\{representational\}\$ level, we show that scripts of the same language become increasingly separable across layers and that a simple linear steering direction can flip a model's output script while largely maintaining semantic content. The vector generalizes asymmetrically to writing systems unseen during construction, flipping non-Latin output to Latin reliably, but mapping Latin output into varied non-Latin scripts. At the \${\textbackslash}textit\{mechanistic\}\$ level, we localize a small set of late-layer attention heads that causally mediate script choice. These heads transfer across unrelated languages and writing systems, suggesting that script routing is implemented by language-agnostic components. Across both analyses, we observe a consistent directional asymmetry: non-Latin output is produced by a compact, identifiable gate, while Latin-script output emerges from diffuse contributions across the network. Collectively, our findings hint that {LLMs} organize script variation around shared latent representations while exhibiting a privileged substrate toward Latin script.},
+	eventtitle = {Accepted at the 9th {BlackboxNLP} Workshop},
+	booktitle = {Accepted at the 9th {BlackboxNLP} Workshop},
+	author = {Gurgurov, Daniil and Saji, Alan and Trinley, Katharina and Genabith, Josef van and Ostermann, Simon},
+	urldate = {2026-09-03},
+	date = {2026-09-03},
+	langid = {english},
+	note = {latinsubstrate.jpg},
+	keywords = {{BlackBoxNLP}},
+	file = {Full Text PDF:/Users/sios01-admin_1/Zotero/storage/BK5KQFQU/Gurgurov et al. - 2026 - The Latin Substrate How Language Models Represent and Mediate Script Choice.pdf:application/pdf},
+}
+
 
 `;
